@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.9)  9 OCT 2024 16:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.9)  10 OCT 2024 17:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2295,152 +2295,142 @@ LaTeX Info: Redefining \% on input line 1.
 [4
 
 
-] (./main.lot
+] (./main.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
-\tf@lot=\write4
-\openout4 = `main.lot'.
+\tf@lof=\write4
+\openout4 = `main.lof'.
 
 
 
 [5
 
-] (./main.lof
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-)
-\tf@lof=\write5
-\openout5 = `main.lof'.
-
-
-
-[6
-
-] (./example.tex
+] (./intro.tex
 Capítulo 1.
-LaTeX Font Info:    Calculating math sizes for size <17.28003> on input line 18.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.28003> on input line 18.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12.09596> on input line 18.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8.64001> on input line 18.
-LaTeX Font Info:    Calculating math sizes for size <10.00012> on input line 29.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.00012> on input line 29.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.00005> on input line 29.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.00006> on input line 29.
-<./img//ejemplos/test-image.png, id=125, 1284.8pt x 722.7pt>
-File: ./img//ejemplos/test-image.png Graphic file (type png)
-<use ./img//ejemplos/test-image.png>
-Package pdftex.def Info: ./img//ejemplos/test-image.png  used on input line 42.
-(pdftex.def)             Requested size: 244.11453pt x 137.31442pt.
-
+) (./antecedentes.tex
 
 [1
 
 
-{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} <./img//ejemplos/test-image.png>]
-
-[2]
-LaTeX Font Info:    Calculating math sizes for size <8.00006> on input line 103.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8.00006> on input line 103.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.6> on input line 103.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <4.00003> on input line 103.
-
-
-[3]
+]
 Capítulo 2.
-<./img//ejemplos/test-image-wrap.jpg, id=169, 301.125pt x 301.125pt>
-File: ./img//ejemplos/test-image-wrap.jpg Graphic file (type jpg)
-<use ./img//ejemplos/test-image-wrap.jpg>
-Package pdftex.def Info: ./img//ejemplos/test-image-wrap.jpg  used on input line 125.
-(pdftex.def)             Requested size: 127.45044pt x 127.45032pt.
 
 
-[4
-
-{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc} <./img//ejemplos/test-image-wrap.jpg>]
-
-[5] (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2024/09/23 1.10c listings language file
-) (c:/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
-) (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2024/09/23 1.10c listings language file
-) (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2024/09/23 1.10c listings language file
-)
-
-[6] (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2024/09/23 1.10c listings language file
-) (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang2.sty
-File: lstlang2.sty 2024/09/23 1.10c listings language file
-) (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang3.sty
-File: lstlang3.sty 2024/09/23 1.10c listings language file
-) (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2024/09/23 1.10c listings language file
-) (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang2.sty
-File: lstlang2.sty 2024/09/23 1.10c listings language file
-) (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang3.sty
-File: lstlang3.sty 2024/09/23 1.10c listings language file
-) (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2024/09/23 1.10c listings language file
-) (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang2.sty
-File: lstlang2.sty 2024/09/23 1.10c listings language file
-) (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang3.sty
-File: lstlang3.sty 2024/09/23 1.10c listings language file
-) (c:/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
-)
-File: ./img//ejemplos/test-image.png Graphic file (type png)
-<use ./img//ejemplos/test-image.png>
-Package pdftex.def Info: ./img//ejemplos/test-image.png  used on input line 240.
-(pdftex.def)             Requested size: 184.9429pt x 104.0224pt.
-File: ./img//ejemplos/test-image-wrap.jpg Graphic file (type jpg)
-<use ./img//ejemplos/test-image-wrap.jpg>
-Package pdftex.def Info: ./img//ejemplos/test-image-wrap.jpg  used on input line 241.
-(pdftex.def)             Requested size: 113.81297pt x 113.81102pt.
-File: ./img//ejemplos/test-image.png Graphic file (type png)
-<use ./img//ejemplos/test-image.png>
-Package pdftex.def Info: ./img//ejemplos/test-image.png  used on input line 243.
-(pdftex.def)             Requested size: 312.9803pt x 176.043pt.
-
-
-[7]
-
-[8
+[2
 
 ]
+<img/patern.png, id=178, 782.925pt x 417.05812pt>
+File: img/patern.png Graphic file (type png)
+<use img/patern.png>
+Package pdftex.def Info: img/patern.png  used on input line 43.
+(pdftex.def)             Requested size: 312.9803pt x 166.72482pt.
+
+
+[3{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} <./img/patern.png>]
+<img/patern2.png, id=197, 561.59813pt x 331.2375pt>
+File: img/patern2.png Graphic file (type png)
+<use img/patern2.png>
+Package pdftex.def Info: img/patern2.png  used on input line 54.
+(pdftex.def)             Requested size: 426.79134pt x 251.72794pt.
+<img/pol.png, id=201, 737.75626pt x 307.90031pt>
+File: img/pol.png Graphic file (type png)
+<use img/pol.png>
+Package pdftex.def Info: img/pol.png  used on input line 67.
+(pdftex.def)             Requested size: 426.79134pt x 178.11717pt.
+
+
+[4 <./img/patern2.png>]
+<img/parabola.png, id=211, 429.10312pt x 417.81094pt>
+File: img/parabola.png Graphic file (type png)
+<use img/parabola.png>
+Package pdftex.def Info: img/parabola.png  used on input line 84.
+(pdftex.def)             Requested size: 284.52756pt x 277.04387pt.
+
+
+[5 <./img/pol.png>]
+LaTeX Font Info:    Calculating math sizes for size <8.00006> on input line 99.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8.00006> on input line 99.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5.6> on input line 99.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <4.00003> on input line 99.
+
+
+[6 <./img/parabola.png>]
+<img/heterodine.png, id=230, 438.13687pt x 163.3603pt>
+File: img/heterodine.png Graphic file (type png)
+<use img/heterodine.png>
+Package pdftex.def Info: img/heterodine.png  used on input line 112.
+(pdftex.def)             Requested size: 284.52756pt x 106.08821pt.
+<img/mini.png, id=232, 651.93562pt x 432.86719pt>
+File: img/mini.png Graphic file (type png)
+<use img/mini.png>
+Package pdftex.def Info: img/mini.png  used on input line 132.
+(pdftex.def)             Requested size: 341.43306pt x 226.71045pt.
+
+
+[7 <./img/heterodine.png>]
+<img/fast.png, id=243, 945.5325pt x 528.47438pt>
+File: img/fast.png Graphic file (type png)
+<use img/fast.png>
+Package pdftex.def Info: img/fast.png  used on input line 143.
+(pdftex.def)             Requested size: 341.43306pt x 190.83122pt.
+
+
+[8 <./img/mini.png> <./img/fast.png>]
+<img/srt.png, id=254, 392.96812pt x 499.8675pt>
+File: img/srt.png Graphic file (type png)
+<use img/srt.png>
+Package pdftex.def Info: img/srt.png  used on input line 154.
+(pdftex.def)             Requested size: 170.71652pt x 217.15839pt.
+<img/chime.png, id=258, 682.04813pt x 350.81062pt>
+File: img/chime.png Graphic file (type png)
+<use img/chime.png>
+Package pdftex.def Info: img/chime.png  used on input line 165.
+(pdftex.def)             Requested size: 341.43306pt x 175.61899pt.
+
+
+[9 <./img/srt.png> <./img/chime.png>]
+<img/rtlsdr.png, id=269, 774.64406pt x 377.15906pt>
+File: img/rtlsdr.png Graphic file (type png)
+<use img/rtlsdr.png>
+Package pdftex.def Info: img/rtlsdr.png  used on input line 178.
+(pdftex.def)             Requested size: 341.43306pt x 166.23825pt.
+) (./design.tex
+
+[10 <./img/rtlsdr.png>]
 Capítulo 3.
-(./main.bbl
-
-[9
-
-])
-
-[10
-
-]
-File: ./img//ejemplos/test-image.png Graphic file (type png)
-<use ./img//ejemplos/test-image.png>
-Package pdftex.def Info: ./img//ejemplos/test-image.png  used on input line 337.
-(pdftex.def)             Requested size: 321.19922pt x 180.67455pt.
 
 
 [11
+
+]
+Capítulo 4.
+) (./resultados.tex
+
+[12
+
+]
+Capítulo 5.
+) (./concluciones.tex
+
+[13
+
+]
+Capítulo 6.
+) (./main.bbl
+
+[14
 
 ])
 
 (c:/texlive/2024/texmf-dist/tex/generic/stringenc/se-utf8.def
 File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
-) [12] (./main.aux
+) [15
+
+] (./main.aux
 LaTeX Info: Redefining \. on input line 16.
 LaTeX Info: Redefining \% on input line 16.
 )
@@ -2450,18 +2440,18 @@ L3 programming layer <2024-09-10>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 35771 strings out of 473579
- 581809 string characters out of 5732263
- 1578757 words of memory out of 5000000
- 57861 multiletter control sequences out of 15000+600000
- 705007 words of font info for 198 fonts, out of 8000000 for 9000
+ 33184 strings out of 473579
+ 549168 string characters out of 5732263
+ 1220150 words of memory out of 5000000
+ 55359 multiletter control sequences out of 15000+600000
+ 651238 words of font info for 136 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 113i,19n,153p,2914b,2396s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmvtt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (19 pages, 372172 bytes).
+ 113i,11n,110p,2914b,2330s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
+Output written on main.pdf (21 pages, 5721852 bytes).
 PDF statistics:
- 567 PDF objects out of 1000 (max. 8388607)
- 499 compressed objects within 5 object streams
- 131 named destinations out of 1000 (max. 500000)
- 218 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 493 PDF objects out of 1000 (max. 8388607)
+ 412 compressed objects within 5 object streams
+ 86 named destinations out of 1000 (max. 500000)
+ 338 words of extra memory for PDF output out of 10000 (max. 10000000)
 

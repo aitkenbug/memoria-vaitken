@@ -3,44 +3,46 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: natnumurl.bst
 Database file #1: library.bib
-You've used 5 entries,
+Warning--vacio school en Finger2013
+You've used 9 entries,
             1986 wiz_defined-function locations,
-            468 strings with 3829 characters,
-and the built_in function-call counts, 936 in all, are:
-= -- 87
-> -- 20
+            497 strings with 4953 characters,
+and the built_in function-call counts, 1295 in all, are:
+= -- 120
+> -- 36
 < -- 0
-+ -- 10
-- -- 5
-* -- 70
-:= -- 124
-add.period$ -- 5
-call.type$ -- 5
-change.case$ -- 5
++ -- 18
+- -- 9
+* -- 84
+:= -- 193
+add.period$ -- 12
+call.type$ -- 9
+change.case$ -- 7
 chr.to.int$ -- 0
-cite$ -- 5
-duplicate$ -- 33
-empty$ -- 120
-format.name$ -- 5
-if$ -- 231
+cite$ -- 10
+duplicate$ -- 44
+empty$ -- 166
+format.name$ -- 9
+if$ -- 310
 int.to.chr$ -- 0
-int.to.str$ -- 5
-missing$ -- 1
-newline$ -- 31
-num.names$ -- 5
-pop$ -- 29
+int.to.str$ -- 9
+missing$ -- 0
+newline$ -- 54
+num.names$ -- 9
+pop$ -- 43
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 30
+skip$ -- 31
 stack$ -- 0
-substring$ -- 32
-swap$ -- 9
+substring$ -- 0
+swap$ -- 2
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 8
-width$ -- 6
-write$ -- 54
+warning$ -- 1
+while$ -- 9
+width$ -- 10
+write$ -- 99
+(There was 1 warning)
