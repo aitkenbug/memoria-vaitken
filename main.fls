@@ -1,8 +1,8 @@
-PWD c:/Users/Vincent/memoria-vaitken
+PWD c:/Users/vicen/memoria-vaitken
 INPUT c:/texlive/2024/texmf.cnf
 INPUT c:/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/Vincent/memoria-vaitken/main.tex
+INPUT c:/Users/vicen/memoria-vaitken/main.tex
 OUTPUT main.log
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/book.cls
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/book.cls
