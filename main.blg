@@ -4,45 +4,45 @@ The top-level auxiliary file: main.aux
 The style file: natnumurl.bst
 Database file #1: library.bib
 Warning--vacio school en Finger2013
-You've used 9 entries,
+You've used 10 entries,
             1986 wiz_defined-function locations,
-            497 strings with 4953 characters,
-and the built_in function-call counts, 1295 in all, are:
-= -- 120
-> -- 36
+            504 strings with 5101 characters,
+and the built_in function-call counts, 1553 in all, are:
+= -- 141
+> -- 48
 < -- 0
-+ -- 18
-- -- 9
-* -- 84
-:= -- 193
-add.period$ -- 12
-call.type$ -- 9
++ -- 22
+- -- 12
+* -- 109
+:= -- 224
+add.period$ -- 14
+call.type$ -- 10
 change.case$ -- 7
 chr.to.int$ -- 0
-cite$ -- 10
-duplicate$ -- 44
-empty$ -- 166
-format.name$ -- 9
-if$ -- 310
+cite$ -- 11
+duplicate$ -- 55
+empty$ -- 203
+format.name$ -- 12
+if$ -- 380
 int.to.chr$ -- 0
-int.to.str$ -- 9
-missing$ -- 0
-newline$ -- 54
-num.names$ -- 9
-pop$ -- 43
+int.to.str$ -- 10
+missing$ -- 4
+newline$ -- 60
+num.names$ -- 10
+pop$ -- 49
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 31
+skip$ -- 34
 stack$ -- 0
 substring$ -- 0
-swap$ -- 2
+swap$ -- 3
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 9
-width$ -- 10
-write$ -- 99
+while$ -- 10
+width$ -- 12
+write$ -- 111
 (There was 1 warning)

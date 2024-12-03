@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1733193206.40821 "main.aux" "main.bbl" "main" 1733193210.02279 0
-  "./library.bib" 1731982297 2799 aa115d4d95e4607f7077dfe7de921d49 ""
+["bibtex main"] 1733206172.81556 "main.aux" "main.bbl" "main" 1733206176.58318 0
+  "./library.bib" 1733205854 3426 10b6952d06415b0adce5d59faa258048 ""
   "./natnumurl.bst" 1731982297 21201 c3a97a2434b58cd70f7f9c9df607b80a ""
-  "main.aux" 1733193208 20855 a53d3595094a885bf802b7584afc2c12 "pdflatex"
+  "main.aux" 1733206175 30202 cd3327a15d71b416ed0afff96c12a4a9 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1733193206.83811 "c:/Users/vicen/memoria-vaitken/main.tex" "main.pdf" "main" 1733193210.02327 0
-  "antecedentes.tex" 1733193200 13594 ea10788e18f763c3d883cbefdd8f16e1 ""
+["pdflatex"] 1733206173.20394 "c:/Users/vicen/memoria-vaitken/main.tex" "main.pdf" "main" 1733206176.58367 0
+  "antecedentes.tex" 1733206168 15766 507e75ff57e5dad64c49edad31e24125 ""
   "c:/Users/vicen/memoria-vaitken/main.tex" 1732399066 3006 cbb9b307ee07a6046d03f938879eec48 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1731631944 2375 baa924870cfb487815765f9094cf3728 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1731631944 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
@@ -274,17 +274,16 @@
   "img/heterodine.png" 1731982297 16880 3c596c40bb125613016d95a697a08fc9 ""
   "img/mini.png" 1731982297 936647 dcc5f5f129704af4a1d7ad6fe69903fb ""
   "img/parabola.png" 1731982297 42928 3c0e92a5e706aeacc460cf6a8e9d0149 ""
-  "img/patern.png" 1731982297 107465 aa28308ef1508d4fc39959bee82d7aad ""
-  "img/patern2.png" 1731982297 45656 f5532f45e29cd6369f701a9b723d6ab8 ""
+  "img/patern1.png" 1733205371 92727 7ab6ebb4f6a8665e06cf3ed10c70eb09 ""
   "img/pol.png" 1731982297 45916 00ac1b2afb56beb9330c58871e7fcad7 ""
   "img/rtlsdr.png" 1731982297 463854 c94a98c0770ff3b92e1527ebbaec968e ""
   "img/srt.png" 1731982297 616438 ac4af183a0a7f28a8a997e3a30035adf ""
   "intro.tex" 1733193200 3966 42edbaf39dfe7fdcf969de8dc3ba85d2 ""
-  "main.aux" 1733193208 20855 a53d3595094a885bf802b7584afc2c12 "pdflatex"
-  "main.bbl" 1733193206 2922 acbb56cdb049079e9f480a5c83456793 "bibtex main"
-  "main.lof" 1733193208 2091 8b61289a99b8c0262794a6654c661bfb "pdflatex"
+  "main.aux" 1733206175 30202 cd3327a15d71b416ed0afff96c12a4a9 "pdflatex"
+  "main.bbl" 1733206173 3373 f8d4e93181ec56487a4e63c55652aecd "bibtex main"
+  "main.lof" 1733206175 1799 6c3b0fff6a90e51699d8726997190e12 "pdflatex"
   "main.tex" 1732399066 3006 cbb9b307ee07a6046d03f938879eec48 ""
-  "main.toc" 1733193208 2541 f57e55fffc1092a910ae32973eb9de99 "pdflatex"
+  "main.toc" 1733206175 4839 e27bf3da4a2ac86a8a8e9b30d699152d "pdflatex"
   "resultados.tex" 1731982297 32 39a27835a38f67849778dac942e724ea ""
   "template.tex" 1731982297 290297 841a7a2beb05c5dcc319b64380dc348b ""
   "template_config.tex" 1731982297 21894 c8a156315548211a1859ff1d4e1eb92a ""

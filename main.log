@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.14)  2 DEC 2024 23:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.14)  3 DEC 2024 03:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2286,16 +2286,18 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 ] (./main.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-)
-\tf@toc=\write3
-\openout3 = `main.toc'.
-
 
 
 [4
 
 
-] (./main.lof
+])
+\tf@toc=\write3
+\openout3 = `main.toc'.
+
+
+
+[5] (./main.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
@@ -2304,7 +2306,7 @@ LaTeX Info: Redefining \% on input line 1.
 
 
 
-[5
+[6
 
 ] (./intro.tex
 Capítulo 1.
@@ -2322,115 +2324,111 @@ Capítulo 2.
 [3
 
 ]
-<img/patern.png, id=183, 782.925pt x 417.05812pt>
-File: img/patern.png Graphic file (type png)
-<use img/patern.png>
-Package pdftex.def Info: img/patern.png  used on input line 43.
-(pdftex.def)             Requested size: 312.9803pt x 166.72482pt.
+<img/patern1.png, id=218, 731.73375pt x 450.9347pt>
+File: img/patern1.png Graphic file (type png)
+<use img/patern1.png>
+Package pdftex.def Info: img/patern1.png  used on input line 38.
+(pdftex.def)             Requested size: 312.9803pt x 192.87291pt.
 
 
-[4{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} <./img/patern.png>]
-<img/patern2.png, id=202, 561.59813pt x 331.2375pt>
-File: img/patern2.png Graphic file (type png)
-<use img/patern2.png>
-Package pdftex.def Info: img/patern2.png  used on input line 54.
-(pdftex.def)             Requested size: 426.79134pt x 251.72794pt.
-<img/pol.png, id=206, 737.75626pt x 307.90031pt>
+[4{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} <./img/patern1.png>]
+
+[5]
+
+[6]
+<img/pol.png, id=264, 737.75626pt x 307.90031pt>
 File: img/pol.png Graphic file (type png)
 <use img/pol.png>
-Package pdftex.def Info: img/pol.png  used on input line 67.
+Package pdftex.def Info: img/pol.png  used on input line 145.
 (pdftex.def)             Requested size: 426.79134pt x 178.11717pt.
-
-
-[5 <./img/patern2.png>]
-<img/parabola.png, id=216, 429.10312pt x 417.81094pt>
+<img/parabola.png, id=268, 429.10312pt x 417.81094pt>
 File: img/parabola.png Graphic file (type png)
 <use img/parabola.png>
-Package pdftex.def Info: img/parabola.png  used on input line 84.
+Package pdftex.def Info: img/parabola.png  used on input line 162.
 (pdftex.def)             Requested size: 284.52756pt x 277.04387pt.
 
 
-[6 <./img/pol.png>]
-LaTeX Font Info:    Calculating math sizes for size <8.00006> on input line 99.
+[7 <./img/pol.png>]
+LaTeX Font Info:    Calculating math sizes for size <8.00006> on input line 177.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8.00006> on input line 99.
+(Font)              <8.00006> on input line 177.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.6> on input line 99.
+(Font)              <5.6> on input line 177.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <4.00003> on input line 99.
+(Font)              <4.00003> on input line 177.
 
 
-[7 <./img/parabola.png>]
-<img/heterodine.png, id=236, 438.13687pt x 163.3603pt>
+[8 <./img/parabola.png>]
+<img/heterodine.png, id=288, 438.13687pt x 163.3603pt>
 File: img/heterodine.png Graphic file (type png)
 <use img/heterodine.png>
-Package pdftex.def Info: img/heterodine.png  used on input line 112.
+Package pdftex.def Info: img/heterodine.png  used on input line 190.
 (pdftex.def)             Requested size: 284.52756pt x 106.08821pt.
-<img/mini.png, id=238, 651.93562pt x 432.86719pt>
+<img/mini.png, id=290, 651.93562pt x 432.86719pt>
 File: img/mini.png Graphic file (type png)
 <use img/mini.png>
-Package pdftex.def Info: img/mini.png  used on input line 132.
+Package pdftex.def Info: img/mini.png  used on input line 210.
 (pdftex.def)             Requested size: 341.43306pt x 226.71045pt.
 
 
-[8 <./img/heterodine.png>]
-<img/fast.png, id=248, 945.5325pt x 528.47438pt>
+[9 <./img/heterodine.png>]
+<img/fast.png, id=300, 945.5325pt x 528.47438pt>
 File: img/fast.png Graphic file (type png)
 <use img/fast.png>
-Package pdftex.def Info: img/fast.png  used on input line 143.
+Package pdftex.def Info: img/fast.png  used on input line 221.
 (pdftex.def)             Requested size: 341.43306pt x 190.83122pt.
 
 
-[9 <./img/mini.png> <./img/fast.png>]
-<img/srt.png, id=259, 392.96812pt x 499.8675pt>
+[10 <./img/mini.png> <./img/fast.png>]
+<img/srt.png, id=311, 392.96812pt x 499.8675pt>
 File: img/srt.png Graphic file (type png)
 <use img/srt.png>
-Package pdftex.def Info: img/srt.png  used on input line 154.
+Package pdftex.def Info: img/srt.png  used on input line 232.
 (pdftex.def)             Requested size: 170.71652pt x 217.15839pt.
-<img/chime.png, id=263, 682.04813pt x 350.81062pt>
+<img/chime.png, id=315, 682.04813pt x 350.81062pt>
 File: img/chime.png Graphic file (type png)
 <use img/chime.png>
-Package pdftex.def Info: img/chime.png  used on input line 165.
+Package pdftex.def Info: img/chime.png  used on input line 243.
 (pdftex.def)             Requested size: 341.43306pt x 175.61899pt.
 
 
-[10 <./img/srt.png> <./img/chime.png>]
-<img/rtlsdr.png, id=274, 774.64406pt x 377.15906pt>
+[11 <./img/srt.png> <./img/chime.png>]
+<img/rtlsdr.png, id=326, 774.64406pt x 377.15906pt>
 File: img/rtlsdr.png Graphic file (type png)
 <use img/rtlsdr.png>
-Package pdftex.def Info: img/rtlsdr.png  used on input line 178.
+Package pdftex.def Info: img/rtlsdr.png  used on input line 256.
 (pdftex.def)             Requested size: 341.43306pt x 166.23825pt.
 ) (./design.tex
 
-[11 <./img/rtlsdr.png>]
+[12 <./img/rtlsdr.png>]
 Capítulo 3.
 
 
-[12
+[13
 
 ]
 Capítulo 4.
 ) (./resultados.tex
 
-[13
+[14
 
 ]
 Capítulo 5.
 ) (./concluciones.tex
 
-[14
+[15
 
 ]
 Capítulo 6.
 ) (./main.bbl
 
-[15
+[16
 
 ])
 
 (c:/texlive/2024/texmf-dist/tex/generic/stringenc/se-utf8.def
 File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
-) [16
+) [17
 
 ] (./main.aux
 LaTeX Info: Redefining \. on input line 16.
@@ -2442,18 +2440,18 @@ L3 programming layer <2024-11-02>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 33211 strings out of 473362
- 549771 string characters out of 5725050
- 1221802 words of memory out of 5000000
- 55596 multiletter control sequences out of 15000+600000
+ 33256 strings out of 473362
+ 550207 string characters out of 5725050
+ 1223802 words of memory out of 5000000
+ 55608 multiletter control sequences out of 15000+600000
  651238 words of font info for 136 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 113i,11n,110p,2912b,2330s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 113i,12n,110p,2912b,2599s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on main.pdf (22 pages, 5729699 bytes).
+Output written on main.pdf (24 pages, 5665089 bytes).
 PDF statistics:
- 498 PDF objects out of 1000 (max. 8388607)
- 416 compressed objects within 5 object streams
- 87 named destinations out of 1000 (max. 500000)
- 338 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 610 PDF objects out of 1000 (max. 8388607)
+ 528 compressed objects within 6 object streams
+ 120 named destinations out of 1000 (max. 500000)
+ 469 words of extra memory for PDF output out of 10000 (max. 10000000)
 

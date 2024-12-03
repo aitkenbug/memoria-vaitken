@@ -1,16 +1,15 @@
 \babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Patrón de radiación del telescopio Mini en el cerro Tololo con cortes en azimut y elevación\cite {Astudillo2014}.}}{4}{figure.caption.9}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Patrón de radiación teórico que compara la radiación isotrópica con la radiación de una antena directiva con la medida de haz de media potencia y la existencia de lóbulos laterales \cite {Cassanelli2022}.}}{5}{figure.caption.10}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces A la izquierda se tiene una polarización lineal del campo electromagnético y a la derecha una polarización circular izquierda\cite {Astudillo2014}.}}{6}{figure.caption.11}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Geometría característica de un reflector parabólico para el tipo de Foco Primario\cite {Astudillo2014}.}}{7}{figure.caption.12}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Diagrama de bloques de un receptor heterodino para astronomía de tipo DSB.}}{8}{figure.caption.13}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Telescopio MINI en el Observatorio Cerro Calan de la Facultad de Ciencia Físicas y Matemáticas de la Universidad de Chile\cite {DAS2024}}}{9}{figure.caption.14}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Telescopio Fast en la provincia de Guizhou, China \cite {FAST2024}.}}{9}{figure.caption.15}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Telescopio SRT del MIT en la azotea del departamento de ingeniería eléctrica de la FCFM\cite {Curotto2019}.}}{10}{figure.caption.16}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Telescopio experimental CHIME en Canada \cite {CHIME}.}}{10}{figure.caption.17}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Software utilizado por RTL-SDR Blog para observar Hidrógeno neutro con una RTL-SDR\cite {RTLSDR2018}.}}{11}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Parámetros del patrón de radiación para una antena con características directivas. \cite {stutzman2012antenna}.}}{4}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces A la izquierda se tiene una polarización lineal del campo electromagnético y a la derecha una polarización circular izquierda\cite {Astudillo2014}.}}{7}{figure.caption.23}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Geometría característica de un reflector parabólico para el tipo de Foco Primario\cite {Astudillo2014}.}}{8}{figure.caption.24}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Diagrama de bloques de un receptor heterodino para astronomía de tipo DSB.}}{9}{figure.caption.25}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Telescopio MINI en el Observatorio Cerro Calan de la Facultad de Ciencia Físicas y Matemáticas de la Universidad de Chile\cite {DAS2024}}}{10}{figure.caption.26}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Telescopio Fast en la provincia de Guizhou, China \cite {FAST2024}.}}{10}{figure.caption.27}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Telescopio SRT del MIT en la azotea del departamento de ingeniería eléctrica de la FCFM\cite {Curotto2019}.}}{11}{figure.caption.28}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Telescopio experimental CHIME en Canada \cite {CHIME}.}}{11}{figure.caption.29}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Software utilizado por RTL-SDR Blog para observar Hidrógeno neutro con una RTL-SDR\cite {RTLSDR2018}.}}{12}{figure.caption.30}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

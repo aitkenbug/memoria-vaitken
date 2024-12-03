@@ -1,11 +1,12 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
   \providecommand\backrefparscanfalse{}
   \providecommand\backrefparscantrue{}
   \providecommand\backrefprint{}
 
 \backrefparscanfalse
-\bibitem{Restrepo2023}
-Óscar Restrepo~Gaitán, ``Desarrollo de tecnologías y metodologías para mejorar la observación de la línea de 21 cm del hidrógeno neutro'', 2023, \href{https://repositorio.uchile.cl/handle/2250/198618} {\nolinkurl{\detokenize{https://repositorio.uchile.cl/handle/2250/198618}}}.
+\bibitem{Ransom2016}
+Condon, J. y Ransom, S., {Essential Radio Astronomy}.
+\newblock Princeton Series in Modern Observational Astronomy, Princeton University Press, 2016, \href{https://books.google.cl/books?id=vWWYDwAAQBAJ} {\nolinkurl{\detokenize{https://books.google.cl/books?id=vWWYDwAAQBAJ}}}.
 \backrefprint\backrefparscantrue
 
 \backrefparscanfalse
@@ -14,9 +15,14 @@ Alvarado, P.~A., ``Medición del patrón de radiación del telescopio mini'', 20
 \backrefprint\backrefparscantrue
 
 \backrefparscanfalse
-\bibitem{Cassanelli2022}
-Cassanelli, T.~A., {Fast Radio Burst localization with Very Long Baseline Interferometry}.
-\newblock Tesis PhD, University of Toronto, 2022.
+\bibitem{stutzman2012antenna}
+Stutzman, W. y Thiele, G., {Antenna Theory and Design}.
+\newblock Antenna Theory and Design, Wiley, 2012, \href{https://books.google.cl/books?id=xhZRA1K57wIC} {\nolinkurl{\detokenize{https://books.google.cl/books?id=xhZRA1K57wIC}}}.
+\backrefprint\backrefparscantrue
+
+\backrefparscanfalse
+\bibitem{Restrepo2023}
+Óscar Restrepo~Gaitán, ``Desarrollo de tecnologías y metodologías para mejorar la observación de la línea de 21 cm del hidrógeno neutro'', 2023, \href{https://repositorio.uchile.cl/handle/2250/198618} {\nolinkurl{\detokenize{https://repositorio.uchile.cl/handle/2250/198618}}}.
 \backrefprint\backrefparscantrue
 
 \backrefparscanfalse

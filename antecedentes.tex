@@ -1,4 +1,120 @@
 \chapter{Antecedentes}
+
+En este capítulo se expondrán los fundamentos teóricos y conceptuales necesarios en el desarrollo del proyecto. Se abordarán los conceptos principales características de las antenas, ya que por naturaleza un radiotelescopio es una antena. Además, se explicará el funcionamiento de los receptores heterodinos, principal componente utilizado en la digitalización y adquisición de señales de RF. Para finalmente, abordar el concepto de radiotelescopio, la importancia de la línea de Hidrógeno neutro y el proyecto CHARTS.\\
+
+\section{Fundamentos de antenas}
+
+Una antena es un dispositivo usualmente pasivo que convierte radiación electromagnética del ambiente en corriente eléctrica y viceversa, dependiendo para que se utilice, pueden ser utilizadas para recibir o transmitir señales. Un radiotelescopio son antenas receptoras. Suele ser fácil calcular las propiedades de una antena transmisora y medir las propiedades de una antena receptora. Afortunadamente, la mayor parte de las propiedades de una antena transmisora (como el patrón de radiación) son las mismas al usar esta misma antena como receptora, así como cualquier medición de una antena receptora puede ser aplicada a esta antena cuando es usada para la transmisión \cite{Ransom2016}.\\
+
+\subsection{Patrón de radiación}
+
+El patrón de radiación es una representación gráfica de las propiedades radiativas de una antena. Se define como el gráfico de potencia transmitida por la antena, evaluada sobre una esfera de radio constante. Por razones prácticas se estudian cortes del patrón de radiación. Estos cortes son las curvas tridimensionales del patrón que son contenidas en la intersección de la esfera pasando por el origen.\\
+
+Para poder medir la potencia radiada por una antena, se debo obtener utilizando la aproximación de campo lejano. Campo lejano es la distancia donde debe encontrarse una fuente puntual para que sus ondas recibidas sean planas \cite{Ransom2016}. Lo que en consecuencia significa que la radiación se propaga en modo TEM, es decir, que la componente eléctrica es perpendicular a la componente magnética y ambas son perpendiculares a la dirección de propagación, esto permite solo utilizar el campo eléctrico para describir la radiación \cite{Astudillo2014}.\\
+
+\subsubsection*{Campo Lejano} La definición de la distancia de campo lejano, depende tanto de la longitud de onda $\lambda$ como el tamaño de la antena $D$, o diámetro para antenas de apertura parabólicas. La distancia de campo lejano se define como:
+
+\begin{equation}
+    R = \frac{2D^2}{\lambda}
+\end{equation}
+
+Se utiliza las definiciones de campo eléctrico normalizado y potencia normalizada para poder expresar el patrón de radiación en decibelios. Utilizando el máximo como el valor de referencia. La potencia normalizada se define como:\\
+
+\begin{equation}
+    \Vec{F}(\theta, \Phi)=\frac{\Vec{E(\theta, \phi)}}{max|\Vec{E}(\theta, \phi)|}
+\end{equation}
+
+\begin{equation}
+    P(\Theta, \Phi) = |\Vec{F}(\theta, \Phi)|^{2}
+\end{equation}
+
+\begin{equation}
+    P(\Theta, \Phi)_{dB} = 10logP(\Theta, \Phi)=20log |\Vec{F}|=F(\Theta, \Phi)
+\end{equation}
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width = 11cm]{img/patern1.png}
+    \caption{Parámetros del patrón de radiación para una antena con características directivas. \cite{stutzman2012antenna}.}
+    \label{fig:patern}
+\end{figure}
+
+La figura \ref{fig:patern}, muestra un patrón de radiación de una antena directiva, donde se pueden observar los lóbulos laterales y el haz principal. El haz principal es la dirección de máxima radiación, mientras que los lóbulos laterales son las direcciones de radiación secundarias.\\
+
+El haz principal se define en términos de potencia y se conoce como HPBW o Haz de Media Potencia. El HPBW es el ángulo entre los puntos de la curva de radiación que tienen la mitad de la potencia máxima, es decir donde se ve una disminución de 3 dB.\\
+
+\subsection{Directividad}
+
+\subsection{Ganancia}
+
+\subsection{Polarización}
+
+\subsection{Ancho de banda}
+
+\subsection{Perdidas y eficiencia}
+
+\paragraph{Impedancia de entrada}
+
+\paragraph{Perdidas de espacio libre}
+
+\paragraph{Perdidas de superficie}
+
+\paragraph{Perdidas de cable}
+
+
+\section{Antenas de apertura}
+
+\subsection{Antenas parabólicas}
+
+\paragraph{Foco primario}
+
+\paragraph{Cassegrain}
+
+\paragraph{Gregorian}
+
+\paragraph{Off-axis}
+
+\section{Antenas de alimentación}
+
+\subsection{Tipos de antenas de alimentación}
+
+\paragraph{Yagi-Uda}
+
+\paragraph{Bocina}
+
+\paragraph{Log-Periódica}
+
+\paragraph{Antenas de semiespacio}
+
+\paragraph{Antenas de parche}
+
+\section{Receptores heterodinos}
+
+\subsection{¿Qué es un receptor heterodino?}
+
+\subsection{Radio definida por software}
+
+\subsection{Transformada Rápida de Fourier}
+
+
+\section{Radiotelescopios}
+
+\subsection{¿Qué es un radiotelescopio?}
+
+\subsection{Línea de Hidrógeno Neutro}
+
+\subsection{CHARTS y FRB}
+
+
+
+
+
+
+
+
+
+
 \section{Conceptos previos}
 \subsection{Radiotelescopio}
 
@@ -19,44 +135,6 @@ Observar H1 permite estudiar la evolución del universo primitivo, rescatando in
 Los fenómenos astrofísicos transitorios de radio o FRB, son eventos de extremadamente corta duración y origen desconocido que ocurren en un amplio rango de frecuencias. Estos pulsos inspiraron el proyecto CHARTS, para apoyar su búsqueda y estudio.\\
 
 El proyecto CHARTS, es una colaboración entre la Universidad de Chile y la Universidad de Toronto con el objetivo de construir un arreglo de 128 sintonizadas para operar en el rango de 300MHz a 500MHz en el marco de la búsqueda de FRB.
-\section{Marco teórico}
-A continuación, se explicarán los conceptos, herramientas y fundamentos para sustentar la construcción y operación de un nuevo radiotelescopio. Incluyendo los elementos teóricos más relevantes para realizar este proyecto.
-
-\subsection{Patrón de Radiación}
-
-El patrón de radiación es el gráfico de la potencia transmitida por la antena, evaluada sobre una esfera de radio constante\cite{Astudillo2014}. Usualmente, se estudian cortes del patrón que corresponden a las curvas en tres dimensiones de este, que son contenidas en la intersección de esta esfera pasando por el origen.\\
-
-La medición de patrón de radiación, es la potencia que se obtiene en la aproximación de campo lejano. por lo que este es independiente de la distancia. El patrón de radiación, se define como el campo eléctrico y la potencia normalizada para ser expresada en decibelios que se representa por las siguientes ecuaciones.
-
-\begin{equation}
-    \Vec{F}(\theta, \Phi)=\frac{\Vec{E(\theta, \phi)}}{max|\Vec{E}(\theta, \phi)|}
-\end{equation}
-\begin{equation}
-    P(\Theta, \Phi) = |\Vec{F}(\theta, \Phi)|^{2}
-\end{equation}
-\begin{equation}
-    P(\Theta, \Phi)_{dB} = 10logP(\Theta, \Phi)=20log |\Vec{F}|=F(\Theta, \Phi)
-\end{equation}
-
-\begin{figure}
-    \centering
-    \includegraphics[width = 11cm]{img/patern.png}
-    \caption{Patrón de radiación del telescopio Mini en el cerro Tololo con cortes en azimut y elevación\cite{Astudillo2014}.}
-    \label{fig:patern}
-\end{figure}
-
-A partir de patrón de radiación, como el de la figura \ref{fig:patern}, se pueden obtener características muy relevantes para la caracterización y estudio de una antena y, particularmente, un radiotelescopio. Entre estas características, se encuentran la medida del ancho de haz de media potencia, o HPBM por su sigla en inglés.\\
-
-También, se encuentra la radiactividad, que representa la concentración de potencia en un solo punto, definida como la razón entre el haz de mayor potencia de la antena estudiada y el haz de la antena isotrópica. Con esta medida, se define la ganancia y la eficiencia de antena, que se obtienen a partir de la potencia enfocada en la dirección deseada por el haz principal del patrón de radiación.\\
-
-\begin{figure}
-    \centering
-    \includegraphics[width = 15cm]{img/patern2.png}
-    \caption{Patrón de radiación teórico que compara la radiación isotrópica con la radiación de una antena directiva con la medida de haz de media potencia y la existencia de lóbulos laterales \cite{Cassanelli2022}.}
-    \label{fig:patern2}
-\end{figure}
-
-La figura \ref{fig:patern2} representa un patrón de radiación producido por una antena altamente directiva ubicada en el centro de la circunferencia punteada. Esta antena esta orientada para que la concentración de radiación sea hacia la derecha de la figura.
 
 \subsection{Polarización}
 
