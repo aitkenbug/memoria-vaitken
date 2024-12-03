@@ -1,8 +1,8 @@
 \babel@toc {spanish}{}\relax 
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Motivacion}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.1}Motivación}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Objetivo General}{2}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Objetivos Especificos}{2}{section.1.3}%
+\contentsline {section}{\numberline {1.3}Objetivos Específicos}{2}{section.1.3}%
 \contentsline {subsection}{\numberline {1.3.1}Ensamblado Mecánico}{2}{subsection.1.3.1}%
 \contentsline {subsection}{\numberline {1.3.2}Diseño del receptor}{2}{subsection.1.3.2}%
 \contentsline {subsection}{\numberline {1.3.3}Primera Luz y Caracterización}{2}{subsection.1.3.3}%
