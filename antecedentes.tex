@@ -25,11 +25,11 @@ Se utiliza las definiciones de campo eléctrico normalizado y potencia normaliza
 \end{equation}
 
 \begin{equation}
-    P(\Theta, \Phi) = |\Vec{F}(\theta, \Phi)|^{2}
+    P(\theta, \phi) = |\Vec{F}(\theta, \phi)|^{2}
 \end{equation}
 
 \begin{equation}
-    P(\Theta, \Phi)_{dB} = 10logP(\Theta, \Phi)=20log |\Vec{F}|=F(\Theta, \Phi)
+    P(\theta, \phi)_{dB} = 10logP(\theta, \phi)=20log |\Vec{F}|=F(\theta, \phi)
 \end{equation}
 
 
@@ -46,9 +46,73 @@ El haz principal se define en términos de potencia y se conoce como HPBW o Haz 
 
 \subsection{Directividad}
 
+La directividad (D) se define como la razón de intesidad de radiacion en una direccion especifica con respecto a la intesidad promedio de radiacion en todas las direcciones. Esta referencia se toma desde el maximo de radiacion.\\
+
+\begin{equation}\label{eq:directivity}
+    D = \frac{U(\theta, \phi)}{U_{prom}}
+\end{equation}
+
+Donde $U(\theta, \phi)$ es la densidad de potencia radiada en una dirección específica y $U_{prom}$ es la densidad de potencia promedio. Lo que da a entender que la directividad es comúnmente adimensional.\\
+
+La directividad se puede expresar directamente del patrón de radiación de la antena. Para esto se define un haz de ángulo sólido $d\Omega$  y se integra sobre la superficie de una esfera de radio R.\\
+
+\begin{equation}\label{eq:solidangle}
+    \Omega_{A} = \int\int_{esfera} |F(\theta, \phi)|^{2} d\Omega
+\end{equation}
+
+El ángulo sólido de un haz de un patrón de radiación tiene el mismo máximo de intensidad de radiación que toda el área del ángulo sólido del haz.\\
+
+\begin{equation}\label{eq:powerdensity}
+    P = U_{prom} \Omega_{A}
+\end{equation}
+
+finalmente si se reemplaza la ecuacion \ref{eq:solidangle} en la ecuacion \ref{eq:powerdensity} se obtiene la directividad de la antena a partir del angulo solido del haz del patron de radiacion.\\
+
+\begin{equation}
+    D = \frac{4\pi}{\Omega_{A}}
+\end{equation}
+
+Esto quiere decir que la directividad esta completamente definida por la forma del patron de radiacion. haciendo que sea totalmente independiente de la construccion de la antena\cite{stutzman2012antenna}.\\
+
+
 \subsection{Ganancia}
 
+La ganancia de una antena se define como la potencia transmitida en una dirección específica con respecto a la potencia transmitida por una antena isotrópica. La ganancia se define como:
+
+\begin{equation}
+    G = \frac{4\pi U_{m}}{P_{in}}
+\end{equation}
+
+Donde $U_{m}$ es la densidad de potencia máxima y $P_{in}$ es la potencia de entrada a la antena. La ganancia tambien se puede representar como la directividad multiplicada por la eficiencia de la antena.\\
+
+\begin{equation}
+    G = \varepsilon D 
+\end{equation}
+
+La eficiencia de una antenna se define como la razón de la potencia radiada por la antena a la potencia total suministrada a la antena.\\
+
+\begin{equation}
+    \varepsilon = \frac{P_{rad}}{P_{in}}
+\end{equation}
+
+En el caso particular de una antena de apertura, el termino de la eficiencia tambien incluye factores como la iluminación de la antena y las perdidas de la superficie, las cuales se denominan como eficiencia de la apertura y eficiencia de la superficie respectivamente.\\
+
+\begin{equation}
+    \varepsilon_{ap} = e_{r} \varepsilon_{t} \varepsilon_{s} \varepsilon_{a}
+\end{equation}
+
+Donde $e_{r}$ es la eficiencia de la radiacion, $\varepsilon_{t}$ es la eficiencia \textit{taper} o de covertura, $\varepsilon_{s}$ de \textit{spillover} o de derrame y $\varepsilon_{a}$ es la eficiencia de \textit{achivement} o de completitud, la cual incluye muchas otras fuentes de perdidas.\\
+
+Así la ganancia de una antena de apertura es directamente proporcional a su apertura fisica y a la longitud de onda de la señal que se desea recibir.\\
+
+\begin{equation}
+    G = \frac{4\pi A}{\lambda^{2}} = \varepsilon_{ap} D
+\end{equation}
+
+$A$ es el area de la apertura de la antena y $\lambda$ es la longitud de onda.\\
+
 \subsection{Polarización}
+
 
 \subsection{Ancho de banda}
 

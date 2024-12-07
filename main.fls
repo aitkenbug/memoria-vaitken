@@ -1,8 +1,8 @@
-PWD c:/Users/vicen/memoria-vaitken
+PWD c:/Users/Vincent/memoria-vaitken
 INPUT c:/texlive/2024/texmf.cnf
 INPUT c:/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/vicen/memoria-vaitken/main.tex
+INPUT c:/Users/Vincent/memoria-vaitken/main.tex
 OUTPUT main.log
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/book.cls
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/book.cls
@@ -538,6 +538,7 @@ INPUT ./img/patern1.png
 INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
+INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT ./img/pol.png
 INPUT ./img/pol.png
 INPUT ./img/pol.png
@@ -630,6 +631,7 @@ INPUT c:/texlive/2024/texmf-dist/tex/generic/stringenc/se-utf8.def
 INPUT main.aux
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb
+INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmex10.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi12.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb
