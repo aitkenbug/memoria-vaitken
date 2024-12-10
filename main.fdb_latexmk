@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1733862271.25793 "main.aux" "main.bbl" "main" 1733862278.39409 0
+["bibtex main"] 1733862271.25793 "main.aux" "main.bbl" "main" 1733871464.95733 0
   "./library.bib" 1733766071 3793 b5d1065e62e3c2106bf16019c635bed4 ""
   "./natnumurl.bst" 1733750114 21201 c3a97a2434b58cd70f7f9c9df607b80a ""
-  "main.aux" 1733862276 45831 5b38289c95e8d5aead5bd41cab394a75 "pdflatex"
+  "main.aux" 1733871463 45831 5b38289c95e8d5aead5bd41cab394a75 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1733862271.95007 "c:/Users/Vincent/memoria-vaitken/main.tex" "main.pdf" "main" 1733862278.39479 0
+["pdflatex"] 1733871456.47148 "c:/Users/Vincent/memoria-vaitken/main.tex" "main.pdf" "main" 1733871464.95795 0
   "antecedentes.tex" 1733854301 30190 179d7a5cdce3c3b2e75a5382e709b623 ""
   "c:/Users/Vincent/memoria-vaitken/main.tex" 1733750114 3033 914ab497233b22ea94686d8bd0742e68 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1728486995 2375 baa924870cfb487815765f9094cf3728 ""
@@ -269,7 +269,7 @@
   "c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1728489204 5520473 0a78405a99dc248928f6ec2cb7e7998e ""
   "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1728489448 3325958 f81146a9e15e13340def69cfdd469b55 ""
   "c:/texlive/2024/texmf.cnf" 1728489177 713 e69b156964470283e0530f5060668171 ""
-  "caracterizacion.tex" 1733862264 10587 6c1b19f452998adea4071bc0349f3667 ""
+  "caracterizacion.tex" 1733871453 10588 a73598b384825b4182adeda99601ee54 ""
   "concluciones.tex" 1733750113 52 3f34af298020cda91e7900525b0ddc68 ""
   "ensamble.tex" 1733862264 3655 225a16bd7a50e2c6d932d58f8f8da65c ""
   "img//departamentos/uchile2.pdf" 1733750134 18772 1d92f499584e10e4c8e0b3bf44be0bbf ""
@@ -287,11 +287,11 @@
   "img/off-axis.jpg" 1733750129 637350 4740a183f8ac946d45644daaccda2b38 ""
   "img/patern1.png" 1733750129 92727 7ab6ebb4f6a8665e06cf3ed10c70eb09 ""
   "intro.tex" 1733750113 3966 42edbaf39dfe7fdcf969de8dc3ba85d2 ""
-  "main.aux" 1733862276 45831 5b38289c95e8d5aead5bd41cab394a75 "pdflatex"
+  "main.aux" 1733871463 45831 5b38289c95e8d5aead5bd41cab394a75 "pdflatex"
   "main.bbl" 1733862271 1668 669d95a54a06f6297a6cb07246188811 "bibtex main"
-  "main.lof" 1733862276 2478 04680533004572b0f9fe222ec322b900 "pdflatex"
+  "main.lof" 1733871463 2478 04680533004572b0f9fe222ec322b900 "pdflatex"
   "main.tex" 1733750114 3033 914ab497233b22ea94686d8bd0742e68 ""
-  "main.toc" 1733862276 7005 a8cc741fb0d223de58b31c3f40843a4e "pdflatex"
+  "main.toc" 1733871463 7005 a8cc741fb0d223de58b31c3f40843a4e "pdflatex"
   "resultados.tex" 1733750114 256 b4b5252348531b43b62fb4db262de814 ""
   "template.tex" 1733750114 290297 841a7a2beb05c5dcc319b64380dc348b ""
   "template_config.tex" 1733750114 21894 c8a156315548211a1859ff1d4e1eb92a ""
