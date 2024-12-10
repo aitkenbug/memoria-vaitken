@@ -46,7 +46,7 @@ El haz principal se define en términos de potencia y se conoce como HPBW o Haz 
 
 \subsection{Directividad}
 
-La directividad (D) se define como la razón de intesidad de radiacion en una direccion especifica con respecto a la intesidad promedio de radiacion en todas las direcciones. Esta referencia se toma desde el maximo de radiacion.\\
+La directividad (D) se define como la razón de intesidad de radiacion en una direccion específica con respecto a la intesidad promedio de radiacion en todas las direcciones. Esta referencia se toma desde el maximo de radiacion.\\
 
 \begin{equation}\label{eq:directivity}
     D = \frac{U(\theta, \phi)}{U_{prom}}
@@ -66,13 +66,13 @@ El ángulo sólido de un haz de un patrón de radiación tiene el mismo máximo 
     P = U_{prom} \Omega_{A}
 \end{equation}
 
-finalmente si se reemplaza la ecuacion \ref{eq:solidangle} en la ecuacion \ref{eq:powerdensity} se obtiene la directividad de la antena a partir del angulo solido del haz del patron de radiacion.\\
+Finalmente, si se reemplaza la ecuacion \ref{eq:solidangle} en la ecuacion \ref{eq:powerdensity} se obtiene la directividad de la antena a partir del angulo sólido del haz del patron de radiacion.\\
 
 \begin{equation}
     D = \frac{4\pi}{\Omega_{A}}
 \end{equation}
 
-Esto quiere decir que la directividad esta completamente definida por la forma del patron de radiacion. haciendo que sea totalmente independiente de la construccion de la antena\cite{stutzman2012antenna}.\\
+Esto quiere decir que la directividad está completamente definida por la forma del patron de radiacion. Haciendo que sea totalmente independiente de la construccion de la antena\cite{stutzman2012antenna}.\\
 
 
 \subsection{Ganancia}
@@ -83,7 +83,7 @@ La ganancia de una antena se define como la potencia transmitida en una direcci�
     G = \frac{4\pi U_{m}}{P_{in}}
 \end{equation}
 
-Donde $U_{m}$ es la densidad de potencia máxima y $P_{in}$ es la potencia de entrada a la antena. La ganancia tambien se puede representar como la directividad multiplicada por la eficiencia de la antena.\\
+Donde $U_{m}$ es la densidad de potencia máxima y $P_{in}$ es la potencia de entrada a la antena. La ganancia también se puede representar como la directividad multiplicada por la eficiencia de la antena.\\
 
 \begin{equation}
     G = \varepsilon D 
@@ -95,13 +95,13 @@ La eficiencia de una antenna se define como la razón de la potencia radiada por
     \varepsilon = \frac{P_{rad}}{P_{in}}
 \end{equation}
 
-En el caso particular de una antena de apertura, el termino de la eficiencia tambien incluye factores como la iluminación de la antena y las perdidas de la superficie, las cuales se denominan como eficiencia de la apertura y eficiencia de la superficie respectivamente.\\
+En el caso particular de una antena de apertura, el término de la eficiencia también incluye factores como la iluminación de la antena y las perdidas de la superficie, las cuales se denominan como eficiencia de la apertura y eficiencia de la superficie respectivamente.\\
 
 \begin{equation}
     \varepsilon_{ap} = e_{r} \varepsilon_{t} \varepsilon_{s} \varepsilon_{a}
 \end{equation}
 
-Donde $e_{r}$ es la eficiencia de la radiacion, $\varepsilon_{t}$ es la eficiencia \textit{taper} o de covertura, $\varepsilon_{s}$ de \textit{spillover} o de derrame y $\varepsilon_{a}$ es la eficiencia de \textit{achivement} o de completitud, la cual incluye muchas otras fuentes de perdidas.\\
+Donde $e_{r}$ es la eficiencia de la radiacion, $\varepsilon_{t}$ es la eficiencia \textit{taper} o de covertura, $\varepsilon_{s}$ de \textit{spillover} o de derrame e $\varepsilon_{a}$ es la eficiencia de \textit{achivement} o de completitud, la cual incluye muchas otras fuentes de perdidas.\\
 
 Así la ganancia de una antena de apertura es directamente proporcional a su apertura fisica y a la longitud de onda de la señal que se desea recibir.\\
 
@@ -109,55 +109,184 @@ Así la ganancia de una antena de apertura es directamente proporcional a su ape
     G = \frac{4\pi A}{\lambda^{2}} = \varepsilon_{ap} D
 \end{equation}
 
-$A$ es el area de la apertura de la antena y $\lambda$ es la longitud de onda.\\
+$A$ es el área de la apertura de la antena y $\lambda$ es la longitud de onda.\\
 
 \subsection{Polarización}
+
+La polarizacion de una antena es la polarizacion de la onda electromagnética irradiada en una direccion dada por la antena al transmitir. Se describe como la orientacion del camopo electrico de la onda.\\
+
+\begin{figure}
+    \centering
+    \includegraphics[width = 10cm]{img/imagen.png}
+    \caption{Polarizacion lineal de una onda electromagnetica propagandose en el eje Z.}
+    \label{fig:polarizacion}
+\end{figure}
+
+Los tipos de polarizacion se dividen en polarizacion lineal, polarizacion circular y la combinmaicon de ambas, la polarizacion eliptica. La figura \ref{fig:polarizacion} muestra una onda electromagnética linealmente polarizada en orientacion vertical.\\
+
+\begin{figure}
+    \centering
+    \includegraphics[width = 10cm]{img/imagen.png}
+    \caption{Polarizacion circular de una onda electromagnetica propagandose en el eje Z.}
+    \label{fig:polarizacion2}
+\end{figure}
+
+La figura \ref{fig:polarizacion2} muestra una onda electromagnética circularmente polarizada en sentido horario.\\
+
 
 
 \subsection{Ancho de banda}
 
+El rango de frecuencia el cual una antenna opera con su mejor eficiencia se le denomina como ancho de banda. El acnho de banda se define considerando los parametros de reflexion y de radiacion de potencia, siendo el parametro comun mente utilzados los parametros de reflexion $S_{11}$ y transmision $S_{21}$ para esta caracterizacion.\\
+
+Los parametros S son los definen la respuesta de un medio a una onda electromagnetica, en este caso, la respuesta de la antena a una onda electromagnetica. existen los parametros $S_{11}$, $S_{12}$, $S_{21}$ y $S_{22}$, donde $S_{11}$ es el parametro de reflexion, $S_{12}$ es el parametro de transmision, $S_{21}$ es el parametro de transmision inversa y $S_{22}$ es el parametro de reflexion inversa.\\
+
+\begin{figure}
+    \centering
+    \includegraphics[width = 10cm]{img/imagen.png}
+    \caption{Diagrama de bloques de un sistema de parametros S.}
+    \label{fig:sparam}
+\end{figure}
+
+La figura \ref{fig:sparam} muestra las diferentes configuraciones para lograr la obtencion de los parametros S.\\
+
+\paragraph{Ancho de banda $S_{11}$} El ancho de banda de reflexion se define como el rango de frecuencia en el cual el parametro de reflexion $S_{11}$ es menor a un valor especifico, comunmente -10dB. lo que corresponde a que el 90\% de la potencia inyectada es irradiada y solo el 10\% reflejada\\
+
+\begin{figure}
+    \centering
+    \includegraphics[width = 10cm]{img/imagen.png}
+    \caption{Ancho de banda de reflexion de una antena.}
+    \label{fig:bandwidth}
+\end{figure}
+
+La figura \ref{fig:bandwidth} muestra el ancho de banda de reflexion de una antena.\\
+
+\paragraph{Ancho de banda $S_{21}$} El ancho de banda de transmision se define como el rango de frecuencia en el cual el parametro de transmision $S_{21}$ es mayor a un valor specifico, comunmente lo más cercano a 0 posible, sin embargo cuando se utilzian componentes activos como cadenas de amplificacion, este valor suele aumenta de 0dB, lo que significa realizar un estudio más profundo del valor esperado.\\
+
+\begin{figure}
+    \centering
+    \includegraphics[width = 10cm]{img/imagen.png}
+    \caption{Figura de una cadena de recepción con un filtro de paso de banda.}
+    \label{fig:bandwidth2}
+\end{figure}
+
+La figura \ref{fig:bandwidth2} muestra el ancho de banda de un filtro de pasabanda defininedo la figura de una cadena de recepcion o transmision.\\
+
+
 \subsection{Perdidas y eficiencia}
+
+En la propagacion de ondas electromagnéticas se producen perdidas de varias fuentes, las relacionas con el medio de propagacion son las perdidas de espacio libre y las perdidas ohmnicas, pero en el contexto de una antena de apertura de reflector parabolico, encontramos también las perdidas de superficie y las perdidas de alimentacion.\\
 
 \paragraph{Impedancia de entrada}
 
+Los sistemas de radiofrecuencia se caracterizan por tener una impedancia asociada a la enrtrada y salida de los componentes que componen un sistema. Propiamente la impedancia no significa una perdida en si misma, pero si existen diferencia de acoplamiento de impedancia podemos empezar a encontrar perdidas asociadas.\\
+
+Como practica comun, se bsuca que la impedancia tanto de salida como entrada de los elemnetos de un sistema de RF sea de 50$\Omega$, pero tambien existen otros estandares de impedancia como los utilziados en sistemas de televison e internet, los cual estan estandarizados a 75$\Omega$.\\
+
+No todas las antenas una vez construidas tienen una impedancia intrinseca de 50$\Omega$, por lo que se deben utilizar elementos de adaptacion de impedancia para lograr la mejor transferencia de potencia, estos elementos se les conoce como \textit{baluns}.\\
+
 \paragraph{Perdidas de espacio libre}
+
+Las perdidas de espacio libre son las perdidas asociadas a la propagacion de ondas electromagnéticas en el espacio. Estas perdidas son directamente proporcionales a la distancia de propagacion y a la frecuencia de la señal.\\
+
+\begin{equation}
+    L_{fs} = 20log\left(\frac{4\pi d}{\lambda}\right)
+\end{equation}
+
+Donde $d$ es la distancia de propagacion y $\lambda$ es la longitud de onda de la señal.\\
 
 \paragraph{Perdidas de superficie}
 
-\paragraph{Perdidas de cable}
+Las perdidas de superficie estan asociadas al termino de eficiencia de superficie de las antenas de apertura. Estas perdidas se deben a las imperfecciones en la suoperficie en relacion a la longitud de onda de la señal. Lo que se puede entender como que para una longitud de onda muy grande (entre 70 cm y 10 cm) si la superficie presenta imperfeccion menores a 1 cm se puede hablar de una superficie perfecta.\\
+
+Lo anterior da la posibilidad de utilizar superficies agujeradas o con perforaciones para reducir el peso de la antena y mejorar la eficiencia de la superficie por imperfeccion de curvatura.\\
+
+\paragraph{Perdidas Ohmnicas}
+
+Las perdidas ohmnicas son las perdidas asociadas a la resistencia de los materiales conductores de la antena. Estas perdidas son directamente proporcionales a la corriente que circula por el conductor y al cuadrado de la resistencia del conductor.\\
+
+\begin{equation}
+    P_{ohm} = I^{2}R
+\end{equation}
+
+Donde $P_{ohm}$ es la potencia disipada por perdidas ohmnicas, $I$ es la corriente que circula por el conductor y $R$ es la resistencia del conductor.\\
+
+Estos efectos se aprecian al utilizar conductores coaxiales de grandes longitudes, algo que es un factor a considerar en la construccion de antenas.\\
+
+\subsection{Ecuacion de Friis}
+
+La ecuacion de Friss es una formula de transmision para un circuito de radiofrecuencia compuesto por dos antenas, una antenna transmisora o otra receptora en espacio libre\cite{Friis1946}. La ecuacion se define como:\\
+
+\begin{equation}
+    \frac{P_{r}}{P_{t}} = G_{t}G_{r}\left(\frac{\lambda}{4\pi d}\right)^{2}
+\end{equation}
+
+Donde $P_{r}$ es la potencia recibida, $P_{t}$ es la potencia transmitida, $G_{t}$ es la ganancia de la antena transmisora, $G_{r}$ es la ganancia de la antena receptora, $\lambda$ es la longitud de onda de la señal y $d$ es la distancia de propagacion.\\
+
+\section{Antenas parabólicas}
+
+Una antena parabolica es una antena de apertura que se compone de una superficie reflectante parabolica y una antena alimentadora. Se caracterizan por tener una alta directividad y ganancia, por lo que son utilizadas en aplicaciones de comunicacion de largo alcance y en radiotelescopios, donde se requiere una alta sensibilidad.\\
 
 
-\section{Antenas de apertura}
+\subsection{Tipos de antenas parabólicas}
 
-\subsection{Antenas parabólicas}
-
-\paragraph{Foco primario}
+Las antenas parabolicas se pueden clasificar en 4 tipos de configuraciones, \textit{Cassegrain}, \textit{Gregorian}, \textit{off-axis} o fuera de foco y \textit{axial feed} o Foco Primario.\\
 
 \paragraph{Cassegrain}
 
+Las antenas de tipo Cassegrain, son aquellas que utilizan un reflector secondario para redirigir la radiacion hacia la antena alimentadora. El reflector secundario es un hiperboloide de rebolucion que se ubica en el foco de la parabola principal y se orienta hacia la antena alimentadora.
+
+\begin{figure}
+    \centering
+    \includegraphics[width = 10cm]{img/cassegrain.jpg}
+    \caption{Antena de 12 metros Vertex tipo Cassegrain en el observatorio de ALMA.}
+    \label{fig:cass}
+\end{figure}
+
 \paragraph{Gregorian}
+
+Las antenas de tipo Gregorian, son aquellas que utilizan un reflector secundario para redirigir la radiacion hacia la antena alimentadora. El reflector secundario es un elipsoide de rebolucion que se ubica en el foco de la parabola principal y se orienta hacia la antena alimentadora.
+
+\begin{figure}
+    \centering
+    \includegraphics[width = 10cm]{img/gregorian.jpg}
+    \caption{Telescopio Effelsberg de 100 metros de tipo Gregorian.}
+    \label{fig:greg}
+\end{figure}
 
 \paragraph{Off-axis}
 
-\section{Antenas de alimentación}
+Las antenas de tipo \textit{off-axis} o fuera de foco, son aquellas que la antena alimetnadora se encuentra fuera de los ejes de la parabola principal. extendiendo el reflector principal. Este tipo de antenas se utilizan en aplicaciones donde se requiere una mayor area de cobertura evisando la obstruccion de la antena alimentadora.
 
-\subsection{Tipos de antenas de alimentación}
+\begin{figure}
+    \centering
+    \includegraphics[width = 10cm]{img/off-axis.jpg}
+    \caption{Telescopio GBT (Green Bank Telescope) de 100 metros de tipo \textit{off-axis}.}
+    \label{fig:off}
+\end{figure}
 
-\paragraph{Yagi-Uda}
 
-\paragraph{Bocina}
+\paragraph{Foco primario}
 
-\paragraph{Log-Periódica}
+Las antenas de tipo Foco Primario, son aquellas que la antena alimentadora se encuentra en el foco de la parabola principal. Este tipo de antenas son más simples de construir, pero tienes otros desafios opticos y de diseño.\\
 
-\paragraph{Antenas de semiespacio}
+\subsection{Antenas de alimentación}
 
-\paragraph{Antenas de parche}
+Las antenas alimentadoras son los elementos ubicados en el foco de la parabola principal que capturan la radiacion concentrada por el reflector. Estas antenas deben tener un patron de radiacion adecuado para el tipo de diseño de la antena parabolica.\\
+
+Las antenas alimentadoras pueden ser de distintos tipos, como antenas de parche, antenas de bocina, antenas yagui-uda, antenas log-periodicas, antenas de semiespacio, entre otras. El tipo de antena alimentadora a utilizar dependera del tipo de antena parabolica y de la aplicacion de la antena, sin embargo, las antenas de bocina son las más utilizadas en antenas parabolicas de reflector secundario.\\
+
 
 \section{Receptores heterodinos}
 
-\subsection{¿Qué es un receptor heterodino?}
+Los receptores comunmente utilizados en radioastronomia son bastante similares a los utilizados en telecomunicaciones. La caracteristica principal de estos receptores es convertir las señales incidentes a un rango de frecuencia menor conservando la fase y la amplitud, esta frecuencia se le conoce como frecuencia intermedia o IF, la cual es procesada por a posteriori para extraer su informacion\cite{Finger2013}.\\
+
+En todos los receptores heterodinos se utiliza un mezclador para realizar la conversion de frecuencia, este es un dispositivo no lineal que procesa las señales con una señal de referencia conocida como oscilador local.\\
+
 
 \subsection{Radio definida por software}
+
+Una radio definida por software o SDR, es un receptor heterodino con un oscilador reprogramable y entrega la señal de IF a un computador para su procesamiento. Estos receptores se pueden reconfigurar para sintonizar distintas frecuencias, para luego entregar las muestras digitales a un computador y así procesar la señal, como por ejemplo realizar una transformada de Fourier para obtener el espectro de la señal.\\
 
 \subsection{Transformada Rápida de Fourier}
 
@@ -171,155 +300,163 @@ $A$ es el area de la apertura de la antena y $\lambda$ es la longitud de onda.\\
 \subsection{CHARTS y FRB}
 
 
+\section{Telescopio CPT}
+
+\section{Metodos de caracterización}
+
+\subsection{Medicion de patrón de radiación}
+
+\subsection{Medición de sensibilidad}
+
+\subsection{Medicion de la temperatura de ruido}
+
+\section{Estado del arte}
 
 
 
 
 
+% \section{Conceptos previos}
+% \subsection{Radiotelescopio}
+
+% En la astronomía clásica, se utilizan telescopios que operan en el rango visible del espectro electromagnético, el mismo rango que tiene el ojo humano, donde estos actúan como el receptor o, al mismo tiempo, una cámara fotográfica. En contraste, un radiotelescopio es un instrumento que observa en longitudes de onda mucho más grandes en el espectro de radio. Estos telescopios, usualmente, son constituidos por un reflector parabólico que concentra la luz obtenida en su foco, donde se ubica un receptor de radio.\\
+
+% Un telescopio de radio tiene consideraciones distintas a uno óptico, ya que el anterior puede observar con múltiples receptores a la vez como lo es el caso de una cámara fotográfica, pero uno de radio, debe tener un receptor de mayor envergadura proporcional con el tamaño de la longitud de onda, lo que limita el número de receptores a uno en la gran mayoría de los casos.\\
+
+% Otro punto importante a destacar, es la característica de ciencia que se puede realizar con estos telescopios, ya que para el caso de la línea de Hidrógeno, se pueden observar fuentes que no necesariamente provienen de estrellas o, para frecuencias más bajas, estrellas con que irradian fuera del rango visible.
+
+% \subsection{Línea de Hidrógeno Neutro}
+
+% El movimiento de un electrón en un átomo de Hidrógeno neutro, genera un campo magnético que se acopla con los espines del protón y el electrón. \quotes{Este acople da cuenta de la radiación a 1420 MHz que viene de la transición entre dos niveles energéticos de primer nivel del estado fundamental del hidrógeno} \cite{Restrepo2023}.\\
+
+% Observar H1 permite estudiar la evolución del universo primitivo, rescatando información proveniente de la transición de la \quotes{Época Oscura} a la formación de las primeras fuentes de luminosas del universo.
+
+% \subsection{CHARTS y FRB}
+
+% Los fenómenos astrofísicos transitorios de radio o FRB, son eventos de extremadamente corta duración y origen desconocido que ocurren en un amplio rango de frecuencias. Estos pulsos inspiraron el proyecto CHARTS, para apoyar su búsqueda y estudio.\\
+
+% El proyecto CHARTS, es una colaboración entre la Universidad de Chile y la Universidad de Toronto con el objetivo de construir un arreglo de 128 sintonizadas para operar en el rango de 300MHz a 500MHz en el marco de la búsqueda de FRB.
+
+% \subsection{Polarización}
+
+% La polarización de una antena hace referencia a la polarización del campo eléctrico y magnético que produce al irradiar potencia al medio. Convencionalmente, se utilizan 2 polarizaciones para las observaciones astronómicas y para las telecomunicaciones, la polarización lineal y la polarización circular.\\
+
+% \begin{figure}
+% \centering
+% \includegraphics[width = 15cm]{img/pol.png}
+% \caption{A la izquierda se tiene una polarización lineal del campo electromagnético y a la derecha una polarización circular izquierda\cite{Astudillo2014}.}
+% \label{fig:pol}
+% \end{figure}
+
+% La polarización linear, se genera con el campo eléctrico contenido en un plano, como se puede ver en la figura \ref{fig:pol}. En contraste, la polarización circular se produce en un caso particular cuando el campo eléctrico rota con una frecuencia constante en torno a un eje y su magnitud es constante. De lo contrario, se produce una polarización elíptica en torno al eje de propagación, tal como se observa en la figura anterior.\\
+
+% Las distintas polarizaciones, se pueden generar por medios constructivos en la geometría de la antena o medios de alteración de fase, ya sea por efectos de largo eléctrico o modulaciones electrónicas para generar el desfase de las líneas alimentadoras.
+
+% \subsection{Antenas de Apertura}
+
+% Las antenas de apertura son aquellas que su funcionamiento es caracterizado por el campo generado en una superficie reflectante, la cual se denomina como apertura. Dentro de las antenas de apertura están las antenas de apertura parabólica que utilizan una superficie parabólica para irradiar potencia. Existen 4 tipos de configuraciones para las antenas parabólicas, \textit{Cassegrain}, \textit{Gregorian}, \textit{off-axis} o fuera de foco y \textit{axial feed} o Foco Primario. Esta última es el que se utilizará para el proyecto.\\
+
+% Estas antenas concentran la radiación en un punto focal dependiendo de su geometría de paraboloide. Usualmente, se instala la antena alimentadora en el foco de la parábola o en el foco de la segunda parábola para las antenas \textit{Cassegrain} y \textit{Gregorian}.\\
+
+% \begin{figure}
+% \centering
+% \includegraphics[width = 10cm]{img/parabola.png}
+% \caption{Geometría característica de un reflector parabólico para el tipo de Foco Primario\cite{Astudillo2014}.}
+% \label{fig:parabola}
+% \end{figure}
+
+% La representación de seguimiento de rayos en dos dimensiones para un reflector parabólico en la figura \ref{fig:parabola}, hace referencia al tipo de configuración a utilizar en la construcción del reflector del nuevo radio telescopio.
 
 
+% \subsection{Antena Alimentadora}
 
-\section{Conceptos previos}
-\subsection{Radiotelescopio}
+% La antena alimentadora, es aquella antena que captura la radiación proveniente de los reflectores. Se debe ocupar una antena con un patrón de radiación directivo, con el objetivo de captar la mayor cantidad de la luz concentrada por el reflector.\\
 
-En la astronomía clásica, se utilizan telescopios que operan en el rango visible del espectro electromagnético, el mismo rango que tiene el ojo humano, donde estos actúan como el receptor o, al mismo tiempo, una cámara fotográfica. En contraste, un radiotelescopio es un instrumento que observa en longitudes de onda mucho más grandes en el espectro de radio. Estos telescopios, usualmente, son constituidos por un reflector parabólico que concentra la luz obtenida en su foco, donde se ubica un receptor de radio.\\
+% Ejemplos de antenas directivas:
 
-Un telescopio de radio tiene consideraciones distintas a uno óptico, ya que el anterior puede observar con múltiples receptores a la vez como lo es el caso de una cámara fotográfica, pero uno de radio, debe tener un receptor de mayor envergadura proporcional con el tamaño de la longitud de onda, lo que limita el número de receptores a uno en la gran mayoría de los casos.\\
+% \begin{itemize}
+% \item Yagi-Uda
+% \item Bocina
+% \item Log-Periódica
+% \item Antenas de semi espacio
+% \item Antenas de parche
+% \end{itemize}
 
-Otro punto importante a destacar, es la característica de ciencia que se puede realizar con estos telescopios, ya que para el caso de la línea de Hidrógeno, se pueden observar fuentes que no necesariamente provienen de estrellas o, para frecuencias más bajas, estrellas con que irradian fuera del rango visible.
+% \subsection{Receptor Heterodino}
 
-\subsection{Línea de Hidrógeno Neutro}
+% Los receptores heterodinos, o coherentes, son los más usados en la radioastronomía. Su función característica es convertir una señal de alta frecuencia a un rango de menor frecuencia, conservando la información de fase y de amplitud para poder ser digitalizada con facilidad\cite{Finger2013}. Para esto, los receptores utilizan un mezclador con un oscilador local para adquirir la señal desde la antena alimentadora para luego ser procesada digitalmente.\\
 
-El movimiento de un electrón en un átomo de Hidrógeno neutro, genera un campo magnético que se acopla con los espines del protón y el electrón. \quotes{Este acople da cuenta de la radiación a 1420 MHz que viene de la transición entre dos niveles energéticos de primer nivel del estado fundamental del hidrógeno} \cite{Restrepo2023}.\\
+% \begin{figure}
+% \centering
+% \includegraphics[width = 10cm]{img/heterodine.png}
+% \caption{Diagrama de bloques de un receptor heterodino para astronomía de tipo DSB.}
+% \label{fig:radio}
+% \end{figure}
 
-Observar H1 permite estudiar la evolución del universo primitivo, rescatando información proveniente de la transición de la \quotes{Época Oscura} a la formación de las primeras fuentes de luminosas del universo.
+% La figura \ref{fig:radio} corresponde a un diagrama de bloques de la configuracion más simple para un receptor heterodino. Contiene una antena receptora, un mezclador de radio frecuencia, un oscilador local y un amplificador de bajo ruido.
 
-\subsection{CHARTS y FRB}
+% \section{Estado del Arte}
 
-Los fenómenos astrofísicos transitorios de radio o FRB, son eventos de extremadamente corta duración y origen desconocido que ocurren en un amplio rango de frecuencias. Estos pulsos inspiraron el proyecto CHARTS, para apoyar su búsqueda y estudio.\\
+% El estado del arte para radiotelescopios, en particular de radios telescopios de reflectores con diámetros de 3 metros o menos. En este caso, la principal línea de desarrollo es en la radio-interferometría y el uso de sistemas de bajo ruido, a la vez que la disminución de los costos para nuevos instrumentos.\\
 
-El proyecto CHARTS, es una colaboración entre la Universidad de Chile y la Universidad de Toronto con el objetivo de construir un arreglo de 128 sintonizadas para operar en el rango de 300MHz a 500MHz en el marco de la búsqueda de FRB.
+% Los esfuerzos para la búsqueda de FRB y, específicamente, en la detección del origen de estos pulsos de alta energía, puede lograrse con el uso de \textit{Pathfinding} al correlacionar 2 telescopios separados por largas distancias para hacer interferometría de línea de base muy larga, o VLBI por su sigla en inglés (T. A. Cassanelli, 2021). Experimento que se quiere hacer con el proyecto CHARTS y este nuevo telescopio.\\
 
-\subsection{Polarización}
-
-La polarización de una antena hace referencia a la polarización del campo eléctrico y magnético que produce al irradiar potencia al medio. Convencionalmente, se utilizan 2 polarizaciones para las observaciones astronómicas y para las telecomunicaciones, la polarización lineal y la polarización circular.\\
-
-\begin{figure}
-    \centering
-    \includegraphics[width = 15cm]{img/pol.png}
-    \caption{A la izquierda se tiene una polarización lineal del campo electromagnético y a la derecha una polarización circular izquierda\cite{Astudillo2014}.}
-    \label{fig:pol}
-\end{figure}
-
-La polarización linear, se genera con el campo eléctrico contenido en un plano, como se puede ver en la figura \ref{fig:pol}. En contraste, la polarización circular se produce en un caso particular cuando el campo eléctrico rota con una frecuencia constante en torno a un eje y su magnitud es constante. De lo contrario, se produce una polarización elíptica en torno al eje de propagación, tal como se observa en la figura anterior.\\
-
-Las distintas polarizaciones, se pueden generar por medios constructivos en la geometría de la antena o medios de alteración de fase, ya sea por efectos de largo eléctrico o modulaciones electrónicas para generar el desfase de las líneas alimentadoras.
-
-\subsection{Antenas de Apertura}
-
-Las antenas de apertura son aquellas que su funcionamiento es caracterizado por el campo generado en una superficie reflectante, la cual se denomina como apertura. Dentro de las antenas de apertura están las antenas de apertura parabólica que utilizan una superficie parabólica para irradiar potencia. Existen 4 tipos de configuraciones para las antenas parabólicas, \textit{Cassegrain}, \textit{Gregorian}, \textit{off-axis} o fuera de foco y \textit{axial feed} o Foco Primario. Esta última es el que se utilizará para el proyecto.\\
-
-Estas antenas concentran la radiación en un punto focal dependiendo de su geometría de paraboloide. Usualmente, se instala la antena alimentadora en el foco de la parábola o en el foco de la segunda parábola para las antenas \textit{Cassegrain} y \textit{Gregorian}.\\
-
-\begin{figure}
-    \centering
-    \includegraphics[width = 10cm]{img/parabola.png}
-    \caption{Geometría característica de un reflector parabólico para el tipo de Foco Primario\cite{Astudillo2014}.}
-    \label{fig:parabola}
-\end{figure}
-
-La representación de seguimiento de rayos en dos dimensiones para un reflector parabólico en la figura \ref{fig:parabola}, hace referencia al tipo de configuración a utilizar en la construcción del reflector del nuevo radio telescopio.
+% Luego, en el contexto de la construcción un nuevo radiotelescopio para observar la línea de 21cm, se tienen los siguientes exponentes que implementan diversas técnicas que inspiran el desarrollo y operación que se desea con el telescopio CPT.\\
 
 
-\subsection{Antena Alimentadora}
+% \subsection{Telescopio Mini}
 
-La antena alimentadora, es aquella antena que captura la radiación proveniente de los reflectores. Se debe ocupar una antena con un patrón de radiación directivo, con el objetivo de captar la mayor cantidad de la luz concentrada por el reflector.\\
+% \begin{figure}
+% \centering
+% \includegraphics[width = 12cm]{img/mini.png}
+% \caption{Telescopio MINI en el Observatorio Cerro Calan de la Facultad de Ciencia Físicas y Matemáticas de la Universidad de Chile\cite{DAS2024}}
+% \label{fig:mini}
+% \end{figure}
 
-Ejemplos de antenas directivas:
+% El telescopio de la figura \ref{fig:mini}, se encuentra en el cerro Calán, a pocos metros de la ubicación de los cimientos para, CPT, ejemplificando las consideraciones de operar en un ambiente extremadamente saturado de interferencia de radiofrecuencia que se puede encontrar en el centro de la ciudad principal del país como Santiago.
 
-\begin{itemize}
-    \item Yagi-Uda
-    \item Bocina
-    \item Log-Periódica
-    \item Antenas de semi espacio
-    \item Antenas de parche
-\end{itemize}
+% \subsection{Telescopio FAST}
 
-\subsection{Receptor Heterodino}
+% \begin{figure}
+% \centering
+% \includegraphics[width = 12cm]{img/fast.png}
+% \caption{Telescopio Fast en la provincia de Guizhou, China \cite{FAST2024}.}
+% \label{fig:fast}
+% \end{figure}
 
-Los receptores heterodinos, o coherentes, son los más usados en la radioastronomía. Su función característica es convertir una señal de alta frecuencia a un rango de menor frecuencia, conservando la información de fase y de amplitud para poder ser digitalizada con facilidad\cite{Finger2013}. Para esto, los receptores utilizan un mezclador con un oscilador local para adquirir la señal desde la antena alimentadora para luego ser procesada digitalmente.\\
+% La figura \ref{fig:fast}, corresponde a un telescopio de 500 metros de apertura con un alimentador posicionado en el foco de la superficie parabólica primaria que puede hacer observaciones de la linea de 21cm y de FRB. El cual se ubica en China, en la provincia de Guizhou.
 
-\begin{figure}
-    \centering
-    \includegraphics[width = 10cm]{img/heterodine.png}
-    \caption{Diagrama de bloques de un receptor heterodino para astronomía de tipo DSB.}
-    \label{fig:radio}
-\end{figure}
+% \subsection{Telescopio SRT}
 
-La figura \ref{fig:radio} corresponde a un diagrama de bloques de la configuracion más simple para un receptor heterodino. Contiene una antena receptora, un mezclador de radio frecuencia, un oscilador local y un amplificador de bajo ruido.
+% \begin{figure}
+% \centering
+% \includegraphics[width = 6cm]{img/srt.png}
+% \caption{Telescopio SRT del MIT en la azotea del departamento de ingeniería eléctrica de la FCFM\cite{Curotto2019}.}
+% \label{fig:srt}
+% \end{figure}
 
-\section{Estado del Arte}
+% El Telescopio de la figura \ref{fig:srt}, se encuentra ubicado en la azotea del edificio del Departamento Ingeniería Eléctrica de la Universidad de Chile, equipado con receptores y filtros diseñados para observar la línea de Hidrógeno neutro. El material de sus reflectores es similar al que se utilizará en CPT.
 
-El estado del arte para radiotelescopios, en particular de radios telescopios de reflectores con diámetros de 3 metros o menos. En este caso, la principal línea de desarrollo es en la radio-interferometría y el uso de sistemas de bajo ruido, a la vez que la disminución de los costos para nuevos instrumentos.\\
+% \subsection{Observatorio CHIME}
 
-Los esfuerzos para la búsqueda de FRB y, específicamente, en la detección del origen de estos pulsos de alta energía, puede lograrse con el uso de \textit{Pathfinding} al correlacionar 2 telescopios separados por largas distancias para hacer interferometría de línea de base muy larga, o VLBI por su sigla en inglés (T. A. Cassanelli, 2021). Experimento que se quiere hacer con el proyecto CHARTS y este nuevo telescopio.\\
+% \begin{figure}
+% \centering
+% \includegraphics[width = 12cm]{img/chime.png}
+% \caption{Telescopio experimental CHIME en Canada \cite{CHIME}.}
+% \label{fig:chime}
+% \end{figure}
 
-Luego, en el contexto de la construcción un nuevo radiotelescopio para observar la línea de 21cm, se tienen los siguientes exponentes que implementan diversas técnicas que inspiran el desarrollo y operación que se desea con el telescopio CPT.\\
+% La figura \ref{fig:chime}, corresponde al telescopio experimental sin partes móviles, sintonizado para observar Hidrógeno y con un correlacionador capaz generar una apertura sintética para encontrar fenómenos astrofísicos transitorios de radio. Trabaja con una arquitectura de instrumentos remotos.
 
+% \subsection{Guía de Construcción de Radiotelescopio con una RTL-SDR}
 
-\subsection{Telescopio Mini}
+% Un enfoque para hacer radioastronomía con componentes comerciales y de bajo costo. Se utilizan radios definidas por software como receptor de radiofrecuencia y destaca las herramientas y software para observar la línea de 21cm.
 
-\begin{figure}
-    \centering
-    \includegraphics[width = 12cm]{img/mini.png}
-    \caption{Telescopio MINI en el Observatorio Cerro Calan de la Facultad de Ciencia Físicas y Matemáticas de la Universidad de Chile\cite{DAS2024}}
-    \label{fig:mini}
-\end{figure}
+% \begin{figure}
+% \centering
+% \includegraphics[width = 12cm]{img/rtlsdr.png}
+% \caption{Software utilizado por RTL-SDR Blog para observar Hidrógeno neutro con una RTL-SDR\cite{RTLSDR2018}.}
+% \label{fig:rtl}
+% \end{figure}
 
-El telescopio de la figura \ref{fig:mini}, se encuentra en el cerro Calán, a pocos metros de la ubicación de los cimientos para, CPT, ejemplificando las consideraciones de operar en un ambiente extremadamente saturado de interferencia de radiofrecuencia que se puede encontrar en el centro de la ciudad principal del país como Santiago.
-
-\subsection{Telescopio FAST}
-
-\begin{figure}
-    \centering
-    \includegraphics[width = 12cm]{img/fast.png}
-    \caption{Telescopio Fast en la provincia de Guizhou, China \cite{FAST2024}.}
-    \label{fig:fast}
-\end{figure}
-
-La figura \ref{fig:fast}, corresponde a un telescopio de 500 metros de apertura con un alimentador posicionado en el foco de la superficie parabólica primaria que puede hacer observaciones de la linea de 21cm y de FRB. El cual se ubica en China, en la provincia de Guizhou.
-
-\subsection{Telescopio SRT}
-
-\begin{figure}
-    \centering
-    \includegraphics[width = 6cm]{img/srt.png}
-    \caption{Telescopio SRT del MIT en la azotea del departamento de ingeniería eléctrica de la FCFM\cite{Curotto2019}.}
-    \label{fig:srt}
-\end{figure}
-
-El Telescopio de la figura \ref{fig:srt}, se encuentra ubicado en la azotea del edificio del Departamento Ingeniería Eléctrica de la Universidad de Chile, equipado con receptores y filtros diseñados para observar la línea de Hidrógeno neutro. El material de sus reflectores es similar al que se utilizará en CPT.
-
-\subsection{Observatorio CHIME}
-
-\begin{figure}
-    \centering
-    \includegraphics[width = 12cm]{img/chime.png}
-    \caption{Telescopio experimental CHIME en Canada \cite{CHIME}.}
-    \label{fig:chime}
-\end{figure}
-
-La figura \ref{fig:chime}, corresponde al telescopio experimental sin partes móviles, sintonizado para observar Hidrógeno y con un correlacionador capaz generar una apertura sintética para encontrar fenómenos astrofísicos transitorios de radio. Trabaja con una arquitectura de instrumentos remotos.
-
-\subsection{Guía de Construcción de Radiotelescopio con una RTL-SDR}
-
-Un enfoque para hacer radioastronomía con componentes comerciales y de bajo costo. Se utilizan radios definidas por software como receptor de radiofrecuencia y destaca las herramientas y software para observar la línea de 21cm.
-
-\begin{figure}
-    \centering
-    \includegraphics[width = 12cm]{img/rtlsdr.png}
-    \caption{Software utilizado por RTL-SDR Blog para observar Hidrógeno neutro con una RTL-SDR\cite{RTLSDR2018}.}
-    \label{fig:rtl}
-\end{figure}
-
-La figura \ref{fig:rtl}, corresponde al software de recepción de radio sintonizado en la frecuencia de emisión del hidrógeno neutro a la derecha, además del software de seguimiento astronómico y catalogo de objetos de interés.
+% La figura \ref{fig:rtl}, corresponde al software de recepción de radio sintonizado en la frecuencia de emisión del hidrógeno neutro a la derecha, además del software de seguimiento astronómico y catalogo de objetos de interés.

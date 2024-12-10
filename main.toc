@@ -13,49 +13,71 @@
 \contentsline {subsection}{\numberline {2.1.2}Directividad}{5}{subsection.2.1.2}%
 \contentsline {subsection}{\numberline {2.1.3}Ganancia}{5}{subsection.2.1.3}%
 \contentsline {subsection}{\numberline {2.1.4}Polarización}{6}{subsection.2.1.4}%
-\contentsline {subsection}{\numberline {2.1.5}Ancho de banda}{6}{subsection.2.1.5}%
-\contentsline {subsection}{\numberline {2.1.6}Perdidas y eficiencia}{6}{subsection.2.1.6}%
-\contentsline {paragraph}{Impedancia de entrada}{6}{section*.10}%
-\contentsline {paragraph}{Perdidas de espacio libre}{6}{section*.11}%
-\contentsline {paragraph}{Perdidas de superficie}{6}{section*.12}%
-\contentsline {paragraph}{Perdidas de cable}{6}{section*.13}%
-\contentsline {section}{\numberline {2.2}Antenas de apertura}{6}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Antenas parabólicas}{6}{subsection.2.2.1}%
-\contentsline {paragraph}{Foco primario}{6}{section*.14}%
-\contentsline {paragraph}{Cassegrain}{6}{section*.15}%
-\contentsline {paragraph}{Gregorian}{6}{section*.16}%
-\contentsline {paragraph}{Off-axis}{6}{section*.17}%
-\contentsline {section}{\numberline {2.3}Antenas de alimentación}{7}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Tipos de antenas de alimentación}{7}{subsection.2.3.1}%
-\contentsline {paragraph}{Yagi-Uda}{7}{section*.18}%
-\contentsline {paragraph}{Bocina}{7}{section*.19}%
-\contentsline {paragraph}{Log-Periódica}{7}{section*.20}%
-\contentsline {paragraph}{Antenas de semiespacio}{7}{section*.21}%
-\contentsline {paragraph}{Antenas de parche}{7}{section*.22}%
-\contentsline {section}{\numberline {2.4}Receptores heterodinos}{7}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}¿Qué es un receptor heterodino?}{7}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Radio definida por software}{7}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Transformada Rápida de Fourier}{7}{subsection.2.4.3}%
-\contentsline {section}{\numberline {2.5}Radiotelescopios}{7}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}¿Qué es un radiotelescopio?}{7}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Línea de Hidrógeno Neutro}{7}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}CHARTS y FRB}{7}{subsection.2.5.3}%
-\contentsline {section}{\numberline {2.6}Conceptos previos}{7}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}Radiotelescopio}{7}{subsection.2.6.1}%
-\contentsline {subsection}{\numberline {2.6.2}Línea de Hidrógeno Neutro}{8}{subsection.2.6.2}%
-\contentsline {subsection}{\numberline {2.6.3}CHARTS y FRB}{8}{subsection.2.6.3}%
-\contentsline {subsection}{\numberline {2.6.4}Polarización}{8}{subsection.2.6.4}%
-\contentsline {subsection}{\numberline {2.6.5}Antenas de Apertura}{9}{subsection.2.6.5}%
-\contentsline {subsection}{\numberline {2.6.6}Antena Alimentadora}{10}{subsection.2.6.6}%
-\contentsline {subsection}{\numberline {2.6.7}Receptor Heterodino}{10}{subsection.2.6.7}%
-\contentsline {section}{\numberline {2.7}Estado del Arte}{10}{section.2.7}%
-\contentsline {subsection}{\numberline {2.7.1}Telescopio Mini}{11}{subsection.2.7.1}%
-\contentsline {subsection}{\numberline {2.7.2}Telescopio FAST}{12}{subsection.2.7.2}%
-\contentsline {subsection}{\numberline {2.7.3}Telescopio SRT}{12}{subsection.2.7.3}%
-\contentsline {subsection}{\numberline {2.7.4}Observatorio CHIME}{13}{subsection.2.7.4}%
-\contentsline {subsection}{\numberline {2.7.5}Guía de Construcción de Radiotelescopio con una RTL-SDR}{13}{subsection.2.7.5}%
-\contentsline {chapter}{\numberline {3}Diseño y Simulacion}{15}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Implementacion y Ensamblaje}{16}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Analisis de Resultados}{17}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusiones}{18}{chapter.6}%
-\contentsline {chapter}{Bibliografía}{19}{chapter*.31}%
+\contentsline {subsection}{\numberline {2.1.5}Ancho de banda}{7}{subsection.2.1.5}%
+\contentsline {paragraph}{Ancho de banda $S_{11}$}{8}{section*.13}%
+\contentsline {paragraph}{Ancho de banda $S_{21}$}{9}{section*.15}%
+\contentsline {subsection}{\numberline {2.1.6}Perdidas y eficiencia}{9}{subsection.2.1.6}%
+\contentsline {paragraph}{Impedancia de entrada}{9}{section*.17}%
+\contentsline {paragraph}{Perdidas de espacio libre}{10}{section*.18}%
+\contentsline {paragraph}{Perdidas de superficie}{10}{section*.19}%
+\contentsline {paragraph}{Perdidas Ohmnicas}{10}{section*.20}%
+\contentsline {subsection}{\numberline {2.1.7}Ecuacion de Friis}{10}{subsection.2.1.7}%
+\contentsline {section}{\numberline {2.2}Antenas parabólicas}{11}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Tipos de antenas parabólicas}{11}{subsection.2.2.1}%
+\contentsline {paragraph}{Cassegrain}{11}{section*.21}%
+\contentsline {paragraph}{Gregorian}{12}{section*.23}%
+\contentsline {paragraph}{Off-axis}{12}{section*.25}%
+\contentsline {paragraph}{Foco primario}{12}{section*.27}%
+\contentsline {subsection}{\numberline {2.2.2}Antenas de alimentación}{13}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Receptores heterodinos}{13}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Radio definida por software}{13}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Transformada Rápida de Fourier}{13}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Radiotelescopios}{13}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}¿Qué es un radiotelescopio?}{13}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Línea de Hidrógeno Neutro}{13}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}CHARTS y FRB}{13}{subsection.2.4.3}%
+\contentsline {section}{\numberline {2.5}Telescopio CPT}{13}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Metodos de caracterización}{14}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Medicion de patrón de radiación}{14}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Medición de sensibilidad}{14}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.6.3}Medicion de la temperatura de ruido}{14}{subsection.2.6.3}%
+\contentsline {section}{\numberline {2.7}Estado del arte}{14}{section.2.7}%
+\contentsline {chapter}{\numberline {3}Ensamblaje e instrumentacion}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Ensamblado Mecánico}{15}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Reflector Parabólico}{16}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Diseño de soportes adicionales}{17}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Montura Alt-Azimutal}{17}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Rack de control}{17}{subsection.3.1.4}%
+\contentsline {section}{\numberline {3.2}Alimentador}{17}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Diseño del receptor}{17}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Cadena de recepción}{17}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Digitalizador y adquisición}{17}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Software de control y adquisición}{17}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Control de la montura}{17}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Adquisición de datos}{17}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.5}Infraestructura de caracterizacion}{18}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Fuente de calibración}{18}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Fuente de ruido}{18}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Software de caracterización}{18}{subsection.3.5.3}%
+\contentsline {chapter}{\numberline {4}Caracterización y puesta en servicio}{19}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Enfoque del alimentador}{19}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Alimentador sin soportes a 70 metros}{19}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Alimentador con soportes con la estrella artificial}{21}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Medicion del patrón de radiación}{22}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Medicion relativa para banda de H1}{22}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Medicion absoluta para todas las badnas de interes}{23}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Sensibilidad y temperatura de ruido}{23}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Medicion de la temperatura de ruido}{23}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.4}Medicion del error de apuntamiento}{24}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Primera luz}{24}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Analisis de Resultados}{25}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Posicion del alimentador}{25}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Patrón de radiación}{25}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Ganancia y Directividad}{25}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Sensibilidad}{25}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Error de apuntamiento}{25}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Ancho de banda}{25}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Primera luz}{25}{section.5.7}%
+\contentsline {chapter}{\numberline {6}Conclusiones}{26}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Trabajos Futuros}{26}{section.6.1}%
+\contentsline {chapter}{Bibliografía}{27}{chapter*.35}%

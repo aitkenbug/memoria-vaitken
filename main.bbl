@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{1}
   \providecommand\backrefparscanfalse{}
   \providecommand\backrefparscantrue{}
   \providecommand\backrefprint{}
@@ -21,40 +21,14 @@ Stutzman, W. y Thiele, G., {Antenna Theory and Design}.
 \backrefprint\backrefparscantrue
 
 \backrefparscanfalse
-\bibitem{Restrepo2023}
-Óscar Restrepo~Gaitán, ``Desarrollo de tecnologías y metodologías para mejorar la observación de la línea de 21 cm del hidrógeno neutro'', 2023, \href{https://repositorio.uchile.cl/handle/2250/198618} {\nolinkurl{\detokenize{https://repositorio.uchile.cl/handle/2250/198618}}}.
+\bibitem{Friis1946}
+Friis, H., ``A note on a simple transmission formula'', {Proceedings of the IRE}, vol.~34, no.~5, pp.~254--256, 1946, \href{https://dx.doi.org/10.1109/JRPROC.1946.234568} {\nolinkurl{doi:\detokenize{10.1109/JRPROC.1946.234568}}}.
 \backrefprint\backrefparscantrue
 
 \backrefparscanfalse
 \bibitem{Finger2013}
 Finger, R.~A., {Design and construction of a digital sideband separating spectrometer for the 1.2-meter southern radio telescope}.
 \newblock Tesis PhD, 2013.
-\backrefprint\backrefparscantrue
-
-\backrefparscanfalse
-\bibitem{DAS2024}
-{Departamento de Astronomía, Universidad de Chile}, ``Current projects, mini radio-telescope installed in cerro calan in 2010''. Online, 2024, \href{http://www.das.uchile.cl/lab_mwl/project.html} {\nolinkurl{\detokenize{http://www.das.uchile.cl/lab_mwl/project.html}}}.
-\backrefprint\backrefparscantrue
-
-\backrefparscanfalse
-\bibitem{FAST2024}
-{FAST (Five-hundred-meter Aperture Spherical Telescope)}, ``Fast observatory''. Online, 2024, \href{https://fast.bao.ac.cn/} {\nolinkurl{\detokenize{https://fast.bao.ac.cn/}}}.
-\backrefprint\backrefparscantrue
-
-\backrefparscanfalse
-\bibitem{Curotto2019}
-Curotto, F., ``Design, implementation and characterization of a radio frequency interference digital adaptive filter using a field-programmable gate array'', Tesis M.Sc., University of Chile, Santiago, Chile, 2019.
-\backrefprint\backrefparscantrue
-
-\backrefparscanfalse
-\bibitem{CHIME}
-{CHIME/FRB Collaboration}, ``Chime/frb experiment''. Online, \href{https://chime-experiment.ca/en} {\nolinkurl{\detokenize{https://chime-experiment.ca/en}}}.
-\backrefprint\backrefparscantrue
-
-\backrefparscanfalse
-\bibitem{RTLSDR2018}
-{RTL-SDR Blog}, ``Cheap and easy hydrogen line radio astronomy with an rtl-sdr, wifi, parabolic grid dish, lna and sdrsharp''. RTL-SDR Blog, 2018, \href{https://www.rtl-sdr.com/cheap-and-easy-hydrogen-line-radio-astronomy-with-a-rtl-sdr-wifi-parabolic-grid-dish-lna-and-sdrsharp/} {\nolinkurl{\detokenize{https://www.rtl-sdr.com/cheap-and-easy-hydrogen-line-radio-astronomy-with-a-rtl-sdr-wifi-parabolic-grid-dish-lna-and-sdrsharp/}}}.
-\newblock Online.
 \backrefprint\backrefparscantrue
 
 \end{thebibliography}
