@@ -45,6 +45,44 @@ Luego desenrollan y enderezan los tubos de aluminio que confirmar los anillos do
 
 \subsection{Diseño de soportes adicionales}
 
+Para poder instalar todos los componentes del telescopio, se debian fabricar soportes personalizados y adicionales para así poder utilizar receptores y elementos que no fueran parte del kit original del fabricante. Con el objetivo de reducir los timepos de fabricación y prototipado al usar componentes de aluminio o acero se decidio utilizar impresion 3D con filamento plastico PLA\footnote{Explicacion PLA} de alta resistencia mecanica.\\
+
+Se diseñaron 6 piezas en total con el software de diseño asistido por computadora o \textit{CAD} \textit{Fusion 360} de la compañia \textit{Autodesk}. Todos los comonentes fueron impresos en PLA de alta resistencia o \textit{Hyper-PLA} de la compañia \textit{Creality}, otorgando una mayor resitencia a la flexion de 50\% que el PLA convencional y una elongacion de 6.304\% en comparacion con la del PLA convencional de 3\%. La configuracion de la impresion fue una altura de capa de 0.2 mm, dada por la boquilla utilizada, 4 capas de muralla y un \textit{Infill} o relleno de 60 \%.\\
+
+Una ventaja importante en la elección de la impresion 3D en filamentops plasticos, es su baja incidencia en la deformacion o interferencia del comportamiento de radiofrecuencia, al ser un material no conductor introducido en el campo cercano de los componentes.\\
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/soporte3D5}
+    \caption{Union de los doportes de aluminio para el alimentador}
+    \label{fig:ensamble4}
+\end{figure}
+
+El diseño 3D de la figura \ref{fig:ensamble4} es un soporte que contiene una cabidad centrar cilindrica que conmple la funcion de sostener tanto el alimentador como el receptor por medio de un tubo plastico de PVC\footnote{PVC} que asegura que todo se mantenga alineado con el centro de la parabola, además de permitir un movimiento en el eje de la cabidad cilindrica para ajustar el foco del alimentador.\\
+
+Tiene también 4 ranuras perforadas para aseguirar los soportes con pernos M4 de medida y también 6 perforaciones con cabidades para tuercas M5. Con estas tuercas y con los respectivos tornillos se asegura la poscision del tubo de PVC para fijar el foco una vez encontrado.\\
+
+Las siguientes piezas comparten la misma filosofia de diseño, para poder compatible entre ellas y con el resto de los componentes del telescopio. Además, permiten el rediseño de nuevas piezas para otros alimentadores, cambios de largo en el tubo distriubidor de PVC y en la eleccion de otro material de impreson 3D si se quiciese.\\
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/soporte3D1v1}
+    \caption{Interfaz de soporte para el tubo de distribucion y otros elementos}
+    \label{fig:ensamble5}
+\end{figure}
+
+La figura \ref{fig:ensamble5} es un soporte multiproposito que permite acoplar otros soportes de menor complejidad para ser instalados en la zona del alimentador y receptor. Así permite cambios radicales en la instrumentación que se requiera en el futuro sin tener que rediseñar toda la estructura de sujeción.\\
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/soporte3D7}
+    \caption{Soporte interno para electronica de recepción}
+    \label{fig:ensamble6}
+\end{figure}
+
+El receptor de radiofrecuencia se encuentra dentro de una caja electrica a prueba de agua, pero se requiere un soporte interno para asegurar que la placa de adquisicion de datos y el digitalizador no se muevan y se mantengan en su lugar mientras el telescopio se mueve en distintas elevaciones. La figura \ref{fig:ensamble6} es un soporte que se instala en la caja electrica y permite montar diferentes tipos de receptores y amplificadores.\\
+
+
 \subsection{Montura Alt-Azimutal}
 
 \subsection{Rack de control}
