@@ -3,37 +3,38 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: natnumurl.bst
 Database file #1: library.bib
+Warning--I didn't find a database entry for "Rot2Prog"
 Warning--vacio school en Finger2013
-You've used 5 entries,
+You've used 9 entries,
             1986 wiz_defined-function locations,
-            474 strings with 4023 characters,
-and the built_in function-call counts, 1005 in all, are:
-= -- 98
-> -- 28
+            503 strings with 4896 characters,
+and the built_in function-call counts, 1602 in all, are:
+= -- 153
+> -- 44
 < -- 0
-+ -- 12
-- -- 7
-* -- 74
-:= -- 143
-add.period$ -- 8
-call.type$ -- 5
-change.case$ -- 2
++ -- 20
+- -- 11
+* -- 112
+:= -- 220
+add.period$ -- 14
+call.type$ -- 9
+change.case$ -- 6
 chr.to.int$ -- 0
-cite$ -- 6
-duplicate$ -- 46
-empty$ -- 113
-format.name$ -- 7
-if$ -- 245
+cite$ -- 10
+duplicate$ -- 62
+empty$ -- 200
+format.name$ -- 11
+if$ -- 399
 int.to.chr$ -- 0
-int.to.str$ -- 5
+int.to.str$ -- 9
 missing$ -- 5
-newline$ -- 34
-num.names$ -- 5
-pop$ -- 19
+newline$ -- 56
+num.names$ -- 9
+pop$ -- 46
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 26
+skip$ -- 40
 stack$ -- 0
 substring$ -- 28
 swap$ -- 12
@@ -42,7 +43,7 @@ text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 7
-width$ -- 6
-write$ -- 62
-(There was 1 warning)
+while$ -- 11
+width$ -- 10
+write$ -- 103
+(There were 2 warnings)
