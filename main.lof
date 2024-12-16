@@ -31,12 +31,16 @@
 \contentsline {figure}{\numberline {3.16}{\ignorespaces Amplificador y filtro pasabanda SAWbird H1 de la compañia \textit {Noeelec}.}}{30}{figure.caption.45}%
 \contentsline {figure}{\numberline {3.17}{\ignorespaces RTL-SDR conectada a la cadena de amplificador y una Raspberry PI 4B.}}{31}{figure.caption.46}%
 \contentsline {figure}{\numberline {3.18}{\ignorespaces cpt\_traking\_software.py en funcionamiento.}}{32}{figure.caption.49}%
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Generador de señales Valon 5008 con filtro pasabajo con una bateria externa.}}{35}{figure.caption.53}%
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Fuente de ruido Agilent 346B.}}{36}{figure.caption.54}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Generador de señales Valon 5008 con filtro pasabajo con una bateria externa.}}{34}{figure.caption.53}%
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Fuente de ruido Agilent 346B.}}{35}{figure.caption.54}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Antena LPDA en tripode auxiliar a 2 metros de altura.}}{39}{figure.caption.57}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Distancia de 70 metros entre el reflector y el generador de señales con elevaciones similares.}}{40}{figure.caption.59}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Distancia de 188 metros entre el reflector y la estrella artificial de la copa de agua.}}{41}{figure.caption.60}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Alimentador dipolo exotico con tetrapodo isntalado.}}{41}{figure.caption.61}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Antena LPDA en tripode auxiliar a 2 metros de altura.}}{38}{figure.caption.57}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Distancia de 70 metros entre el reflector y el generador de señales con elevaciones similares.}}{39}{figure.caption.59}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Distancia de 188 metros entre el reflector y la estrella artificial de la copa de agua.}}{40}{figure.caption.60}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Alimentador dipolo exotico con tetrapodo isntalado.}}{40}{figure.caption.61}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Antena construida siendo monitoriada por la camara remota}}{43}{figure.caption.62}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Corte azimutal patrón de radiación a 1428 MHz}}{44}{figure.caption.63}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Corte elevacion patrón de radiación a 1428 MHz}}{45}{figure.caption.64}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Patrón de radiación a 400 MHz}}{46}{figure.caption.65}%
 \addvspace {10\p@ }
