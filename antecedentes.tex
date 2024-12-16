@@ -314,15 +314,58 @@ El proyecto CHARTS, es una colaboración entre la Universidad de Chile y la Univ
 
 \section{Telescopio CPT}
 
+El telescopio CPT, \textit{CHARTS Pathfinder Telescope}, es un telescopio de 3 metros de diametro con una configuracion de foco primario. Este telescopio se encuentra en la cumbre del cerro Calán en Santiago de Chile, siendo parte del departamento de astronomia de la Facultad de Ciencias Fisicas y Matematicas de la Universidad de Chile.\\
 
+El reflector de este telescopio es un paraboloide de 3 metros de diametro, Con una estructura de aluminio unida con remaches y pernos. Su superficie reflectante es de malla de acero galvanizado con separacion de 6 mm. el anillo exterior es de una cinta de alumino de 3x20 mm. El soporte del alimentrador es de 4 perfiles de alimunio de 2x2 cm de 2 metros de largo.\cite{rfhamdesign3meterdish}.\\
+
+La eficiencia de superficie que estima el fabricante es de 65\% teniendo su ganancia maximma a 5760 MHz con 43.3 dB y a 1296 MHz con 30.3 dB. Tanto el reflector como la montura alt-azimutal son de la compañia holandesa \textit{RFHamdesign}.\\
+
+\begin{figure}
+    \centering
+    \includegraphics[width = 0.8\textwidth]{img/cpt_tracking}
+    \caption{Telescopio CPT en el cerro Calán siguiendo el centro de la galaxia.}
+    \label{fig:cpt}
+\end{figure}
+
+El proposito para poner en servicio este telescopio es observar la linea espectral de hidrógeno neutro de 21 cm de longitud de onda, para caracterizar todos los aspectos de la antena y comenzar a realizar observaciones de radioastronomia. Luego se ampliaran sus capacidades para apoyar al proyecto CHARTS en la banda de 300 MHz a 500 MHz y hacer observaciones solares de alto ancho de banda desde 1 GHz a 6 GHz.\\
 
 \section{Metodos de caracterización}
 
+Los siguientes metodos de caracterizacion son los más comunes en la caracterizacion de antenas y radiotelescopios para medir su desempeño y definir sus capacidades como instrumentos astronomicos.\\
+
 \subsection{Medicion de patrón de radiación}
 
-\subsection{Medición de sensibilidad}
+El metodo más directo para la medicion del patron de radiacion son los metodos de campo lejano, lo que al tratarse de antenas de apertura de grandes dimensiones, presenta varios desafios practicos y tecnicos, especialmente a altas frecuencias\cite{Astudillo2014}.\\
+
+\begin{figure}
+    \centering
+    \includegraphics[width = 10cm]{img/imagen.png}
+    \caption{Diagrama de un sistema de medicion de campo lejano.}
+    \label{fig:farfield}
+\end{figure}
+
+La figura \ref{fig:farfield} muestra un diagrama de un sistema basico necesario para poder realizar la medicion, el cual requiere la antena objetivo, la que queremos caracterizar. La antena fuente, que es la que generara la radiacion para medir la antena objetivo. Ademas de todo el equipo e instrumentación necesaria.\\
 
 \subsection{Medicion de la temperatura de ruido}
+
+Para medir la temperatura de ruido de un sistema, se puede utilizar el metodo de factor Y, el cual consisten en utilizar una fuente de ruido de ENR, conocida como \textit{Excess Noise Ratio} o la relacion de exeso de ruido, la cual se conecta a la antena y se mide la potencia de ruido en la salida del receptor.\\
+
+La medicion se realiza obteniendo la temperatura del sistema cuando se enciende la fuente de ruido y cuando se apaga, siendos estas temperaturas como $T_{hot}$ y $T_{cold}$ o temperatura caliente y temperatura fria respectivamente.\\
+
+El ruido de ENR se obtiene a 2 \quotes{temperaturas de ruido} conocidas, una a temperatura ambiente y otra a la temperatura con la fuente encendida.\\
+
+\begin{equation}
+    ENR = \frac{T_hot - 290}{290}
+\end{equation}
+
+Considerando la temperatura ambiente como 290 grados K. ENR se logra polarizando la fuente de ruido y para obtener el factor Y utilizamos la siguiente ecuacion:\\
+
+\begin{equation}
+    Y = \frac{\frac{T_{hot}}{T_{cold}} + \frac{T_{noise}}{T_{cold}}}{1 + \frac{T_{noise}}{T_{cold}}}
+\end{equation}
+
+Donde $T_{noise}$ es la temperatura de ruido del sistema. Asi para obtener la figura de ruido neceseitamos el factor de ruido F, $F=T_{noise}/T_{cold} +1 $, para luego reemplazarlo en $NF = 10log(F)$\cite{analogNoiseFigure}.\\
+
 
 \section{Estado del arte}
 

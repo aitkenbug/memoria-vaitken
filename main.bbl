@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
   \providecommand\backrefparscanfalse{}
   \providecommand\backrefparscantrue{}
   \providecommand\backrefprint{}
@@ -39,6 +39,16 @@ Finger, R.~A., {Design and construction of a digital sideband separating spectro
 \backrefparscanfalse
 \bibitem{Restrepo2023}
 Óscar Restrepo~Gaitán, ``Desarrollo de tecnologías y metodologías para mejorar la observación de la línea de 21 cm del hidrógeno neutro'', 2023, \href{https://repositorio.uchile.cl/handle/2250/198618} {\nolinkurl{\detokenize{https://repositorio.uchile.cl/handle/2250/198618}}}.
+\backrefprint\backrefparscantrue
+
+\backrefparscanfalse
+\bibitem{rfhamdesign3meterdish}
+{RF Hamdesign}, ``3 meter parabolic dish kit'', 2024, \href{https://www.rfhamdesign.com/products/parabolicdishkit/3meterdishkit/index.php} {\nolinkurl{\detokenize{https://www.rfhamdesign.com/products/parabolicdishkit/3meterdishkit/index.php}}}.
+\backrefprint\backrefparscantrue
+
+\backrefparscanfalse
+\bibitem{analogNoiseFigure}
+{Analog Devices}, ``Noise figure measurement methods and formulas – maxim integrated'', 2024, \href{https://www.analog.com/en/resources/technical-articles/noise-figure-measurement-methods-and-formulas--maxim-integrated.html} {\nolinkurl{\detokenize{https://www.analog.com/en/resources/technical-articles/noise-figure-measurement-methods-and-formulas--maxim-integrated.html}}}.
 \backrefprint\backrefparscantrue
 
 \backrefparscanfalse

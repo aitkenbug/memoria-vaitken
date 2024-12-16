@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1734325186.75171 "main.aux" "main.bbl" "main" 1734325191.07717 0
-  "./library.bib" 1734324187 4369 8874cb4b8dcfb04f62548a95830b14f3 ""
+["bibtex main"] 1734341229.34852 "main.aux" "main.bbl" "main" 1734341233.75157 0
+  "./library.bib" 1734341180 4939 818b58183d738413653873a2cefcc39e ""
   "./natnumurl.bst" 1733927529 21201 c3a97a2434b58cd70f7f9c9df607b80a ""
-  "main.aux" 1734325189 54280 52dbbfdd187d0fe0ea36ec9652d9e35e "pdflatex"
+  "main.aux" 1734341232 54505 f580b7399728c0ec62f50031c2927a8f "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1734325187.14067 "c:/Users/vicen/memoria-vaitken/main.tex" "main.pdf" "main" 1734325191.07775 0
-  "antecedentes.tex" 1734325177 32064 71a9013ed1c0f3304f49fb37735da451 ""
+["pdflatex"] 1734341229.72207 "c:/Users/vicen/memoria-vaitken/main.tex" "main.pdf" "main" 1734341233.75211 0
+  "antecedentes.tex" 1734341220 35950 714d0aaa4b2dbe5f5dbe0d55105779f3 ""
   "c:/Users/vicen/memoria-vaitken/main.tex" 1733927529 3033 914ab497233b22ea94686d8bd0742e68 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1731631944 2375 baa924870cfb487815765f9094cf3728 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1731631944 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
@@ -76,6 +76,7 @@
   "c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb" 1731631944 112766 6259d69aa3d87a505f375e49d8f6bf3a ""
   "c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmex10.pfb" 1731631944 23055 2e5b42921de910eaa97b85df04ca4891 ""
   "c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi12.pfb" 1731631944 30696 3da7e46ecf5615eedebd9f27dab4d9d7 ""
+  "c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi6.pfb" 1731631944 31113 04b711c9a4c7f8cb4ed784c6fc4cc1c5 ""
   "c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb" 1731631944 30635 833ec815d446ec453a4913fc26d24cbc ""
   "c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb" 1731631944 119235 05e5c8d6d60439433e50047898c2c0e0 ""
   "c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb" 1731631944 113634 9384aebdf26f9881e046a4b5574566db ""
@@ -287,6 +288,7 @@
   "img/70m_measure.png" 1734320277 1476934 58edd42b813bbf099b95d9d7f3a675d8 ""
   "img/cassegrain.jpg" 1733927529 1086806 8a00d11af9df3fca3eef507cefbfe4c5 ""
   "img/contrapesos.jpg" 1733927529 880615 e78f0d8ddbdd0ff3d2e5d5109e020a95 ""
+  "img/cpt_tracking.jpg" 1733927529 846038 30c26828e211fb6a4161c6d7cadb48b0 ""
   "img/enfoque1.jpg" 1733927529 940893 4ea6c28d23d44a9bb5d1db079e4d57c3 ""
   "img/enfoque_cerca.jpg" 1733927529 1057781 d11c55e68407b1eb9ce9b9ad847dbdb8 ""
   "img/enfoque_cerca1.jpg" 1733927529 892978 0c92b28cce50fed216b6bcd2c566400c ""
@@ -312,11 +314,11 @@
   "img/soporte_montura.jpg" 1733927529 640894 366ed12ae5bad3a5e4f3d60a890b70cc ""
   "img/valon.jpg" 1733927529 687372 bd0c6e9f671525699d3383aeb3809c38 ""
   "intro.tex" 1733927529 3966 42edbaf39dfe7fdcf969de8dc3ba85d2 ""
-  "main.aux" 1734325189 54280 52dbbfdd187d0fe0ea36ec9652d9e35e "pdflatex"
-  "main.bbl" 1734325187 3122 5603e0fdd852b4474034f1ab09b87645 "bibtex main"
-  "main.lof" 1734325189 5170 27211e42f007e9943b325af1e5b71344 "pdflatex"
+  "main.aux" 1734341232 54505 f580b7399728c0ec62f50031c2927a8f "pdflatex"
+  "main.bbl" 1734341229 3917 c0fe4e826ab2bf46c08cd396f8b19912 "bibtex main"
+  "main.lof" 1734341232 5455 e2d5841f19e01277190d82a823173117 "pdflatex"
   "main.tex" 1733927529 3033 914ab497233b22ea94686d8bd0742e68 ""
-  "main.toc" 1734325189 7581 a097f3a0f099557a52f0ddc883447678 "pdflatex"
+  "main.toc" 1734341232 7485 9174d69ca7b417e8842548d5eab39de8 "pdflatex"
   "resultados.tex" 1733927529 256 b4b5252348531b43b62fb4db262de814 ""
   "template.tex" 1733927529 290297 841a7a2beb05c5dcc319b64380dc348b ""
   "template_config.tex" 1733927529 21894 c8a156315548211a1859ff1d4e1eb92a ""

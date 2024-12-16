@@ -576,6 +576,14 @@ INPUT ./img/off-axis.jpg
 INPUT ./img/off-axis.jpg
 INPUT ./img/off-axis.jpg
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm
+INPUT ./img/cpt_tracking.jpg
+INPUT ./img/cpt_tracking.jpg
+INPUT ./img/cpt_tracking.jpg
+INPUT ./img/cpt_tracking.jpg
+INPUT ./img/imagen.png
+INPUT ./img/imagen.png
+INPUT ./img/imagen.png
+INPUT ./img/imagen.png
 INPUT ./ensamble.tex
 INPUT ./ensamble.tex
 INPUT ./ensamble.tex
@@ -744,6 +752,7 @@ INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmex10.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi12.pfb
+INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi6.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb
