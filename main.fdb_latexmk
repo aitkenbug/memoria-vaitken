@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex main"] 1734372116.14477 "main.aux" "main.bbl" "main" 1734372123.17681 0
+["bibtex main"] 1734381496.60243 "main.aux" "main.bbl" "main" 1734381504.23276 0
   "./library.bib" 1734347455 4939 818b58183d738413653873a2cefcc39e ""
   "./natnumurl.bst" 1733750114 21201 c3a97a2434b58cd70f7f9c9df607b80a ""
-  "main.aux" 1734372121 54570 4aba0d5d2a05498e7fa379766a96fbd2 "pdflatex"
+  "main.aux" 1734381502 54578 ded85d4881f531b88ac1da42e857974b "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1734372116.81677 "c:/Users/Vincent/memoria-vaitken/main.tex" "main.pdf" "main" 1734372123.17752 0
-  "antecedentes.tex" 1734371969 35954 2a030c57b11ac42cf0ca6dd5c25792bf ""
-  "c:/Users/Vincent/memoria-vaitken/main.tex" 1733750114 3033 914ab497233b22ea94686d8bd0742e68 ""
+["pdflatex"] 1734381497.26225 "c:/Users/Vincent/memoria-vaitken/main.tex" "main.pdf" "main" 1734381504.23357 0
+  "antecedentes.tex" 1734373080 36010 6f9a479b432fb8d85c944a6bbf43fd9e ""
+  "c:/Users/Vincent/memoria-vaitken/main.tex" 1734379386 5015 e2d0578e1e58f501975c8fffe80d79b9 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1728486995 2375 baa924870cfb487815765f9094cf3728 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1728486995 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1728486995 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
@@ -281,7 +281,7 @@
   "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1728489448 3325958 f81146a9e15e13340def69cfdd469b55 ""
   "c:/texlive/2024/texmf.cnf" 1728489177 713 e69b156964470283e0530f5060668171 ""
   "caracterizacion.tex" 1734347455 10859 ce58e70d96f6c9ec53915d554e0ae4df ""
-  "concluciones.tex" 1733750113 52 3f34af298020cda91e7900525b0ddc68 ""
+  "concluciones.tex" 1734381488 3002 662e6b90af4a051151e49525b20d2e65 ""
   "ensamble.tex" 1734371969 27771 b2dfd250971b4a9230d8c1f801698b9b ""
   "img//departamentos/uchile2.pdf" 1733750134 18772 1d92f499584e10e4c8e0b3bf44be0bbf ""
   "img/1420rp.png" 1734350773 114375 d979dac4d066b6e8dd2c3e9b92d7847d ""
@@ -320,12 +320,12 @@
   "img/soporte_montura.jpg" 1733853863 640894 366ed12ae5bad3a5e4f3d60a890b70cc ""
   "img/traking.png" 1734371264 75712 6e672ec86ea523230d1fc43d106ac46e ""
   "img/valon.jpg" 1733853906 687372 bd0c6e9f671525699d3383aeb3809c38 ""
-  "intro.tex" 1733750113 3966 42edbaf39dfe7fdcf969de8dc3ba85d2 ""
-  "main.aux" 1734372121 54570 4aba0d5d2a05498e7fa379766a96fbd2 "pdflatex"
-  "main.bbl" 1734372116 3917 c0fe4e826ab2bf46c08cd396f8b19912 "bibtex main"
-  "main.lof" 1734372121 5966 e5239d7c603b5b50f7193953349a9e53 "pdflatex"
-  "main.tex" 1733750114 3033 914ab497233b22ea94686d8bd0742e68 ""
-  "main.toc" 1734372121 7307 44c5332265aa9d67838daffb4b46ec96 "pdflatex"
+  "intro.tex" 1734372690 3967 857fc5a74a92c3821bab4a1e6ded9670 ""
+  "main.aux" 1734381502 54578 ded85d4881f531b88ac1da42e857974b "pdflatex"
+  "main.bbl" 1734381497 3917 c0fe4e826ab2bf46c08cd396f8b19912 "bibtex main"
+  "main.lof" 1734381502 5969 1a30d5e38bd7fafc05f6db3e91814b0b "pdflatex"
+  "main.tex" 1734379386 5015 e2d0578e1e58f501975c8fffe80d79b9 ""
+  "main.toc" 1734381502 7307 a96831881f88f75994f7524ff8bf5dc4 "pdflatex"
   "resultados.tex" 1734372108 3146 2d33753208afbce7942a31ede0ae7608 ""
   "template.tex" 1733750114 290297 841a7a2beb05c5dcc319b64380dc348b ""
   "template_config.tex" 1733750114 21894 c8a156315548211a1859ff1d4e1eb92a ""
