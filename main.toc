@@ -38,51 +38,51 @@
 \contentsline {section}{\numberline {2.6}Metodos de caracterización}{15}{section.2.6}%
 \contentsline {subsection}{\numberline {2.6.1}Medicion de patrón de radiación}{15}{subsection.2.6.1}%
 \contentsline {subsection}{\numberline {2.6.2}Medicion de la temperatura de ruido}{16}{subsection.2.6.2}%
-\contentsline {chapter}{\numberline {3}Ensamblaje e instrumentacion}{18}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Ensamblado Mecánico}{18}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Reflector Parabólico}{19}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Diseño de soportes adicionales}{20}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Montura Alt-Azimutal}{24}{subsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.1.4}Rack de control}{26}{subsection.3.1.4}%
-\contentsline {section}{\numberline {3.2}Alimentador}{27}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}LPDA de alto ancho de banda}{27}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Dipolo exotico}{27}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Antena circular de alto ancho de banda}{28}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Diseño del receptor}{29}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Cadena de recepción}{29}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Digitalizador y adquisición}{30}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Software de control y adquisición}{31}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Control de la montura}{32}{subsection.3.4.1}%
-\contentsline {paragraph}{control.py}{32}{section*.47}%
-\contentsline {paragraph}{cpt\_traking\_software.py}{32}{section*.48}%
-\contentsline {subsection}{\numberline {3.4.2}Adquisición de datos}{33}{subsection.3.4.2}%
-\contentsline {paragraph}{rtl\_spectra.py}{33}{section*.50}%
-\contentsline {paragraph}{cpt\_rtl\_adquisition.py}{33}{section*.51}%
-\contentsline {section}{\numberline {3.5}Infraestructura de caracterizacion}{33}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Fuente de calibración}{33}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Fuente de ruido}{35}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Software de caracterización}{35}{subsection.3.5.3}%
-\contentsline {paragraph}{cpt\_rp\_measure.py}{35}{section*.55}%
-\contentsline {paragraph}{cpt\_siglent.py}{36}{section*.56}%
-\contentsline {chapter}{\numberline {4}Caracterización y puesta en servicio}{37}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Enfoque del alimentador}{37}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Alimentador sin soportes a 70 metros}{37}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Alimentador con soportes con la estrella artificial}{39}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Medicion del patrón de radiación}{41}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Medicion relativa para banda de H1}{41}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Medicion absoluta para todas las badnas de interes}{41}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4.3}Sensibilidad y temperatura de ruido}{41}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Medicion de la temperatura de ruido}{42}{subsection.4.3.1}%
-\contentsline {section}{\numberline {4.4}Medicion del error de apuntamiento}{42}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Primera luz}{42}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Analisis de Resultados}{43}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Posicion del alimentador}{43}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Patrón de radiación}{44}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Ganancia y Directividad}{46}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Sensibilidad}{46}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Error de apuntamiento}{46}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Ancho de banda}{46}{section.5.6}%
-\contentsline {section}{\numberline {5.7}Primera luz}{46}{section.5.7}%
-\contentsline {chapter}{\numberline {6}Conclusiones}{47}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Trabajos Futuros}{47}{section.6.1}%
-\contentsline {chapter}{Bibliografía}{49}{chapter*.66}%
+\contentsline {chapter}{\numberline {3}Ensamblaje e instrumentacion}{17}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Ensamblado Mecánico}{17}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Reflector Parabólico}{18}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Diseño de soportes adicionales}{19}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Montura Alt-Azimutal}{23}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Rack de control}{25}{subsection.3.1.4}%
+\contentsline {section}{\numberline {3.2}Alimentador}{26}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}LPDA de alto ancho de banda}{26}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Dipolo exotico}{26}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Antena circular de alto ancho de banda}{27}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Diseño del receptor}{28}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Cadena de recepción}{28}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Digitalizador y adquisición}{29}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Software de control y adquisición}{30}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Control de la montura}{31}{subsection.3.4.1}%
+\contentsline {paragraph}{control.py}{31}{section*.47}%
+\contentsline {paragraph}{cpt\_traking\_software.py}{31}{section*.48}%
+\contentsline {subsection}{\numberline {3.4.2}Adquisición de datos}{32}{subsection.3.4.2}%
+\contentsline {paragraph}{rtl\_spectra.py}{32}{section*.50}%
+\contentsline {paragraph}{cpt\_rtl\_adquisition.py}{32}{section*.51}%
+\contentsline {section}{\numberline {3.5}Infraestructura de caracterizacion}{32}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Fuente de calibración}{32}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Fuente de ruido}{34}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Software de caracterización}{34}{subsection.3.5.3}%
+\contentsline {paragraph}{cpt\_rp\_measure.py}{34}{section*.55}%
+\contentsline {paragraph}{cpt\_siglent.py}{35}{section*.56}%
+\contentsline {chapter}{\numberline {4}Caracterización y puesta en servicio}{36}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Enfoque del alimentador}{36}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Alimentador sin soportes a 70 metros}{36}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Alimentador con soportes con la estrella artificial}{38}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Medicion del patrón de radiación}{40}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Medicion relativa para banda de H1}{40}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Medicion absoluta para todas las badnas de interes}{40}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Sensibilidad y temperatura de ruido}{40}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Medicion de la temperatura de ruido}{41}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.4}Medicion del error de apuntamiento}{41}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Primera luz}{41}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Analisis de Resultados}{42}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Posicion del alimentador}{42}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Patrón de radiación}{43}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Ganancia y Directividad}{45}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Sensibilidad}{45}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Error de apuntamiento}{45}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Ancho de banda}{45}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Primera luz}{45}{section.5.7}%
+\contentsline {chapter}{\numberline {6}Conclusiones}{46}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Trabajos Futuros}{46}{section.6.1}%
+\contentsline {chapter}{Bibliografía}{48}{chapter*.66}%
