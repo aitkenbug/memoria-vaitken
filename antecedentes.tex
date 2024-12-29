@@ -1,18 +1,18 @@
 \chapter{Antecedentes}
 
-En este capítulo se expondrán los fundamentos teóricos y conceptuales necesarios en el desarrollo del proyecto. Se abordarán los conceptos principales características de las antenas, ya que por naturaleza un radiotelescopio es una antena. Además, se explicará el funcionamiento de los receptores heterodinos, principal componente utilizado en la digitalización y adquisición de señales de RF. Para finalmente, abordar el concepto de radiotelescopio, la importancia de la línea de Hidrógeno neutro y el proyecto CHARTS.\\
+En este capítulo se expondrán los fundamentos teóricos y conceptuales necesarios en el desarrollo del proyecto. Se abordarán los principales conceptos y características de las antenas, teninedo en cuenta que por naturaleza un radiotelescopio es una antena. Además, se explicará el funcionamiento de los receptores heterodinos, principal componente utilizado en la digitalización y adquisición de señales de RF. Para finalmente, abordar el concepto de radiotelescopio, la importancia de la línea de Hidrógeno neutro y el proyecto CHARTS.\\
 
 \section{Fundamentos de antenas}
 
-Una antena es un dispositivo usualmente pasivo que convierte radiación electromagnética del ambiente en corriente eléctrica y viceversa, dependiendo para que se utilice, pueden ser utilizadas para recibir o transmitir señales. Un radiotelescopio son antenas receptoras. Suele ser fácil calcular las propiedades de una antena transmisora y medir las propiedades de una antena receptora. Afortunadamente, la mayor parte de las propiedades de una antena transmisora (como el patrón de radiación) son las mismas al usar esta misma antena como receptora, así como cualquier medición de una antena receptora puede ser aplicada a esta antena cuando es usada para la transmisión \cite{Ransom2016}.\\
+Una antena es un dispositivo usualmente pasivo que convierte radiación electromagnética del ambiente en corriente eléctrica y viceversa, dependiendo para que se utilice, pueden ser configuradas para recibir o transmitir señales. Un radiotelescopio son antenas receptoras. Suele ser fácil calcular las propiedades de una antena transmisora y medir las propiedades de una antena receptora. Afortunadamente, la mayor parte de las propiedades de una antena transmisora (como el patrón de radiación) son equivalentes al usar esta misma antena como receptora, así como cualquier medición de una antena receptora puede ser aplicada a esta antena cuando es usada para la transmisión \cite{Ransom2016}.\\
 
 \subsection{Patrón de radiación}
 
 El patrón de radiación es una representación gráfica de las propiedades radiativas de una antena. Se define como el gráfico de potencia transmitida por la antena, evaluada sobre una esfera de radio constante. Por razones prácticas se estudian cortes del patrón de radiación. Estos cortes son las curvas tridimensionales del patrón que son contenidas en la intersección de la esfera pasando por el origen.\\
 
-Para poder medir la potencia radiada por una antena, se debo obtener utilizando la aproximación de campo lejano. Campo lejano es la distancia donde debe encontrarse una fuente puntual para que sus ondas recibidas sean planas \cite{Ransom2016}. Lo que en consecuencia significa que la radiación se propaga en modo TEM, es decir, que la componente eléctrica es perpendicular a la componente magnética y ambas son perpendiculares a la dirección de propagación, esto permite solo utilizar el campo eléctrico para describir la radiación \cite{Astudillo2014}.\\
+Para poder medir la potencia radiada por una antena, se debe obtener utilizando la aproximación de campo lejano. El campo lejano es la distancia donde debe encontrarse una fuente puntual para que sus ondas recibidas sean planas \cite{Ransom2016}. Lo que en consecuencia significa que la radiación se propaga en modo TEM, es decir, que la componente eléctrica es perpendicular a la componente magnética y ambas son perpendiculares a la dirección de propagación, esto permite solo utilizar el campo eléctrico para describir la radiación \cite{Astudillo2014}.\\
 
-\subsubsection*{Campo Lejano} La definición de la distancia de campo lejano, depende tanto de la longitud de onda $\lambda$ como el tamaño de la antena $D$, o diámetro para antenas de apertura parabólicas. La distancia de campo lejano se define como:
+\subsubsection*{Campo Lejano} La definición de la distancia de campo lejano depende tanto de la longitud de onda $\lambda$ como el tamaño de la antena $D$, o diámetro para antenas de apertura parabólicas. La distancia de campo lejano se define como:
 
 \begin{equation}
     R = \frac{2D^2}{\lambda}
@@ -66,13 +66,13 @@ El ángulo sólido de un haz de un patrón de radiación tiene el mismo máximo 
     P = U_{prom} \Omega_{A}
 \end{equation}
 
-Finalmente, si se reemplaza la ecuacion \ref{eq:solidangle} en la ecuación \ref{eq:powerdensity} se obtiene la directividad de la antena a partir del ángulo sólido del haz del patrón de radiación.\\
+Finalmente, si se reemplaza la ecuación \ref{eq:solidangle} en la ecuación \ref{eq:powerdensity} se obtiene la directividad de la antena a partir del ángulo sólido del haz del patrón de radiación.\\
 
 \begin{equation}
     D = \frac{4\pi}{\Omega_{A}}
 \end{equation}
 
-Esto quiere decir que la directividad está completamente definida por la forma del patron de radiación. Haciendo que sea totalmente independiente de la construcción de la antena\cite{stutzman2012antenna}.\\
+Esto quiere decir que la directividad está completamente definida por la forma del patrón de radiación. Haciendo que sea totalmente independiente de la construcción de la antena \cite{stutzman2012antenna}.\\
 
 
 \subsection{Ganancia}
@@ -95,7 +95,7 @@ La eficiencia de una antena se define como la razón de la potencia radiada por 
     \varepsilon = \frac{P_{rad}}{P_{in}}
 \end{equation}
 
-En el caso particular de una antena de apertura, el término de la eficiencia también incluye factores como la iluminación de la antena y las perdidas de la superficie, las cuales se denominan como eficiencia de la apertura y eficiencia de la superficie respectivamente.\\
+En el caso particular de una antena de apertura, el término de la eficiencia también incluye factores como la iluminación de la antena y las pérdidas de la superficie, las cuales se denominan eficiencia de apertura y eficiencia de superficie respectivamente.\\
 
 \begin{equation}
     \varepsilon_{ap} = e_{r} \varepsilon_{t} \varepsilon_{s} \varepsilon_{a}
@@ -103,7 +103,7 @@ En el caso particular de una antena de apertura, el término de la eficiencia ta
 
 Donde $e_{r}$ es la eficiencia de la radiación, $\varepsilon_{t}$ es la eficiencia \textit{taper} o de cobertura, $\varepsilon_{s}$ de \textit{spillover} o de derrame e $\varepsilon_{a}$ es la eficiencia de \textit{achivement} o de completitud, la cual incluye muchas otras fuentes de perdidas.\\
 
-Así, la ganancia de una antena de apertura es directamente proporcional a su apertura fisica y a la longitud de onda de la señal que se desea recibir.\\
+Así, la ganancia de una antena de apertura es directamente proporcional a su apertura física y a la longitud de onda de la señal que se desea recibir.\\
 
 \begin{equation}
     G = \frac{4\pi A}{\lambda^{2}} = \varepsilon_{ap} D
@@ -127,7 +127,7 @@ Los tipos de polarización se dividen en polarización lineal, polarización cir
 \begin{figure}
     \centering
     \includegraphics[width = 10cm]{img/imagen.png}
-    \caption{Polarizacion circular de una onda electromagnetica propagandose en el eje Z.}
+    \caption{Polarización circular de una onda electromagnética propagandose en el eje Z.}
     \label{fig:polarizacion2}
 \end{figure}
 
@@ -137,31 +137,31 @@ La figura \ref{fig:polarizacion2} muestra una onda electromagnética circularmen
 
 \subsection{Ancho de banda}
 
-El rango de frecuencia el cual una antenna opera con su mejor eficiencia se le denomina como ancho de banda. El acnho de banda se define considerando los parametros de reflexion y de radiacion de potencia, siendo el parametro comun mente utilzados los parametros de reflexion $S_{11}$ y transmision $S_{21}$ para esta caracterizacion.\\
+El rango de frecuencia en el cual una antena opera con su mejor eficiencia se le denomina como ancho de banda. El ancho de banda se define considerando los parámetros de reflexián y de radiacián de potencia, siendo comúnmente utílzados los parámetros de reflexión $S_{11}$ y transmisión $S_{21}$ para esta caracterización.\\
 
-Los parametros S son los definen la respuesta de un medio a una onda electromagnetica, en este caso, la respuesta de la antena a una onda electromagnetica. existen los parametros $S_{11}$, $S_{12}$, $S_{21}$ y $S_{22}$, donde $S_{11}$ es el parametro de reflexion, $S_{12}$ es el parametro de transmision, $S_{21}$ es el parametro de transmision inversa y $S_{22}$ es el parametro de reflexion inversa.\\
+Los parámetros S son los que definen la respuesta de un medio a una onda electromagnética. Existen los parámetros $S_{11}$, $S_{12}$, $S_{21}$ y $S_{22}$, donde $S_{11}$ es el parametro de reflexión, $S_{12}$ es el parámetro de transmision, $S_{21}$ es el parámetro de transmisión inversa y $S_{22}$ es el parámetro de reflexión inversa.\\
 
 \begin{figure}
     \centering
     \includegraphics[width = 0.8\textwidth]{img/bloquesS.png}
-    \caption{Diagrama de parametros S para un dispositivo bajo prueba (DUT).}
+    \caption{Diagrama de parámetros S para un dispositivo bajo prueba (DUT).}
     \label{fig:sparam}
 \end{figure}
 
-La figura \ref{fig:sparam} muestra las diferentes configuraciones para lograr la obtencion de los parametros S.\\
+La figura \ref{fig:sparam} muestra las diferentes configuraciones para lograr la obtención de los parámetros S.\\
 
-\paragraph{Ancho de banda $S_{11}$} El ancho de banda de reflexion se define como el rango de frecuencia en el cual el parametro de reflexion $S_{11}$ es menor a un valor especifico, comunmente -10dB. lo que corresponde a que el 90\% de la potencia inyectada es irradiada y solo el 10\% reflejada\\
+\paragraph{Ancho de banda $S_{11}$} El ancho de banda de reflexión se define como el rango de frecuencia en el cual el parámetro de reflexión $S_{11}$ es menor a un valor específico, comúnmente -10 dB. Lo que corresponde a que el 90\% de la potencia inyectada es irradiada y solo el 10\% reflejada\\
 
 \begin{figure}
     \centering
     \includegraphics[width = 10cm]{img/imagen.png}
-    \caption{Ancho de banda de reflexion de una antena.}
+    \caption{Ancho de banda de reflexión de una antena.}
     \label{fig:bandwidth}
 \end{figure}
 
-La figura \ref{fig:bandwidth} muestra el ancho de banda de reflexion de una antena.\\
+La figura \ref{fig:bandwidth} muestra el ancho de banda de reflexión de una antena.\\
 
-\paragraph{Ancho de banda $S_{21}$} El ancho de banda de transmision se define como el rango de frecuencia en el cual el parametro de transmision $S_{21}$ es mayor a un valor specifico, comunmente lo más cercano a 0 posible, sin embargo cuando se utilzian componentes activos como cadenas de amplificacion, este valor suele aumenta de 0dB, lo que significa realizar un estudio más profundo del valor esperado.\\
+\paragraph{Ancho de banda $S_{21}$} El ancho de banda de transmisión se define como el rango de frecuencia en el cual el parámetro de transmisión $S_{21}$ es mayor a un valor específico, comúnmente lo más cercano a 0 posible, sin embargo, cuando se utilizan componentes activos como cadenas de amplificación, este valor suele aumenta de 0 dB, lo que significa realizar un estudio más profundo del valor esperado.\\
 
 \begin{figure}
     \centering
@@ -170,40 +170,40 @@ La figura \ref{fig:bandwidth} muestra el ancho de banda de reflexion de una ante
     \label{fig:bandwidth2}
 \end{figure}
 
-La figura \ref{fig:bandwidth2} muestra el ancho de banda de un filtro de pasabanda defininedo la figura de una cadena de recepcion o transmision.\\
+La figura \ref{fig:bandwidth2} muestra el ancho de banda de un filtro de pasabanda definiendo la figura de una cadena de recepción o transmisión.\\
 
 
 \subsection{Perdidas y eficiencia}
 
-En la propagacion de ondas electromagnéticas se producen perdidas de varias fuentes, las relacionas con el medio de propagacion son las perdidas de espacio libre y las perdidas ohmnicas, pero en el contexto de una antena de apertura de reflector parabolico, encontramos también las perdidas de superficie y las perdidas de alimentacion.\\
+En la propagación de ondas electromagnéticas se producen pérdidas de varias fuentes, las relacionas con el medio de propagacion son las perdidas de espacio libre y las perdidas ohmnicas, pero en el contexto de una antena de apertura de reflector parabólico, se encuentran también las pérdidas de superficie y las pérdidas de alimentación.\\
 
 \paragraph{Impedancia de entrada}
 
-Los sistemas de radiofrecuencia se caracterizan por tener una impedancia asociada a la enrtrada y salida de los componentes que componen un sistema. Propiamente la impedancia no significa una perdida en si misma, pero si existen diferencia de acoplamiento de impedancia podemos empezar a encontrar perdidas asociadas.\\
+Los sistemas de radiofrecuencia se caracterizan por tener una impedancia asociada a la entrada y salida de los componentes que forman un sistema. Propiamente la impedancia no significa una perdida en sí misma, pero si existen diferencias de acoplamiento de impedancia pueden empezar a encontrar perdidas asociadas.\\
 
-Como practica comun, se bsuca que la impedancia tanto de salida como entrada de los elemnetos de un sistema de RF sea de 50$\Omega$, pero tambien existen otros estandares de impedancia como los utilziados en sistemas de televison e internet, los cual estan estandarizados a 75$\Omega$.\\
+Como práctica común, se busca que la impedancia tanto de salida como entrada de los elementos de un sistema de RF sea de 50$\Omega$, pero también existen otros estándares de impedancia como los utilizados en sistemas de televisión e internet, los cuales están estandarizados a 75$\Omega$.\\
 
-No todas las antenas una vez construidas tienen una impedancia intrinseca de 50$\Omega$, por lo que se deben utilizar elementos de adaptacion de impedancia para lograr la mejor transferencia de potencia, estos elementos se les conoce como \textit{baluns}.\\
+No todas las antenas una vez construidas tienen una impedancia intrínseca de 50$\Omega$, por lo que se deben utilizar elementos de adaptación de impedancia para lograr la mejor transferencia de potencia, a estos elementos se les conoce como \textit{baluns}.\\
 
-\paragraph{Perdidas de espacio libre}
+\paragraph{Pérdidas de espacio libre}
 
-Las perdidas de espacio libre son las perdidas asociadas a la propagacion de ondas electromagnéticas en el espacio. Estas perdidas son directamente proporcionales a la distancia de propagacion y a la frecuencia de la señal.\\
+Las perdidas de espacio libre son las pérdidas asociadas a la propagación de ondas electromagnéticas en el espacio. Estas pérdidas son directamente proporcionales a la distancia de propagación y a la frecuencia de la señal.\\
 
 \begin{equation}
     L_{fs} = 20log\left(\frac{4\pi d}{\lambda}\right)
 \end{equation}
 
-Donde $d$ es la distancia de propagacion y $\lambda$ es la longitud de onda de la señal.\\
+Donde $d$ es la distancia de propagación y $\lambda$ es la longitud de onda de la señal.\\
 
-\paragraph{Perdidas de superficie}
+\paragraph{Pérdidas de superficie}
 
-Las perdidas de superficie estan asociadas al termino de eficiencia de superficie de las antenas de apertura. Estas perdidas se deben a las imperfecciones en la suoperficie en relacion a la longitud de onda de la señal. Lo que se puede entender como que para una longitud de onda muy grande (entre 70 cm y 10 cm) si la superficie presenta imperfeccion menores a 1 cm se puede hablar de una superficie perfecta.\\
+Las pérdidas de superficie están asociadas al término de eficiencia de superficie de las antenas de apertura. Estas pérdidas se deben a las imperfecciones en la superficie en relación a la longitud de onda de la señal. Se puede entender que para una longitud de onda muy grande (entre 70 cm y 10 cm) si la superficie presenta imperfecciones menores a 1 cm se puede hablar de una superficie perfecta.\\
 
-Lo anterior da la posibilidad de utilizar superficies agujeradas o con perforaciones para reducir el peso de la antena y mejorar la eficiencia de la superficie por imperfeccion de curvatura.\\
+Lo anterior da la posibilidad de utilizar superficies agujeradas o con perforaciones para reducir el peso de la antena y mejorar la eficiencia de la superficie por imperfección de curvatura.\\
 
-\paragraph{Perdidas Ohmnicas}
+\paragraph{Pérdidas ohmnicas}
 
-Las perdidas ohmnicas son las perdidas asociadas a la resistencia de los materiales conductores de la antena. Estas perdidas son directamente proporcionales a la corriente que circula por el conductor y al cuadrado de la resistencia del conductor.\\
+Las pérdidas ohmnicas son las perdidas asociadas a la resistencia de los materiales conductores de la antena. Estas pérdidas son directamente proporcionales a la corriente que circula por el conductor y al cuadrado de la resistencia del conductor.\\
 
 \begin{equation}
     P_{ohm} = I^{2}R
@@ -211,56 +211,56 @@ Las perdidas ohmnicas son las perdidas asociadas a la resistencia de los materia
 
 Donde $P_{ohm}$ es la potencia disipada por perdidas ohmnicas, $I$ es la corriente que circula por el conductor y $R$ es la resistencia del conductor.\\
 
-Estos efectos se aprecian al utilizar conductores coaxiales de grandes longitudes, algo que es un factor a considerar en la construccion de antenas.\\
+Estos efectos se aprecian al utilizar conductores coaxiales de grandes longitudes, un factor a considerar en la construcción de antenas.\\
 
-\subsection{Ecuacion de Friis}
+\subsection{Ecuación de Friis}
 
-La ecuacion de Friss es una formula de transmision para un circuito de radiofrecuencia compuesto por dos antenas, una antenna transmisora o otra receptora en espacio libre\cite{Friis1946}. La ecuacion se define como:\\
+La ecuación de Friss es una fórmula de transmisión para un circuito de radiofrecuencia compuesto por dos antenas, una antena transmisora u otra receptora en espacio libre \cite{Friis1946}. La ecuación se define como:\\
 
 \begin{equation}
     \frac{P_{r}}{P_{t}} = G_{t}G_{r}\left(\frac{\lambda}{4\pi d}\right)^{2}
 \end{equation}
 
-Donde $P_{r}$ es la potencia recibida, $P_{t}$ es la potencia transmitida, $G_{t}$ es la ganancia de la antena transmisora, $G_{r}$ es la ganancia de la antena receptora, $\lambda$ es la longitud de onda de la señal y $d$ es la distancia de propagacion.\\
+Donde $P_{r}$ es la potencia recibida, $P_{t}$ es la potencia transmitida, $G_{t}$ es la ganancia de la antena transmisora, $G_{r}$ es la ganancia de la antena receptora, $\lambda$ es la longitud de onda de la señal y $d$ es la distancia de propagación.\\
 
 \section{Antenas parabólicas}
 
-Una antena parabolica es una antena de apertura que se compone de una superficie reflectante parabolica y una antena alimentadora. Se caracterizan por tener una alta directividad y ganancia, por lo que son utilizadas en aplicaciones de comunicacion de largo alcance y en radiotelescopios, donde se requiere una alta sensibilidad.\\
+Una antena parabólica es una antena de apertura que se compone de una superficie reflectante parabólica y una antena alimentadora. Se caracterizan por tener una alta directividad y ganancia, por lo que son utilizadas en aplicaciones de comunicación de largo alcance y en radiotelescopios, donde se requiere una alta sensibilidad.\\
 
 
 \subsection{Tipos de antenas parabólicas}
 
-Las antenas parabolicas se pueden clasificar en 4 tipos de configuraciones, \textit{Cassegrain}, \textit{Gregorian}, \textit{off-axis} o fuera de foco y \textit{axial feed} o Foco Primario.\\
+Las antenas parabólicas se pueden clasificar en 4 tipos de configuraciones, \textit{Cassegrain}, \textit{Gregorian}, \textit{off-axis} o fuera de foco y \textit{axial feed} o Foco Primario.\\
 
 \paragraph{Cassegrain}
 
-Las antenas de tipo Cassegrain, son aquellas que utilizan un reflector secondario para redirigir la radiacion hacia la antena alimentadora. El reflector secundario es un hiperboloide de rebolucion que se ubica en el foco de la parabola principal y se orienta hacia la antena alimentadora.
+Las antenas de tipo Cassegrain, son aquellas que utilizan un reflector secundario para redirigir la radiación hacia la antena alimentadora. El reflector secundario es un hiperboloide de revolución que se ubica en el foco de la parábola principal y se orienta hacia la antena alimentadora.
 
 \begin{figure}
     \centering
-    \includegraphics[width = 10cm]{img/cassegrain.jpg}
+    \includegraphics[width = 0.8\textwidth]{img/cassegrain.jpg}
     \caption{Antena de 12 metros Vertex tipo Cassegrain en el observatorio de ALMA.}
     \label{fig:cass}
 \end{figure}
 
 \paragraph{Gregorian}
 
-Las antenas de tipo Gregorian, son aquellas que utilizan un reflector secundario para redirigir la radiacion hacia la antena alimentadora. El reflector secundario es un elipsoide de rebolucion que se ubica en el foco de la parabola principal y se orienta hacia la antena alimentadora.
+Las antenas de tipo Gregorian, son aquellas que utilizan un reflector secundario para redirigir la radiación hacia la antena alimentadora. El reflector secundario es un elipsoide de revolución que se ubica en el foco de la parábola principal y se orienta hacia la antena alimentadora.
 
 \begin{figure}
     \centering
-    \includegraphics[width = 10cm]{img/gregorian.jpg}
+    \includegraphics[width = 0.8\textwidth]{img/gregorian.jpg}
     \caption{Telescopio Effelsberg de 100 metros de tipo Gregorian.}
     \label{fig:greg}
 \end{figure}
 
 \paragraph{Off-axis}
 
-Las antenas de tipo \textit{off-axis} o fuera de foco, son aquellas que la antena alimetnadora se encuentra fuera de los ejes de la parabola principal. extendiendo el reflector principal. Este tipo de antenas se utilizan en aplicaciones donde se requiere una mayor area de cobertura evisando la obstruccion de la antena alimentadora.
+Las antenas de tipo \textit{off-axis} o fuera de foco, son aquellas en las cuales la antena alimentadora se encuentra fuera de los ejes de la parábola principal, extendiendo el reflector principal. Este tipo de antenas se utilizan en aplicaciones donde se requiere una mayor área de cobertura revisando la obstrucción de la antena alimentadora.
 
 \begin{figure}
     \centering
-    \includegraphics[width = 10cm]{img/off-axis.jpg}
+    \includegraphics[width = 0.8\textwidth]{img/off-axis.jpg}
     \caption{Telescopio GBT (Green Bank Telescope) de 100 metros de tipo \textit{off-axis}.}
     \label{fig:off}
 \end{figure}
@@ -268,25 +268,25 @@ Las antenas de tipo \textit{off-axis} o fuera de foco, son aquellas que la anten
 
 \paragraph{Foco primario}
 
-Las antenas de tipo Foco Primario, son aquellas que la antena alimentadora se encuentra en el foco de la parabola principal. Este tipo de antenas son más simples de construir, pero tienes otros desafios opticos y de diseño.\\
+Las antenas de tipo foco primario, son aquellas donde la antena alimentadora se encuentra en el foco de la parábola principal. Este tipo de antenas son más simples de construir, pero tienen otros desafíos ópticos y de diseño.\\
 
 \subsection{Antenas de alimentación}
 
-Las antenas alimentadoras son los elementos ubicados en el foco de la parabola principal que capturan la radiacion concentrada por el reflector. Estas antenas deben tener un patron de radiacion adecuado para el tipo de diseño de la antena parabolica.\\
+Las antenas alimentadoras son los elementos ubicados en el foco de la parábola principal que capturan la radiación concentrada por el reflector. Estas antenas deben tener un patrón de radiacion adecuado para el tipo de diseño de la antena parabólica.\\
 
-Las antenas alimentadoras pueden ser de distintos tipos, como antenas de parche, antenas de bocina, antenas yagui-uda, antenas log-periodicas, antenas de semiespacio, entre otras. El tipo de antena alimentadora a utilizar dependera del tipo de antena parabolica y de la aplicacion de la antena, sin embargo, las antenas de bocina son las más utilizadas en antenas parabolicas de reflector secundario.\\
+Las antenas alimentadoras pueden ser de distintos tipos, como antenas de parche, antenas de bocina, antenas yagui-uda, antenas log-periódicas, antenas de semiespacio, entre otras. El tipo de antena alimentadora a utilizar dependerá del tipo de antena parabólica y de la aplicación de la antena, sin embargo, las antenas de bocina son las más utilizadas en antenas parabólicas de reflector secundario.\\
 
 
 \section{Receptores heterodinos}
 
-Los receptores comunmente utilizados en radioastronomia son bastante similares a los utilizados en telecomunicaciones. La caracteristica principal de estos receptores es convertir las señales incidentes a un rango de frecuencia menor conservando la fase y la amplitud, esta frecuencia se le conoce como frecuencia intermedia o IF, la cual es procesada por a posteriori para extraer su informacion\cite{Finger2013}.\\
+Los receptores comúnmente utilizados en radioastronomía son bastante similares a los utilizados en telecomunicaciones. La característica principal de estos receptores es convertir las señales incidentes a un rango de frecuencia menor conservando la fase y la amplitud, esta frecuencia se le conoce como frecuencia intermedia o IF, la cual es procesada a posteriori para extraer su información \cite{Finger2013}.\\
 
-En todos los receptores heterodinos se utiliza un mezclador para realizar la conversion de frecuencia, este es un dispositivo no lineal que procesa las señales con una señal de referencia conocida como oscilador local.\\
+En todos los receptores heterodinos se utiliza un mezclador para realizar la conversión de frecuencia, este es un dispositivo no lineal que procesa las señales con una señal de referencia conocida como oscilador local.\\
 
 
 \subsection{Radio definida por software}
 
-Una radio definida por software o SDR, es un receptor heterodino con un oscilador reprogramable y entrega la señal de IF a un computador para su procesamiento. Estos receptores se pueden reconfigurar para sintonizar distintas frecuencias, para luego entregar las muestras digitales a un computador y así procesar la señal, como por ejemplo realizar una transformada de Fourier para obtener el espectro de la señal.\\
+Una radio definida por software o SDR, es un receptor heterodino con un oscilador reprogramable y entrega la señal de IF a un computador para su procesamiento. Estos receptores se pueden reconfigurar para sintonizar distintas frecuencias, para luego entregar las muestras digitales a un computador y así procesar la señal, como por ejemplo, realizar una transformada de Fourier para obtener el espectro de la señal.\\
 
 %\subsection{Transformada Rápida de Fourier}
 
@@ -295,15 +295,15 @@ Una radio definida por software o SDR, es un receptor heterodino con un oscilado
 
 \section{Radiotelescopios}
 
-Tal como los telescopios opticos que concentran la luz visible en un foco, la amplifican y procesan para que sea analizada por diversos instrumentos, tambien los radio telescopios que concentran la luz de las ondas de radio de als estrellas y otros cuerpos celestes. Estos telescopios son diseñados para observar las ondas más grandes de la luz, desde 1 mm a 10 metros de longitud de onda. \cite{nraoRadioTelescopes}\\
+Tal como los telescopios ópticos que concentran la luz visible en un foco, la amplifican y procesan para que sea analizada por diversos instrumentos, también los radiotelescopios concentran la luz de las ondas de radio de las estrellas y otros cuerpos celestes. Estos telescopios son diseñados para observar las ondas más grandes de la luz, desde 1 mm a 10 metros de longitud de onda. \cite{nraoRadioTelescopes}\\
 
-Un radiotelescopio a diferencia de un telescopio optico, posee una ventaja unica. la radiacion observada es coherente, por lo que existen los amplificadores coherentes, los cuales mantienen la información de la fase de la señal. Esta cualidad permite la construccion de interferometros y telescopios de apertura sintetica\cite{Ransom2016}.\\ 
+Un radiotelescopio a diferencia de un telescopio optico posee una ventaja única. La radiación observada es coherente, por lo que existen los amplificadores coherentes, los cuales mantienen la información de la fase de la señal. Esta cualidad permite la construcción de interferómetros y telescopios de apertura sintética \cite{Ransom2016}.\\ 
 
 \subsection{Línea de Hidrógeno Neutro}
 
-El movimiento de un electrón en un átomo de Hidrógeno neutro, genera un campo magnético que se acopla con los espines del protón y el electrón. \quotes{Este acople da cuenta de la radiación a 1420 MHz que viene de la transición entre dos niveles energéticos de primer nivel del estado fundamental del hidrógeno} \cite{Restrepo2023}.\\
+El movimiento de un electrón en un átomo de Hidrógeno neutro genera un campo magnético que se acopla con los espines del protón y el electrón. \quotes{Este acople da cuenta de la radiación a 1420 MHz que viene de la transición entre dos niveles energéticos de primer nivel del estado fundamental del Hidrógeno} \cite{Restrepo2023}.\\
 
-La linea de hidrogeno neutro o H1, es una de la lineas espectrales más importantes en radioastronomia, ya que permite observar la distribucion de gas en las galaxias y la evolucion del universo primitivo. Tambien es una de las mas estudiadas y catalogadas por muchos otros telescopios.\\
+La línea de hidrógeno neutro o H1, es una de las líneas espectrales más importantes en radioastronomía, ya que permite observar la distribución de gas en las galaxias y la evolución del universo primitivo. También es una de las más estudiadas y catalogadas por muchos otros telescopios.\\
 
 \subsection{CHARTS y FRB}
 
@@ -314,11 +314,11 @@ El proyecto CHARTS, es una colaboración entre la Universidad de Chile y la Univ
 
 \section{Telescopio CPT}
 
-El telescopio CPT, \textit{CHARTS Pathfinder Telescope}, es un telescopio de 3 metros de diametro con una configuracion de foco primario. Este telescopio se encuentra en la cumbre del cerro Calán en Santiago de Chile, siendo parte del departamento de astronomia de la Facultad de Ciencias Fisicas y Matematicas de la Universidad de Chile.\\
+El telescopio CPT, \textit{CHARTS Pathfinder Telescope}, es un telescopio de 3 metros de diámetro con una configuración de foco primario. Este telescopio se encuentra en la cumbre del cerro Calán en Santiago de Chile, siendo parte del departamento de astronomía de la Facultad de Ciencias Físicas y Matemáticas de la Universidad de Chile.\\
 
-El reflector de este telescopio es un paraboloide de 3 metros de diametro, Con una estructura de aluminio unida con remaches y pernos. Su superficie reflectante es de malla de acero galvanizado con separacion de 6 mm. el anillo exterior es de una cinta de alumino de 3x20 mm. El soporte del alimentrador es de 4 perfiles de alimunio de 2x2 cm de 2 metros de largo.\cite{rfhamdesign3meterdish}.\\
+El reflector de este telescopio es un paraboloide de 3 metros de diámetro, con una estructura de aluminio unida con remaches y pernos. Su superficie reflectante es de malla de acero galvanizado con separación de 6 mm, el anillo exterior es de una cinta de aluminio de 3x20 mm. El soporte del alimentador es de 4 perfiles de aluminio de 2x2 cm de 2 metros de largo \cite{rfhamdesign3meterdish}.\\
 
-La eficiencia de superficie que estima el fabricante es de 65\% teniendo su ganancia maximma a 5760 MHz con 43.3 dB y a 1296 MHz con 30.3 dB. Tanto el reflector como la montura alt-azimutal son de la compañia holandesa \textit{RFHamdesign}.\\
+La eficiencia de superficie que estima el fabricante es de 65\% teniendo su ganancia maxima a 5760 MHz con 43.3 dB y a 1296 MHz con 30.3 dB. Tanto el reflector como la montura alt-azimutal son de la compañía holandesa \textit{RFHamdesign}.\\
 
 \begin{figure}
     \centering
@@ -327,29 +327,30 @@ La eficiencia de superficie que estima el fabricante es de 65\% teniendo su gana
     \label{fig:cpt}
 \end{figure}
 
-El proposito para poner en servicio este telescopio es observar la linea espectral de hidrógeno neutro de 21 cm de longitud de onda, para caracterizar todos los aspectos de la antena y comenzar a realizar observaciones de radioastronomia. Luego se ampliaran sus capacidades para apoyar al proyecto CHARTS en la banda de 300 MHz a 500 MHz y hacer observaciones solares de alto ancho de banda desde 1 GHz a 6 GHz.\\
+El propósito para poner en servicio este telescopio es observar la línea espectral de hidrógeno neutro de 21 cm de longitud de onda, para caracterizar todos los aspectos de la antena y comenzar a realizar observaciones de radioastronomía. Luego se ampliáran sus capacidades para apoyar al proyecto CHARTS en la banda de 300 MHz a 500 MHz y hacer observaciones solares de alto ancho de banda desde 1 GHz a 6 GHz.\\
 
-\section{Metodos de caracterización}
+\section{Métodos de caracterización}
 
-Los siguientes metodos de caracterizacion son los más comunes en la caracterizacion de antenas y radiotelescopios para medir su desempeño y definir sus capacidades como instrumentos astronomicos.\\
+Los siguientes métodos son los más comunes en la caracterizacion de antenas y radiotelescopios para medir su desempeño y definir sus capacidades como instrumentos astronómicos.\\
 
-\subsection{Medicion de patrón de radiación}
+\subsection{Medición de patrón de radiación}
 
-El metodo más directo para la medicion del patron de radiacion son los metodos de campo lejano, lo que al tratarse de antenas de apertura de grandes dimensiones, presenta varios desafios practicos y tecnicos, especialmente a altas frecuencias\cite{Astudillo2014}.\\
+El método más directo para la medición del patrón de radiación es el de campo lejano y al tratarse de antenas de apertura de grandes dimensiones, presenta varios desafíos prácticos y técnicos, especialmente a altas frecuencias\cite{Astudillo2014}.\\
+
 \begin{figure}
     \centering
     \includegraphics[width = 0.8\textwidth]{img/farfielddiag}
-    \caption{Diagrama de un sistema de medicion de patron de radiacion para una antena bajo prueba (AUT) en campo lejano.}
+    \caption{Diagrama de un sistema de medición de patrón de radiación para una antena bajo prueba (AUT) en campo lejano.}
     \label{fig:farfield}
 \end{figure}
 
-La figura \ref{fig:farfield} muestra un diagrama de un sistema basico necesario para poder realizar la medicion, el cual requiere la antena objetivo, la que queremos caracterizar. La antena fuente, que es la que generara la radiacion para medir la antena objetivo. Ademas de todo el equipo e instrumentación necesaria.\\
+La figura \ref{fig:farfield} muestra un diagrama de un sistema básico necesario para poder realizar la medición, el cual requiere la antena objetivo, la que se quiere caracterizar. La antena fuente, que es la que generara la radiación para medir la antena objetivo. Además de todo el equipo e instrumentación necesaria.\\
 
-\subsection{Medicion de la temperatura de ruido}
+\subsection{Medición de la temperatura de ruido}
 
-Para medir la temperatura de ruido de un sistema, se puede utilizar el metodo de factor Y, el cual consisten en utilizar una fuente de ruido de ENR, conocida como \textit{Excess Noise Ratio} o la relacion de exeso de ruido, la cual se conecta a la antena y se mide la potencia de ruido en la salida del receptor.\\
+Para medir la temperatura de ruido de un sistema, se puede utilizar el método de factor Y, el cual consiste en utilizar una fuente de ruido de ENR, conocida como \textit{Excess Noise Ratio} o la relación de exceso de ruido, la cual se conecta a la antena y se mide la potencia de ruido en la salida del receptor.\\
 
-La medicion se realiza obteniendo la temperatura del sistema cuando se enciende la fuente de ruido y cuando se apaga, siendos estas temperaturas como $T_{hot}$ y $T_{cold}$ o temperatura caliente y temperatura fria respectivamente.\\
+La medición se realiza obteniendo la temperatura del sistema cuando se enciende la fuente de ruido y cuando se apaga, siendo estas temperaturas como $T_{hot}$ y $T_{cold}$ o temperatura caliente y temperatura fría respectivamente.\\
 
 El ruido de ENR se obtiene a 2 \quotes{temperaturas de ruido} conocidas, una a temperatura ambiente y otra a la temperatura con la fuente encendida.\\
 
@@ -357,13 +358,13 @@ El ruido de ENR se obtiene a 2 \quotes{temperaturas de ruido} conocidas, una a t
     ENR = \frac{T_{hot} - 290}{290}
 \end{equation}
 
-Considerando la temperatura ambiente como 290 grados K. ENR se logra polarizando la fuente de ruido y para obtener el factor Y utilizamos la siguiente ecuacion:\\
+Considerando la temperatura ambiente como 290 grados K. ENR se logra polarizando la fuente de ruido y para obtener el factor Y utilizamos la siguiente ecuación:\\
 
 \begin{equation}
     Y = \frac{\frac{T_{hot}}{T_{cold}} + \frac{T_{noise}}{T_{cold}}}{1 + \frac{T_{noise}}{T_{cold}}}
 \end{equation}
 
-Donde $T_{noise}$ es la temperatura de ruido del sistema. Asi para obtener la figura de ruido neceseitamos el factor de ruido F, $F=T_{noise}/T_{cold} +1 $, para luego reemplazarlo en $NF = 10log(F)$\cite{analogNoiseFigure}.\\
+Donde $T_{noise}$ es la temperatura de ruido del sistema. Así para obtener la figura de ruido se necesita el factor de ruido F, $F=T_{noise}/T_{cold} +1 $, para luego reemplazarlo en $NF = 10log(F)$\cite{analogNoiseFigure}.\\
 
 
 %\section{Estado del arte}
