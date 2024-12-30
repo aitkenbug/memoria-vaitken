@@ -16,7 +16,7 @@
 \contentsline {subsection}{\numberline {2.1.5}Ancho de banda}{7}{subsection.2.1.5}%
 \contentsline {paragraph}{Ancho de banda $S_{11}$}{8}{section*.13}%
 \contentsline {paragraph}{Ancho de banda $S_{21}$}{9}{section*.15}%
-\contentsline {subsection}{\numberline {2.1.6}Perdidas y eficiencia}{9}{subsection.2.1.6}%
+\contentsline {subsection}{\numberline {2.1.6}Pérdidas y eficiencia}{9}{subsection.2.1.6}%
 \contentsline {paragraph}{Impedancia de entrada}{9}{section*.17}%
 \contentsline {paragraph}{Pérdidas de espacio libre}{10}{section*.18}%
 \contentsline {paragraph}{Pérdidas de superficie}{10}{section*.19}%
@@ -26,18 +26,18 @@
 \contentsline {subsection}{\numberline {2.2.1}Tipos de antenas parabólicas}{11}{subsection.2.2.1}%
 \contentsline {paragraph}{Cassegrain}{11}{section*.21}%
 \contentsline {paragraph}{Gregorian}{12}{section*.23}%
-\contentsline {paragraph}{Off-axis}{12}{section*.25}%
+\contentsline {paragraph}{Off-axis}{13}{section*.25}%
 \contentsline {paragraph}{Foco primario}{13}{section*.27}%
 \contentsline {subsection}{\numberline {2.2.2}Antenas de alimentación}{13}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2.3}Receptores heterodinos}{13}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Receptores heterodinos}{14}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Radio definida por software}{14}{subsection.2.3.1}%
 \contentsline {section}{\numberline {2.4}Radiotelescopios}{14}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Línea de Hidrógeno Neutro}{14}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}CHARTS y FRB}{14}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.2}CHARTS y FRB}{15}{subsection.2.4.2}%
 \contentsline {section}{\numberline {2.5}Telescopio CPT}{15}{section.2.5}%
 \contentsline {section}{\numberline {2.6}Métodos de caracterización}{16}{section.2.6}%
 \contentsline {subsection}{\numberline {2.6.1}Medición de patrón de radiación}{16}{subsection.2.6.1}%
-\contentsline {subsection}{\numberline {2.6.2}Medición de la temperatura de ruido}{16}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.6.2}Medición de la temperatura de ruido}{17}{subsection.2.6.2}%
 \contentsline {chapter}{\numberline {3}Ensamblaje e instrumentación}{18}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Ensamblado Mecánico}{18}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Reflector Parabólico}{19}{subsection.3.1.1}%
@@ -73,16 +73,16 @@
 \contentsline {subsection}{\numberline {4.2.2}Medición absoluta para todas las bandas de interés}{41}{subsection.4.2.2}%
 \contentsline {section}{\numberline {4.3}Sensibilidad y temperatura de ruido}{41}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Medición de la temperatura de ruido}{42}{subsection.4.3.1}%
-\contentsline {section}{\numberline {4.4}Medicion del error de apuntamiento}{42}{section.4.4}%
+\contentsline {section}{\numberline {4.4}Medición del error de apuntamiento}{42}{section.4.4}%
 \contentsline {section}{\numberline {4.5}Primera luz}{42}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Analisis de Resultados}{43}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Análisis de Resultados}{43}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Posicion del alimentador}{43}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Patrón de radiación}{44}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Ganancia y Directividad}{46}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Sensibilidad}{46}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Error de apuntamiento}{46}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Ancho de banda}{46}{section.5.6}%
-\contentsline {section}{\numberline {5.7}Primera luz}{46}{section.5.7}%
-\contentsline {chapter}{\numberline {6}Conclusiones}{47}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Trabajos Futuros}{47}{section.6.1}%
-\contentsline {chapter}{Bibliografía}{49}{chapter*.66}%
+\contentsline {section}{\numberline {5.3}Sensibilidad}{46}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Ganancia y Directividad}{47}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Error de apuntamiento}{48}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Ancho de banda}{48}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Primera luz}{48}{section.5.7}%
+\contentsline {chapter}{\numberline {6}Conclusiones}{49}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Trabajos Futuros}{49}{section.6.1}%
+\contentsline {chapter}{Bibliografía}{51}{chapter*.68}%

@@ -7,18 +7,18 @@
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Diagrama de parámetros S para un dispositivo bajo prueba (DUT).}}{8}{figure.caption.12}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Ancho de banda de reflexión de una antena.}}{8}{figure.caption.14}%
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Figura de una cadena de recepción con un filtro de paso de banda.}}{9}{figure.caption.16}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Antena de 12 metros Vertex tipo Cassegrain en el observatorio de ALMA.}}{11}{figure.caption.22}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Antena de 12 metros Vertex tipo Cassegrain en el observatorio de ALMA.}}{12}{figure.caption.22}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Telescopio Effelsberg de 100 metros de tipo Gregorian.}}{12}{figure.caption.24}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Telescopio GBT (Green Bank Telescope) de 100 metros de tipo \textit {off-axis}.}}{13}{figure.caption.26}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Telescopio CPT en el cerro Calán siguiendo el centro de la galaxia.}}{15}{figure.caption.28}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Diagrama de un sistema de medición de patrón de radiación para una antena bajo prueba (AUT) en campo lejano.}}{16}{figure.caption.29}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Telescopio CPT en el cerro Calán siguiendo el centro de la galaxia.}}{16}{figure.caption.28}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Diagrama de un sistema de medición de patrón de radiación para una antena bajo prueba (AUT) en campo lejano.}}{17}{figure.caption.29}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Herramientas utilizadas para el ensamblado de la superficie del reflector parabólico.}}{19}{figure.caption.30}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Los 12 arcos de aluminio sujetos al centro del reflector parabólico.}}{19}{figure.caption.31}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Los tubos de aluminio y la cinta de aluminio para la tensión de la malla metálica instalados radialmente en los soportes.}}{20}{figure.caption.32}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Union de los soportes de aluminio para el alimentador.}}{21}{figure.caption.33}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Unión de los soportes de aluminio para el alimentador.}}{21}{figure.caption.33}%
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Interfaz de soporte para el tubo de distribución y otros elementos}}{22}{figure.caption.34}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Soporte interno para eléctronica de recepción}}{22}{figure.caption.35}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Soporte interno para electrónica de recepción}}{22}{figure.caption.35}%
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Soporte para la fuente de calibración de la copa de agua \enquote *{estrella artificial}}}{23}{figure.caption.36}%
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Soporte para antena circular de alto ancho de banda para configuración de alimentador}}{23}{figure.caption.37}%
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Soporte para el dipolo exótico como alimentador de 1420MHz}}{24}{figure.caption.38}%
@@ -43,4 +43,6 @@
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Corte azimutal patrón de radiación a 1428 MHz}}{44}{figure.caption.63}%
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Corte elevacion patrón de radiación a 1428 MHz}}{45}{figure.caption.64}%
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Patrón de radiación a 400 MHz}}{46}{figure.caption.65}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Espectro obtenido por la RTL-SDR a 1428 GHz calibrado a potencia}}{46}{figure.caption.66}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Tono de -80 dBm a las frecuencias de interés}}{47}{figure.caption.67}%
 \addvspace {10\p@ }

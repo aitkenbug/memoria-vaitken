@@ -8,7 +8,7 @@ Se realizaron 2 mediciones de enfoque del alimentador, una a 70 metros y otra a 
 
 \subsection{Alimentador sin soportes a 70 metros}
 
-En un principio el alimentador del telescopio consistía en una antena LPDA (Log Periodic Dipole Array) de 296 MHz a 6 GHz, de ultra ancho de banda, con una ganancia de aproximadamente 9 dBi. Con el receptor instalado en esta antena, se procedió a realizar el enfoque del alimentador. Para esta etapa se retiró el soporte tetrpápodo y se instaló el alimentador en un trípode auxiliar sostenido por un tubo de PVC para lograr la altura del centro del reflector de 2 metros.\\
+En un principio el alimentador del telescopio consistía en una antena LPDA (Log Periodic Dipole Array) de 296 MHz a 6 GHz, de ultra ancho de banda, con una ganancia de aproximadamente 9 dBi. Con el receptor instalado en esta antena, se procedió a realizar el enfoque del alimentador. Para esta etapa se retiró el soporte tetrápodo y se instaló el alimentador en un trípode auxiliar sostenido por un tubo de PVC para lograr la altura del centro del reflector de 2 metros.\\
 
 \begin{figure}
     \centering
@@ -23,12 +23,12 @@ Con la antena de la figura \ref{fig:antena_lpda} se procedió a realizar el enfo
     \centering
     \begin{subfigure}{0.45\textwidth}
         \includegraphics[width=\textwidth]{img/enfoque_cerca}
-        \caption{Generador de señales portatil con la antena orientada hacia el reflector a 70 metros.}
+        \caption{Generador de señales portátil con la antena orientada hacia el reflector a 70 metros.}
         \label{fig:generador}
     \end{subfigure}
     \begin{subfigure}{0.45\textwidth}
         \includegraphics[width=\textwidth]{img/enfoque_cerca1}
-        \caption{Antena LPDA de menor ancho de banda instalada con el generador de señales en tripode.}
+        \caption{Antena LPDA de menor ancho de banda instalada con el generador de señales en trípode.}
         \label{fig:antena_lpda}
     \end{subfigure}
 \end{figure}
@@ -42,9 +42,9 @@ El generador de señales se configuró a una frecuencia de 1000 MHz y se dispar�
     \label{fig:70m_measure}
 \end{figure} 
 
-En la figura \ref{fig:70m_measure} se muestra la distancia aproximada de 70 metros, tomando 10 metros de distancia adicional para asegurar el campo lejano a dicha frecuencia. Se alineó visualmente la antena del generador con el reflector a la distancia, la que se encontraba parcialmente con una línea de vista obstaculizada por árboles y arbustos.\\
+En la figura \ref{fig:70m_measure} se muestra la distancia aproximada de 70 metros, tomando 10 metros de distancia adicional para asegurar el campo lejano a dicha frecuencia. Se alineó visualmente la antena del generador con el reflector a la distancia, con una línea de vista que se encontraba parcialmente  obstaculizada por árboles y arbustos.\\
 
-Para efectos de la medición, como se necesitaba encontrar un punto aproximado de enfoque, la exactitud de esta medición no fue crítica. Se procedió a mover el alimentador en el eje Z, es decir en la direccion de la apertura del reflector, hasta encontrar el punto donde la señal del generador era máxima.\\
+Para efectos de la medición, como se necesitaba encontrar un punto aproximado de enfoque, la exactitud de esta medición no fue crítica. Se procedió a mover el alimentador en el eje Z, es decir en la dirección de la apertura del reflector, hasta encontrar el punto donde la señal del generador era máxima.\\
 
 La potencia recibida por el receptor fue medida con el software de medición utilizando la RTL-SDR guardando los espectros para distancias de 5 cm en 5 cm. Se midió la razón señal a ruido y se obtuvo el punto de máxima potencia recibida en dBFS. Medidas que luego fueron calibradas en dBm por la medición de sensibilidad.\\
 
@@ -59,7 +59,7 @@ Para la medición de enfoque con la estrella artificial se instaló el soporte t
     \label{fig:enfoque2}
 \end{figure}
 
-Para el caso de 1428 MHz, la distancia de campo lejano era de 85 metros y la estrella artificial de la figura \ref{fig:enfoque2} se encontraba a 188 metros, estando perfectamente en el campo lejano del reflector. Además la alineación con el reflector se realizó con el control automático de la montura alt azimutal y la línea de vista se encontraba completamente libre para la priemra zona de Fresnel.\\
+Para el caso de 1428 MHz, la distancia de campo lejano era de 85 metros y la estrella artificial de la figura \ref{fig:enfoque2} se encontraba a 188 metros, estando perfectamente en el campo lejano del reflector. Además, la alineación con el reflector se realizó con el control automático de la montura alt azimutal y la línea de vista se encontraba completamente libre para la primera zona de Fresnel.\\
 
 \begin{figure}
     \centering
@@ -76,16 +76,16 @@ Para esta medición de enfoque, se movió el alimentador en el eje Z con una res
 
 Se utilizaron 2 plataformas para la medición del patrón de radiación, una con la medida relativa dBFS obtenida de los espectros de la RTL-SDR y otra con la medida absoluta en dBm obtenida con el analizador de espectros Siglent SVA1075x. Para todas las mediciones se utilizó la estrella artificial de la copa de agua.\\
 
-Todas las mediciones de patrón de radiación se realizaron en la cima del cerro Calán, en la plataforma de observación del telescopio CPT. Para cada frecuencia medida, se hicieron los cortes azimutales y de elevación, o la medida del campo H y el campo E. Todos los cortes de 180 grados para obtener con claridad los lóbulos laterales y con una resolución de 1 punto por grado.\\
+Todas las mediciones de patrón de radiación se realizaron en la cima del cerro Calán, en la plataforma de observación del telescopio CPT. Para cada frecuencia medida, se hicieron los cortes azimutales y de elevación, o la medida del campo H y el campo E. Todos los cortes son de 180 grados para obtener con claridad los lóbulos laterales y con una resolución de 1 punto por grado.\\
 
 
 \subsection{Medición relativa para banda de H1}
 
 La medición con la RTL-SDR se realizó a 1428 MHz, utilizando el filtro angosto de la misma frecuencia de \textit{RadioastronomySuplies}. El generador Valon, se configuró a 1428 MHz con una potencia inyectada a la estrella artificial de 0.23 dBm.\\
 
-Las perdidas ohmnicas del cable coaxial RG316 a 1428 MHz son de 10.5 dB por 10 m, como el cable que alimenta la antena de la copa de agua es de 20 metros, se obtuvó una perdida de 21 dB. La potencia recibida por la antena es de -21 dBm aproximadamente.\\
+Las pérdidas ohmnicas del cable coaxial RG316 a 1428 MHz son de 10.5 dB por 10 m, como el cable que alimenta la antena de la copa de agua es de 20 metros, se obtuvo una pérdida de 21 dB. La potencia recibida por la antena es de -21 dBm aproximadamente.\\
 
-Con los softwares de medición se obtuvieron los espectros de la señal recibida por la RTL-SDR, se midió la razón señal a ruido y se guardaron 1000 espectros para cada grado de elevación y azimuth. Como la copa de agua se encuentra en altura, se generó un plano semicircular elevado en 7 grados sobre el eje horizontal, donde se corrigierón los valores de elevación por ángulo azimutal con la ecuación de corrección \ref{eq:powerdensity}. Para el segundo corte, se generó un desfase de 7 grados en elevación, y para medir de 0 a -90 grados, se invirtió la posición azimutal en 180 grados para obtener ese cuadrante.\\
+Con los softwares de medición se obtuvieron los espectros de la señal recibida por la RTL-SDR, se midió la razón señal a ruido y se guardaron 1000 espectros para cada grado de elevación y azimuth. Como la copa de agua se encuentra en altura, se generó un plano semicircular elevado en 7 grados sobre el eje horizontal, donde se corrigieron los valores de elevación por ángulo azimutal con la ecuación de corrección \ref{eq:powerdensity}. Para el segundo corte, se generó un desfase de 7 grados en elevación, y para medir de 0 a -90 grados, se invirtió la posición azimutal en 180 grados para obtener ese cuadrante.\\
 
 \subsection{Medición absoluta para todas las bandas de interés}
 
@@ -93,7 +93,7 @@ Con los softwares de medición se obtuvieron los espectros de la señal recibida
 
 La medida de sensibilidad se realizó inyectando un tono para cada frecuencia de interés en la entrada de la cadena de recepción. Se utilizó el generador de señales \textit{Rode \& Schwartz} SMB100A con una potencia de salida de -80 dBm y un coaxial RG316 de 10 metros al receptor instalado en el foco de la antena. Se midieron los espectros generados por la RTL-SDR para determinar la escala dBFS de la radio y calibrar los demás espectros en potencia.\\
 
-Se guardaron los espectros de 300 MHz, 400 MHz y 500 MHz para cubrir la banda de interes del proyecto CHARTS. También se guardaron los espectros de 1000 MHz, 1428 MHz, 1500 MHz y el límite de digitalización de 1700 MHz.\\
+Se guardaron los espectros de 300 MHz, 400 MHz y 500 MHz para cubrir la banda de interés del proyecto CHARTS. También se guardaron los espectros de 1000 MHz, 1428 MHz, 1500 MHz y el límite de digitalización de 1700 MHz.\\
 
 \subsection{Medición de la temperatura de ruido}
 
@@ -106,12 +106,12 @@ Para obtener la temperatura del sistema completo se realizó una acumulación de
 Con cada una de estas mediciones se realizó el cálculo de temperatura de ruido con el método de Y-factor y se obtuvo la figura de ruido de la cadena de amplificación, del receptor y del sistema.\\
 
 
-\section{Medicion del error de apuntamiento}
+\section{Medición del error de apuntamiento}
 
 \section{Primera luz}
 
-Para la primera luz, se escogió el centro de la galaxia por varias razones. La primera es que se trata de fuente de radio muy fuerte, fácil de detectar y es bastamente estudiada y catalogada. La segunda razón es que para la epoca de medición en los meses de noviembre, diciembre y enero, el centro de la galaxia se encuentra bastante cerca del zenith para la latitud de Santiago, lo que facilita la observación.\\
+Para la primera luz, se escogió el centro de la galaxia por varias razones. La primera es que se trata de fuente de radio muy fuerte, fácil de detectar y es bastamente estudiada y catalogada. La segunda razón es que, para la época de medición en los meses de noviembre, diciembre y enero, el centro de la galaxia se encuentra bastante cerca del zenith para la latitud de Santiago, lo que facilita la observación.\\
 
-El centro de la galaxia tiene una ascencion recta de 17 h 45 m 40 s y una declinacion -29°00'28'', coordenadas que son ingresadas en el software de control de la montura alt azimutal. Se acumularon espectros por periodos de 2 horas durante 3 días, desde las 10 am hasta las 6 pm, para obtener la máxima cantidad de datos posibles. También se descartaron algunas observaciones dónde el sol se encontraba muy cerca del centro de la galaxia, para evitar la saturación del receptor.\\
+El centro de la galaxia tiene una ascensión recta de 17 h 45 m 40 s y una declinación -29°00'28'', coordenadas que son ingresadas en el software de control de la montura alt azimutal. Se acumularon espectros por periodos de 2 horas durante 3 días, desde las 10 am hasta las 6 pm, para obtener la máxima cantidad de datos posibles. También se descartaron algunas observaciones dónde el sol se encontraba muy cerca del centro de la galaxia, para evitar la saturación del receptor.\\
 
-Para la observación se configuró el telescopio con el receptor de H1 y con la antena dipolo exótico en el foco geométrico del reflector. Se obtuvieron los espectros de la RTL-SDR y se guardaron en el disco duro para su posterior analisis.\\
+Para la observación se configuró el telescopio con el receptor de H1 y con la antena dipolo exótico en el foco geométrico del reflector. Se obtuvieron los espectros de la RTL-SDR y se guardaron en el disco duro para su posterior análisis.\\
