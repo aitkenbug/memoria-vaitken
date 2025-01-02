@@ -1,0 +1,557 @@
+\chapteranum{Apéndice}
+
+\section*{cpt\_tracking\_software.py}
+
+\begin{sourcecode}[]{python}{}
+    import time
+    import threading
+    from astropy.coordinates import EarthLocation, AltAz, SkyCoord
+    from astropy.time import Time
+    import spid
+    import socket
+    from astropy import units as u
+    
+    # Define your telescope's location
+    latitude = -33.395720  # Replace with your latitude in degrees
+    longitude = -70.536856  # Replace with your longitude in degrees
+    elevation = 868  # Replace with your elevation in meters
+    
+    # Telescope limits (adjust based on your telescope's safety and design)
+    ALT_MIN = 20  # Minimum Altitude in degrees (avoid negative or below horizon)
+    ALT_MAX = 150  # Maximum Altitude in degrees
+    AZ_MIN = 0   # Minimum Azimuth in degrees
+    AZ_MAX = 261 # Maximum Azimuth in degrees
+    
+    # Global variables for tracking and target
+    tracking = False
+    current_target = None
+    stop_threads = False
+    
+    def send_angle(alt, az, host='10.17.89.223', port = 23):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as client_socket:
+            client_socket.connect((host, port))
+            message = spid.encode_command(spid.build_command(round(float(az),1), round(float(alt))))
+            client_socket.sendall(message)
+    
+    
+    def get_altz_coords(ra, dec):
+        radec = SkyCoord(ra=ra*u.hour, dec=dec*u.deg, frame='icrs')
+        # Calan GEOGRAPHIC_COORD
+        calan_obs = EarthLocation(lat=-33.3961*u.deg, lon=-70.537*u.deg, height=867*u.m)
+        now = Time.now()
+        altaz_frame = AltAz(obstime=now,location=calan_obs)
+        altaz = radec.transform_to(altaz_frame)
+        alt = altaz.alt.deg
+        az = altaz.az.deg
+    
+        if az>200:
+            az = 360 -az
+            alt = 180 -alt
+        return alt, az
+    
+    
+    def is_within_limits(alt, az):
+        """Check if the Alt/Az coordinates are within the telescope's limits."""
+        return ALT_MIN <= alt <= ALT_MAX and AZ_MIN <= az <= AZ_MAX
+    
+    
+    def track_target():
+        """Background thread function to update tracking and send data via socket."""
+        global stop_threads
+    
+        while not stop_threads:
+            if tracking and current_target:
+                ra, dec = current_target["ra"], current_target["dec"]
+                alt, az = get_altz_coords(ra, dec)
+    
+                if is_within_limits(alt, az):
+                    print(f"Tracking {current_target['name']}: Altitude = {alt:.2f}°, Azimuth = {az:.2f}°")
+                    data = f"{current_target['name']}: Altitude = {alt:.2f}, Azimuth = {az:.2f}\n"
+                    try:
+                        send_angle(alt, az)
+                    except:
+                        print("The controller is not responding")
+                else:
+                    print(f"{current_target['name']} is outside the telescope limits: Alt = {alt:.2f}°, Az = {az:.2f}°")
+            time.sleep(5)  # Update every 5 seconds
+    
+    
+    
+    def main():
+        global tracking, current_target, stop_threads
+    
+        print("Welcome to the telescope tracking program!")
+        print("Commands: follow, stop, change, exit")
+    
+        # Start the tracking thread
+        tracking_thread = threading.Thread(target=track_target, daemon=True)
+        tracking_thread.start()
+    
+        while True:
+            command = input("\nEnter command (follow, stop, change, exit): ").strip().lower()
+    
+            if command == "follow":
+                if current_target:
+                    tracking = True
+                    print(f"Started following {current_target['name']}...")
+                else:
+                    print("No target selected. Use 'change' to select a target.")
+    
+            elif command == "stop":
+                tracking = False
+                print("Tracking stopped.")
+    
+            elif command == "change":
+                name = input("Enter the name of the object: ").strip()
+                ra = float(input("Enter the Right Ascension (RA) in degrees: "))
+                dec = float(input("Enter the Declination (Dec) in degrees: "))
+    
+                current_target = {"name": name, "ra": ra, "dec": dec}
+                print(f"Target changed to {name} (RA: {ra}, Dec: {dec}).")
+    
+            elif command == "exit":
+                print("Exiting the program. Goodbye!")
+                stop_threads = True
+                tracking_thread.join()
+                socket_thread.join()
+                break
+    
+            else:
+                print("Invalid command. Please try again.")
+    
+    
+    if __name__ == "__main__":
+        main()
+    
+\end{sourcecode}
+
+\section*{spid.py}
+
+\begin{sourcecode}[]{python}{}
+    # Library to process all bytes formating for the SPID MD-1 Rot2Prog protocol
+
+    deg_res = 2 # 01 - 1, 02 - 0.5, 04 - 0.25, byte - degrees per pulse
+    stop_str = "57000000000000000000000F20"
+    status_str = "57000000000000000000001F20"
+    command_str = "5730303030PH30303030PV2F20"
+    restart_str = "57EFBEADDE000000000000EE20"
+    
+    def angle_to_pulse(angle):
+        i = str(int(deg_res * (360 + angle))) # create string of pulses
+        if len(i) < 4: # Add the "0" for complet the byte string
+            i = "0" + i
+        return i
+    
+    def build_command(az, el):
+        command = list(command_str)
+        az_pulse = angle_to_pulse(az)
+        el_pulse = angle_to_pulse(el)
+    
+        command[3] = az_pulse[0]
+        command[5] = az_pulse[1]
+        command[7] = az_pulse[2]
+        command[9] = az_pulse[3]
+    
+        command[10] = "0"
+        command[11] = str(deg_res)
+    
+        command[13] = el_pulse[0]
+        command[15] = el_pulse[1]
+        command[17] = el_pulse[2]
+        command[19] = el_pulse[3]
+    
+        command[20] = "0"
+        command[21] = str(deg_res)
+        
+        return "".join(command)
+    
+    def encode_command(msg):
+        return bytes.fromhex(msg)
+    
+    def decode_command(msg):
+        response_string = msg.hex()
+        H1 = int(response_string[3:4], 16)
+        H2 = int(response_string[5:6], 16)
+        H3 = int(response_string[7:8], 16)
+        H4 = int(response_string[9:10], 16)
+        V1 = int(response_string[13:14], 16)
+        V2 = int(response_string[15:16], 16)
+        V3 = int(response_string[17:18], 16)
+        V4 = int(response_string[19:20], 16)
+    
+        # Calculate angles for Az/El
+        az = round((H1 * 100) + (H2 * 10) + H3 + (H4 / 10) -360, 1)
+        el = round((V1 * 100) + (V2 * 10) + V3 + (V4 / 10) -360, 1)
+    
+        return (az, el)    
+\end{sourcecode}
+
+\section*{control.py}
+
+\begin{sourcecode}[]{python}{}
+    import spid
+import socket
+import numpy as np
+import threading
+import sys
+import time
+
+movement_monitor = False
+stop_threads = False
+position = 0,0
+stop_position = 0,0
+
+# Function to handle receiving messages from the server
+def receive_messages(sock):
+    global stop_threads
+    global position
+    global stop_position
+
+    sock.settimeout(1.0)
+    while not stop_threads:
+        if stop_threads:
+            break
+        try:
+            message = sock.recv(1024)
+            if message:
+                position = spid.decode_command(message)
+                print(f"Current position -> EL: {position[1]} AZ: {position[0]}")
+
+            else:
+                print("Connection closed by the server.")
+                stop_threads = True
+        
+        except socket.timeout:
+            continue
+
+        except OSError:
+            break
+
+        except ConnectionAbortedError:
+            print("Connection was closed.")
+            break
+        except Exception as e:
+            print(f"Error: {str(e)}")
+            break
+
+# Function to handle sending messages to the server
+def send_messages(sock):
+    global stop_threads
+    global position
+    global stop_position
+    global movement_monitor
+
+    while not stop_threads:
+        message = input("").split(" ")
+        
+        if movement_monitor:
+            msg = spid.encode_command(spid.status_str)
+            if stop_position == position:
+                movement_monitor = False
+
+        if message[0] == "stop":
+            msg = spid.encode_command(spid.stop_str)
+            print("Stoping Telescope Movement")
+
+        if message[0] == "status":
+            msg = spid.encode_command(spid.status_str)
+            print(f"Actual Position: ")
+
+        if message[0] == "park":
+            msg = spid.encode_command(spid.build_command(0,90))
+            print("Moving to park position")
+
+        if message[0] == "service":
+            msg = spid.encode_command(spid.build_command(0,0))
+            print("Moving to service position")
+
+        if message[0] == "restart":
+            msg = spid.encode_command(spid.restart_str)
+
+        if message[0] == "move":
+            if len(message) < 2:
+                print("The command has missing arguments: move [move type] [position] ... ")
+            elif message[1] == "elaz":
+                if len(message) < 4:
+                    print("Elevation and Azimuth movement needs the 2 position arguments")
+                else:
+                    msg = spid.encode_command(spid.build_command(str_to_f(message[3]),str_to_f(message[2])))
+                    stop_pos = message[2], message[3]
+                    print(f"Moving to El - Az {message[2]} - {message[3]}")
+                    movement_monitor = True
+
+            elif message[1] == "el":
+                if len(message) < 3:
+                    print("Elevation movement missing argument")
+                else:
+                    msg = spid.encode_command(spid.build_command(str_to_f(position[0]), str_to_f(message[2])))
+                    print(f"Moving to El {message[2]}")
+            elif message[1] == "az":
+                if len(message) < 3:
+                    print("Azimuth movement missing argument")
+                else:
+                    msg = spid.encode_command(spid.build_command(str_to_f(message[2]), str_to_f(position[1])))
+                    print("Moving to Az {message[2]}")
+
+        if message[0].lower() == 'exit':
+            print("Closing connection...")
+            stop_threads = True
+            sock.close()
+            break
+
+        try:
+            sock.sendall(msg)
+        except Exception as e:
+            print(f"Error: {str(e)}")
+            stop_threads = True
+            break
+    sys.exit()
+
+def str_to_f(x):
+    return round(float(x),1)
+
+def follow_ra_dec(ra,dec):
+    pass
+
+
+def main():
+    global stop_threads
+    global position
+    global stop_position
+
+    # Define server address and port
+    host = "10.17.89.223"  # or '127.0.0.1' or server IP address
+    port = 23        # Ensure this port matches the server's port
+
+    # Create a socket object
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+    try:
+        # Connect to the server
+        sock.connect((host, port))
+        print(f"Connected to server {host}:{port}")
+
+        # Read the actual position of the antenna
+        sock.sendall(spid.encode_command(spid.status_str))
+        time.sleep(0.01)
+        angles = spid.decode_command(sock.recv(1024))
+        position = angles
+        #angles = position
+        print(f"Actual Position: Elevation: {position[1]} - Azimuth: {position[0]}")
+    
+    except Exception as e:
+        print(f"Connection error: {str(e)}")
+        return
+
+    # Start the receiving thread
+    receive_thread = threading.Thread(target=receive_messages, args=(sock,))
+    receive_thread.start()
+
+    # Start the sending thread (this is the main thread)
+    send_messages(sock)
+
+    # Wait for the receiving thread to finish (if connection closed)
+    receive_thread.join()
+
+    sys.exit()
+
+if __name__ == "__main__":
+    main()
+
+
+\end{sourcecode}
+
+\section*{astrortl.py}
+
+\begin{sourcecode}[]{python}{}
+    import socket
+    import time
+    import numpy as np
+    import struct
+    import time
+    
+    def send_command(socket, command, value):
+        socket.send(struct.pack('>BI', command, int(value)))
+        
+    def set_up_rtl(socket, central_freq, sample_rate= 2.048e6, gain_mode=0, gain_index=29, freq_correction = 0):
+        #Set up central freq
+        send_command(socket, 0x01, central_freq)
+        print(f"Central freq set to: {central_freq}")
+    
+        #Set sample rate
+        send_command(socket, 0x02, sample_rate)
+        print(f"Sample Rate set to: {sample_rate}")
+    
+        #Set gain mode
+        send_command(socket, 0x03, gain_mode)
+        print(f"Gain mode set to: {gain_mode}")
+    
+        #Set gain by index
+        send_command(socket, 0x0d, gain_index)
+        print(f"Gain index set to: {gain_index}")
+    
+        #Set freq correction
+        send_command(socket, 0x05, freq_correction)
+        print(f"Freq correction set to: {freq_correction}")
+    
+    def connect_to_rtl(host="127.0.0.1", port=1234):
+        sdr_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        sdr_socket.connect((host, port))
+        return sdr_socket
+    
+    def receive_data(socket, samples=4096):
+        buffer_size = samples
+        socket.recv(2048)
+        raw_data = b''
+        
+        while len(raw_data) < buffer_size:
+            chunk = socket.recv(buffer_size - len(raw_data))
+            if not chunk:
+                raise RuntimeError("Socket connection closed while receiving data.")
+            raw_data += chunk
+        #data = np.ctypeslib.as_array(raw_data)
+        #iq = raw_data.astype(np.float64).view(np.complex128)
+        #iq /= 127.5
+        #iq -= (1 + ij)
+    
+        iq  = [complex(i/(255/2) - 1, q/(255/2) - 1) for i, q in zip(raw_data[::2], raw_data[1::2])]
+    
+        return iq
+    
+    def compute_fft(iq_samples, sample_rate):
+        fft_size = len(iq_samples)
+        spectrum = np.fft.fftshift(np.fft.fft(iq_samples, fft_size))
+        spectrum_power = 20 * np.log10(np.abs(spectrum) + 1e-12)  # Convert to dB with numerical stability
+        freqs = np.fft.fftshift(np.fft.fftfreq(fft_size, d=1/sample_rate))
+        return freqs, spectrum_power
+\end{sourcecode}
+
+\section*{cpt\_rtl\_adquisition.py}
+
+\begin{sourcecode}[]{python}{}
+import astrortl as rtl
+import numpy as np
+import matplotlib.pyplot as plt
+from collections import deque
+import threading
+import time
+
+fft_size = 4096
+samples = 0
+sdr_socket = rtl.connect_to_rtl(host="10.17.89.224", port=1234)
+rtl.set_up_rtl(sdr_socket, 1420e6)
+file = 0
+
+buffer = []
+
+def data_acquisition(socket, buffer, fft_size):
+    freqs, fft = rtl.compute_fft(rtl.receive_data(socket, fft_size), fft_size)
+    fft = fft - 80
+    buffer = np.append(buffer, fft)
+        #time.sleep(0.1)  # Simulate a 10 Hz sampling rate
+
+while True:
+    try:
+        freqs, fft = rtl.compute_fft(rtl.receive_data(sdr_socket, fft_size), fft_size)
+        fft = fft - 80
+        buffer.append(fft)
+        if samples == 10000-1:
+            np.save(f"spectras/milky_way_{file}.npy", np.array(buffer))
+            buffer = []
+            print(f"Saving buffer {file}")
+            file = file + 1
+
+            samples = 0
+        else:
+            samples = samples + 1
+    except:
+        sdr_socket.close()
+\end{sourcecode}
+
+\section*{spectra\_avg.py}
+
+\begin{sourcecode}[]{python}{}
+    import numpy as np
+    import os
+
+    avg_spectra = []
+    file = 1
+    
+    while True:
+        files = os.listdir('spectras')
+        files = [s for s in files if ".npy" in s]
+        try:
+            if len(files)>4:
+                current = f'spectras/{min(files)}'
+                data = np.load(current)
+                mean = np.mean(data, axis=0)
+                avg_spectra.append(list(mean))
+                os.remove(current)
+                print(len(avg_spectra))
+        except: pass
+            
+        if len(avg_spectra) == 100:
+            np.save(f"spectras/sun_avg_{file}.npy", np.array(avg_spectra))
+            avg_spectra = []
+            print(f"Saving avg buffer {file}")
+            file = file + 1
+    
+            samples = 0
+            
+        if len(os.listdir('spectras'))>10:
+            print('Too many files')
+            break
+            
+
+\end{sourcecode}
+
+\section*{rp\_rtl\_spectrum.py}
+
+\begin{sourcecode}[]{python}{}
+import socket
+import time
+import numpy as np
+import struct
+import matplotlib.pyplot as plt
+import time
+import spid
+import decimal
+import csv
+import pandas as pd
+import astrortl
+
+def angle_azimuth_conv(az):
+    return 261 - (90 - az)
+
+def angle_elevation_conv(az):
+    return (1-2*(abs(az)*np.pi/180)/np.pi)*7
+
+def angle_azimuth_conv_el(el):
+    if el < 0:
+        return 180 + 171
+
+    else:
+        return 171
+
+def angle_elevation_conv_el(el):
+    if el < 0:
+        
+        return 173 + el
+
+    else:
+        return el + 7
+        
+
+def send_angle(az, host='10.17.89.223', port = 23):
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as client_socket:
+        client_socket.connect((host, port))
+        message = spid.encode_command(spid.build_command(round(float(angle_azimuth_conv(az)),1), round(float(angle_elevation_conv(az)))))
+        client_socket.sendall(message)
+
+def send_angle_el(el, host='10.17.89.223', port = 23):
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as client_socket:
+        client_socket.connect((host, port))
+        message = spid.encode_command(spid.build_command(round(float(angle_azimuth_conv_el(el)),1), round(float(angle_elevation_conv_el(el)))))
+        client_socket.sendall(message)
+
+\end{sourcecode}

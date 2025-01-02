@@ -45,7 +45,7 @@ Luego se desenrollaron y enderezaron los tubos de aluminio que conforman los ani
 
 \subsection{Diseño de soportes adicionales}
 
-Para poder instalar todos los componentes del telescopio, se debió fabricar soportes personalizados y adicionales para así poder utilizar receptores y elementos que no fueran parte del kit original del fabricante. Con el objetivo de reducir los tiempos de fabricación y prototipado al usar componentes de aluminio o acero se decidió utilizar impresión 3D con filamento plástico PLA\footnote{Explicacion PLA} de alta resistencia mecánica.\\
+Para poder instalar todos los componentes del telescopio, se debió fabricar soportes personalizados y adicionales para así poder utilizar receptores y elementos que no fueran parte del kit original del fabricante. Con el objetivo de reducir los tiempos de fabricación y prototipado al usar componentes de aluminio o acero se decidió utilizar impresión 3D con filamento plástico PLA\footnote{PLA del inglés Ácido Poliláctico, es un termo plástico sostenible utilizado en la impresión 3D} de alta resistencia mecánica.\\
 
 Se diseñaron 6 piezas en total con el software de diseño asistido por computadora o \textit{CAD} \textit{Fusion 360} de la compañía \textit{Autodesk}. Todos los componentes fueron impresos en PLA de alta resistencia o \textit{Hyper-PLA} de la compañía \textit{Creality}, otorgando una mayor resistencia a la flexión de 50\% que el PLA convencional y una elongación de 6.304\% en comparación con la del PLA convencional de 3\%. La configuración de la impresión fue una altura de capa de 0.2 mm, dada por la boquilla utilizada, 4 capas de muralla y un \textit{Infill} o relleno de 60 \%.\\
 
@@ -58,7 +58,7 @@ Una ventaja importante en la elección de la impresión 3D en filamentos plásti
     \label{fig:ensamble4}
 \end{figure}
 
-El diseño 3D de la figura \ref{fig:ensamble4} es un soporte que contiene una cavidad centrar cilíndrica que cumple la función de sostener tanto el alimentador como el receptor por medio de un tubo plástico de PVC\footnote{PVC} que asegura que todo se mantenga alineado con el centro de la parábola, además de permitir un movimiento en el eje de la cavidad cilíndrica para ajustar el foco del alimentador.\\
+El diseño 3D de la figura \ref{fig:ensamble4} es un soporte que contiene una cavidad centrar cilíndrica que cumple la función de sostener tanto el alimentador como el receptor por medio de un tubo plástico de PVC\footnote{PVC, cloruro de polivinilo, polimero plástico} que asegura que todo se mantenga alineado con el centro de la parábola, además de permitir un movimiento en el eje de la cavidad cilíndrica para ajustar el foco del alimentador.\\
 
 Tiene 4 ranuras perforadas para asegurar los soportes con pernos M4 de medida y también 6 perforaciones con cavidades para tuercas M5. Con estas tuercas y con los respectivos tornillos se asegura la posición del tubo de PVC para fijar el foco una vez encontrado.\\
 
@@ -103,7 +103,7 @@ Para las mediciones de baja frecuencia (menores a 600 MHz) se debe utilizar la m
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{img/soporte3D6}
-    \caption{Soporte para el dipolo exótico como alimentador de 1420MHz}
+    \caption{Soporte para el dipolo exótico como alimentador de 1420 MHz}
     \label{fig:ensamble9}
 \end{figure}
 
@@ -197,11 +197,11 @@ Para el receptor se optó por utilizar una SDR de bajo costo, un filtro pasaband
 
 \subsection{Cadena de recepción}
 
-Para la cadena de recepción cuenta con un empaquetado de un amplificador de bajo ruido de la compañía \textit{Noeelec} que contiene además un filtro pasabanda de 75 MHz de ancho de banda centrado en 1420 MHz. El amplificador tiene una ganancia típica a 1.4 GHz de 35 dB con una figura de ruido de 0.6 dB para la misma frecuencia. Además, este amplificador puede ser alimentado por bias-tee\footnote{} desde la misma SDR.\\
+Para la cadena de recepción cuenta con un empaquetado de un amplificador de bajo ruido de la compañía \textit{Noeelec} que contiene además un filtro pasabanda de 75 MHz de ancho de banda centrado en 1420 MHz. El amplificador tiene una ganancia típica a 1.4 GHz de 35 dB con una figura de ruido de 0.6 dB para la misma frecuencia. Además, este amplificador puede ser alimentado por bias-tee\footnote{Circuitos de inyección de corriente continua a travez de líneas coaxiales de RF} desde la misma SDR.\\
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.8\textwidth]{img/imagen}
+    \includegraphics[width=0.8\textwidth]{img/rtl_saw}
     \caption{Amplificador y filtro pasabanda SAWbird H1 de la compañía \textit{Noeelec}.}
     \label{fig:cadena}
 \end{figure}
@@ -225,13 +225,13 @@ El cable ethernet utilizado es un cat 6 de 25 metros, que va desde el receptor a
 
 \section{Software de control y adquisición} \label{sec:software}
 
-La infraestructura digital del telescopio se diseñó con un factor principal en mente, que este se pueda operar completamente remoto, por lo que todo el software está hecho para ser operado desde cualquier lugar con acceso a internet. Accediendo a la terminal de control por medio de SSH\footnote{Secure Shell: } y todos sus sistemas están conectados a una red local por medio de ethernet.\\
+La infraestructura digital del telescopio se diseñó con un factor principal en mente, que este se pueda operar completamente remoto, por lo que todo el software está hecho para ser operado desde cualquier lugar con acceso a internet. Accediendo a la terminal de control por medio de SSH\footnote{SSH del inglés Secure Shell, es un protocolo de envío de comandos a un computador de forma segura.} y todos sus sistemas están conectados a una red local por medio de ethernet.\\
 
 El principal lenguaje de programación utilizado para el desarrollo de software fue python, por su simplicidad a la hora de generar entornos virtuales de desarrollo y librerías existentes para utilizar los diversos subsistemas, como por ejemplo, el uso de la librería de \textit{astropy} para los cálculos de seguimiento.\\
 
 \subsection{Control de la montura}
 
-El controlador del rotor requiere una comunicación específica en hexagesimal para moverse y a través del mismo protocolo responde con la posición en la cual se encuentra. Para esto se creó una librería en python basada en el protocolo Rot2Prog \cite{Rot2Prog} que empaqueta y traduce los comandos de movimiento, elevación y azimuth. Esta librería es un archivo de python por el nombre de spid.py, la que es importada para todos los demás códigos de control.\\
+El controlador del rotor requiere una comunicación específica en hexagesimal para moverse y a través del mismo protocolo responde con la posición en la cual se encuentra. Para esto se creó una librería en python basada en el protocolo Rot2Prog \cite{rot2prog} que empaqueta y traduce los comandos de movimiento, elevación y azimuth. Esta librería es un archivo de python por el nombre de spid.py, la que es importada para todos los demás códigos de control.\\
 
 \paragraph{control.py} Es el código principal de control, tiene la capacidad de mandar una posición de azimuth y elevación, de pedir la posición actual de la montura, de reiniciar el controlador en caso de que no responda a los comandos y una de las funciones más importantes es el parado de emergencia de cualquier movimiento.\\
 

@@ -108,10 +108,18 @@ Con cada una de estas mediciones se realizó el cálculo de temperatura de ruido
 
 \section{Medición del error de apuntamiento}
 
+Para determinar el error de apuntamiento del telescopio se utilizó la estrella artificial de la copa de agua. Se especificaron las posiciones geograficas del telescopio y la copa de agua, así tambien sus alturas correspondientes.\\
+
+Se midieron las posiciones utilizando un GPS y se determino la distancia entre el telescopio y la copa de agua. También se midió la altitud de las bases de cada estructura con GPS. Las coordenadas del telescopio son -33.395701 -70.536878, latitud y logitud respectivamente con una altitud de 867 metros sobre el nivel del mar. Para la copa de agua las coordenadas son -33.397340 y -70.536800, latitud y logitud respectivamente, con una altituid de 853 metros sobre el nivel del mar.\\
+
+El centro de rotación del motor de la antena, se encuentra a 2 metros de la superficie del terreno y la altura de la antena instalada en la copa de agua es 15 metros desde el terreno.\\
+
+Con estos datos se obtuvo la posición de la copa de agua con respecto al telescopio en terminos de elevación y azimuth. Luego se calculó la diferencia de posición comandada al telescopio para encontrar el máximo de potencia recibida con la posición real de la estrella artifical.\\
+
 \section{Primera luz}
 
-Para la primera luz, se escogió la región estandar S9 del catálogo de observaciones en la banda de 21 cm. Es una de las 4 regiones de emision de hidrogeno neutro recomendada para clibracion de instrumentos y definicion de escalas de temperatura para los catalogos de H1. Estás regiones se estudiaron por el observatorio Hat Creek con un telescopio de 25 metros de apertura. Los epectros de estas regiones se encuentran calibrados a temperatura.\\
+Para la primera luz, se escogió la región estándar S9 del catálogo de observaciones en la banda de 21 cm. Es una de las 4 regiones de emisión de hidrógeno neutro recomendada para calibración de instrumentos y definición de escalas de temperatura para los catálogos de H1. Estás regiones se estudiaron por el observatorio Hat Creek con un telescopio de 25 metros de apertura. Los espectros de estas regiones se encuentran calibrados a temperatura.\\
 
-La región S9 tiene una ascensión recta de 17 h 52 m 05 s y una declinación -34°25'15'', coordenadas que son ingresadas en el software de control de la montura alt azimutal. Se acumularon espectros por periodos de 30 minutos durante 2 horas, desde las 12:30 pm hasta las 4 pm. Entre estas mediciones de 30 minutos se acumularon espectros del cielo a 30 grados de elevacion fuera de la zona para obtener la temperatura del cielo para la calibracion de temperatura.\\
+La región S9 tiene una ascensión recta de 17 h 52 m 05 s y una declinación -34°25'15'', coordenadas que son ingresadas en el software de control de la montura alt azimutal. Se acumularon espectros por periodos de 30 minutos durante 2 horas, desde las 12:30 pm hasta las 4 pm. Entre estas mediciones de 30 minutos se acumularon espectros del cielo a 30 grados de elevación fuera de la zona para obtener la temperatura del cielo para la calibración de temperatura.\\
 
 Para la observación se configuró el telescopio con el receptor de H1 y con la antena dipolo exótico en el foco geométrico del reflector. Se obtuvieron los espectros de la RTL-SDR y se guardaron en el disco duro para su posterior análisis.\\

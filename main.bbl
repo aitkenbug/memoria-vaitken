@@ -63,4 +63,10 @@ Gallardo, D., ``Diseño y medición de un arreglo de antenas para la detección 
 \newblock Online.
 \backrefprint\backrefparscantrue
 
+\backrefparscanfalse
+\bibitem{rot2prog}
+Ryeng, E., ``Replacing and automating the wordpress cron system'', 2025, \href{https://ryeng.name/blog/3} {\nolinkurl{\detokenize{https://ryeng.name/blog/3}}}.
+\newblock Accessed: 2025-01-02.
+\backrefprint\backrefparscantrue
+
 \end{thebibliography}
