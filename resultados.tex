@@ -5,7 +5,7 @@ La construccion de la antena finalizo con todas las partes mecanicas y electroni
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{img/antenna}
-    \caption{Antena construida siendo monitoriada por la camara remota}
+    \caption{Antena construida siendo monitoreada por la camara remota}
     \label{fig:antena}
 \end{figure}
 
@@ -13,9 +13,16 @@ La construccion de la antena finalizo con todas las partes mecanicas y electroni
 
 La posicion del alimentador con mayor ganancia se obtuvo a 135 cm de la superficie del reflector. La figura \ref{fig:distancia} muestra la ganancia en funcion de la distancia del alimentador al reflector.\\
 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/enfoqueDist}
+    \caption{Potencia recibida en función de la distancia del alimentador al reflector}
+    \label{fig:distancia}
+\end{figure}
+
 La distancia obtenida coincide con la disatncia focal de la antena y se observa que la a medida que el alimentador se aleja del foco, aumentando o disminullendo la distancia con la parabola, la ganancia disminulle drasticamente perdiendo 6 dB por centimetro hasta llegar a la ganancia que tendria la antena sin considerar el reflector.\\
 
-Estas perdidas se aprecian de la misma manera tanto para la frecuencia de 1428 MHz como para la de 400 MHz.\\
+Estas perdidas son analogas a la medida de 1420 MHz para la de 400 MHz.\\
 
 \section{Patrón de radiación} \label{sec:patron}
 
@@ -53,14 +60,26 @@ En la figura \ref{fig:1420rp} se observa el corte azimutal del patrón de radiac
     \label{fig:1420rpel}
 \end{figure}
 
-Con respecto al corte de elevacion, de la figura \ref{fig:1420rpel}, se observa un lobulo principal de 4.3 grados de HPBW y una discontinuidad en el lobulo principal a 0 grados. Los lobulos laterales  se encuentran por debajo de -25dB.\\
+Con respecto al corte de elevacion, de la figura \ref{fig:1420rpel}, se observa un lobulo principal de 4.3 grados de HPBW y una discontinuidad en el lobulo principal a 0 grados. Los lobulos laterales  se encuentran por debajo de -25 dB.\\
 
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{img/400rp}
-    \caption{Patrón de radiación a 400 MHz}
+    \caption{Corte azimutal patrón de radiación a 400 MHz}
     \label{fig:400rp}
 \end{figure}
+
+En la figura \ref{fig:400rp} se observa el corte azimutal del patrón de radiación a 400 MHz, donde se aprecia un lobulo principal predominante de 7.5 grados de HPBW y todos los demas lobulos laterales bajo -15 dB.\\
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/400rpel}
+    \caption{Corte elevación patrón de radiación a 400 MHz}
+    \label{fig:400rpel}
+\end{figure}
+
+Con respecto al corte de elevacion, de la figura \ref{fig:400rpel}, se observa un lobulo principal de 7.5 grados de HPBW y una discontinuidad en el lobulo principal a 0 grados. A diferencia de la figura \ref{fig:400rp} los lobulos laterales estan dominados por ruido, sin embargo, sigue por debajo de los -15 dB\\
+
 
 
 \section{Sensibilidad}
@@ -134,3 +153,10 @@ Este valor de eficiencia de apertura en comparación con la eficiencia de apertu
 \section{Ancho de banda}
 
 \section{Primera luz}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/h1}
+    \caption{Espectro obtenido por la RTL-SDR a 1420 MHz calibrado a potencia}
+    \label{fig:rtl1428}
+\end{figure}
