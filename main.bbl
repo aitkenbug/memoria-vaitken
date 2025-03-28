@@ -69,4 +69,9 @@ Ryeng, E., ``Replacing and automating the wordpress cron system'', 2025, \href{h
 \newblock Accessed: 2025-01-02.
 \backrefprint\backrefparscantrue
 
+\backrefparscanfalse
+\bibitem{williams73}
+Williams, D., ``Studies of four regions for use as standards in 21 cm observations'', {aaps}, 1973, \href{https://ui.adsabs.harvard.edu/abs/1973A&AS....8..505W} {\nolinkurl{\detokenize{https://ui.adsabs.harvard.edu/abs/1973A&AS....8..505W}}}.
+\backrefprint\backrefparscantrue
+
 \end{thebibliography}

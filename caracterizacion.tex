@@ -1,12 +1,12 @@
 \chapter{Caracterización y puesta en servicio}
 
-En este capítulo se expondrán los procesos de caracterización y puesta en servicio del telescopio CPT. Para abordar los puntos de caracterización y primera luz de los objetivos propuestos para este trabajo. Se detallarán los aspectos considerados para cada una de las mediciones y los fundamentos correspondientes.
+En este capítulo se expondrán los procesos de caracterización y puesta en servicio del telescopio CPT. Para abordar los puntos de caracterización y primera luz de los objetivos propuestos para este trabajo, se detallarán los aspectos considerados para cada una de las mediciones y los fundamentos correspondientes.
 
 \section{Enfoque del alimentador}
 
-Se realizaron 2 mediciones de enfoque del alimentador, una a 70 metros y otra a 186 metros. Para la primera medición se utilizó un generador de señales genérico con una LPDA de bajo ancho de banda. Luego para el resto de las mediciones se utilizó la estrella artificial de la copa de agua de la sección XX.\\
+Se realizaron 2 mediciones de enfoque del alimentador, una a 70 metros y otra a 186 metros. Para la primera medición se utilizó un generador de señales genérico con una LPDA de alto ancho de banda. Luego para el resto de las mediciones se utilizó la estrella artificial de la copa de agua de la sección XX.\\
 
-\subsection{Alimentador sin soportes a 70 metros}
+\subsection{Pruebas de enfoque preliminar}
 
 En un principio el alimentador del telescopio consistía en una antena LPDA (Log Periodic Dipole Array) de 296 MHz a 6 GHz, de ultra ancho de banda, con una ganancia de aproximadamente 9 dBi. Con el receptor instalado en esta antena, se procedió a realizar el enfoque del alimentador. Para esta etapa se retiró el soporte tetrápodo y se instaló el alimentador en un trípode auxiliar sostenido por un tubo de PVC para lograr la altura del centro del reflector de 2 metros.\\
 
@@ -23,7 +23,7 @@ Con la antena de la figura \ref{fig:antena_lpda} se procedió a realizar el enfo
     \centering
     \begin{subfigure}{0.45\textwidth}
         \includegraphics[width=\textwidth]{img/enfoque_cerca}
-        \caption{Generador de señales portátil con la antena orientada hacia el reflector a 70 metros.}
+        \caption{Generador de señales portátil con la antena orientada hacia el reflector.}
         \label{fig:generador}
     \end{subfigure}
     \begin{subfigure}{0.45\textwidth}
@@ -33,7 +33,7 @@ Con la antena de la figura \ref{fig:antena_lpda} se procedió a realizar el enfo
     \end{subfigure}
 \end{figure}
 
-El generador de señales se configuró a una frecuencia de 1000 MHz y se disparó constantemente el tono en dicha frecuencia. Se instaló a una distancia de 70 metros dentro del parque cerro Calán con la consideración de un campo lejano de 60.5 metros a 1000 MHz para el tamaño del reflector, por lo que este generador se encontraba a dicha distancia del reflector.\\
+El generador de señales se configuró a una frecuencia de 1000 MHz y se transmitió constantemente el tono en dicha frecuencia. Se instaló con la consideración de un campo lejano de 60.5 metros a 1000 MHz para el tamaño del reflector, por lo que este generador se encontraba a dicha región.\\
 
 \begin{figure}
     \centering
@@ -48,9 +48,9 @@ Para efectos de la medición, como se necesitaba encontrar un punto aproximado d
 
 La potencia recibida por el receptor fue medida con el software de medición utilizando la RTL-SDR guardando los espectros para distancias de 5 cm en 5 cm. Se midió la razón señal a ruido y se obtuvo el punto de máxima potencia recibida en dBFS. Medidas que luego fueron calibradas en dBm por la medición de sensibilidad.\\
 
-\subsection{Alimentador con soportes con la estrella artificial}
+\subsection{Pruebas de enfoque definitivas}
 
-Para la medición de enfoque con la estrella artificial se instaló el soporte tetrápodo y se colocó el alimentador en su posición final después de las mediciones anteriores. Se configuró el generador de señales Valon de la estrella artificial a 1428 MHz. Se utilizó esta nueva frecuencia para evitar interferencia de radiofrecuencia en la medición, utilizando el filtro delgado de H1.\\
+Para la medición de enfoque con la estrella artificial se instaló el soporte tetrápodo y se colocó el alimentador en su posición final después de las mediciones anteriores. Se configuró el generador de señales Valon de la estrella artificial a frecuencias autorizadas para transmisión de radioaficionados. Se utilizó esta nueva frecuencia para evitar interferencia de radiofrecuencia en la medición, utilizando el filtro delgado de H1.\\
 
 \begin{figure}
     \centering
@@ -64,13 +64,13 @@ Para el caso de 1428 MHz, la distancia de campo lejano era de 85 metros y la est
 \begin{figure}
     \centering
     \includegraphics[width=0.7\textwidth]{img/feed_focus}
-    \caption{Alimentador dipolo exótico con tetrápodo instalado.}
+    \caption{Alimentador dipolo de ARTE con tetrápodo instalado.}
     \label{fig:enfoque2}
 \end{figure}
 
 En la figura \ref{fig:enfoque2} se muestra el alimentador con el tetrápodo instalado y un tubo PVC milimetrado para medir la distancia relativa al reflector, usando de referencia el punto donde los soportes se unen al tubo del alimentador.\\
 
-Para esta medición de enfoque, se movió el alimentador en el eje Z con una resolución de 0.5 cm hasta encontrar el punto de máxima potencia recibida. Se midió la razón señal a ruido y se obtuvo el punto de máxima potencia recibida en dBFS al igual que en la medición anterior.\\
+Para esta medición de enfoque, se movió el alimentador en el eje Z con una resolución de 0.5 cm hasta encontrar el punto de máxima potencia recibida que se puede apreciar en la sección \ref{sec:posicion}. Se midió la razón señal a ruido y se obtuvo el punto de máxima potencia recibida en dBFS al igual que en la medición anterior.\\
 
 \section{Medición del patrón de radiación}
 
@@ -87,7 +87,7 @@ Las pérdidas ohmnicas del cable coaxial RG316 a 1428 MHz son de 10.5 dB por 10 
 
 Con los softwares de medición se obtuvieron los espectros de la señal recibida por la RTL-SDR, se midió la razón señal a ruido y se guardaron 1000 espectros para cada grado de elevación y azimuth. Como la copa de agua se encuentra en altura, se generó un plano semicircular elevado en 7 grados sobre el eje horizontal, donde se corrigieron los valores de elevación por ángulo azimutal con la ecuación de corrección \ref{eq:powerdensity}. Para el segundo corte, se generó un desfase de 7 grados en elevación, y para medir de 0 a -90 grados, se invirtió la posición azimutal en 180 grados para obtener ese cuadrante.\\
 
-\subsection{Medición absoluta para todas las bandas de interés}
+%\subsection{Medición absoluta para todas las bandas de interés}
 
 \section{Sensibilidad y temperatura de ruido}
 
@@ -97,13 +97,13 @@ Se guardaron los espectros de 300 MHz, 400 MHz y 500 MHz para cubrir la banda de
 
 \subsection{Medición de la temperatura de ruido}
 
-Para medir la temperatura de ruido y por ende la figura del receptor, se utilizó la fuente de ruido Agilent 346B con una amplificación de 40dB. Para la cadena de amplificación se utilizó el LNA + Filtro H1 SAWbird+ H1 de Nooelec, el cual se conectó a la fuente de ruido y se midió la potencia de ruido en la salida en el analizador de espectro.\\
+Para medir la temperatura de ruido del receptor, se utilizó la fuente de ruido Agilent 346B con una amplificación de 40dB. Para la cadena de amplificación se utilizó el LNA + Filtro H1 SAWbird+ H1 de Nooelec, el cual se conectó a la fuente de ruido y se midió la potencia de ruido en la salida en el analizador de espectro.\\
 
 Para la temperatura de ruido del receptor, se inyectó la señal de ruido en la entrada del receptor y se midió la potencia de ruido con los espectros de la RTL-SDR en la banda de interés.\\
 
-Para obtener la temperatura del sistema completo se realizó una acumulación de espectros del centro de la galaxia a 1420 MHz y a una región del cielo limpia en concentración de hidrógeno neutro. Consultando a los catálogos de radioastronomía se obtuvo la temperatura de la galaxia y de la región del cielo.\\
+%Para obtener la temperatura del sistema completo se realizó una acumulación de espectros del centro de la galaxia a 1420 MHz y a una región del cielo limpia en concentración de hidrógeno neutro. Consultando a los catálogos de radioastronomía se obtuvo la temperatura de la galaxia y de la región del cielo.\\
 
-Con cada una de estas mediciones se realizó el cálculo de temperatura de ruido con el método de Y-factor y se obtuvo la figura de ruido de la cadena de amplificación, del receptor y del sistema.\\
+Se realizó el cálculo de temperatura de ruido con el método de Y-factor y se obtuvo la figura de ruido de la cadena de amplificación, del receptor y del sistema.\\
 
 
 \section{Medición del error de apuntamiento}
@@ -120,6 +120,8 @@ Con estos datos se obtuvo la posición de la copa de agua con respecto al telesc
 
 Para la primera luz, se escogió la región estándar S9 del catálogo de observaciones en la banda de 21 cm. Es una de las 4 regiones de emisión de hidrógeno neutro recomendada para calibración de instrumentos y definición de escalas de temperatura para los catálogos de H1. Estás regiones se estudiaron por el observatorio Hat Creek con un telescopio de 25 metros de apertura. Los espectros de estas regiones se encuentran calibrados a temperatura.\\
 
-La región S9 tiene una ascensión recta de 17 h 52 m 05 s y una declinación -34°25'15'', coordenadas que son ingresadas en el software de control de la montura alt azimutal. Se acumularon espectros por periodos de 30 minutos durante 2 horas, desde las 12:30 pm hasta las 4 pm. Entre estas mediciones de 30 minutos se acumularon espectros del cielo a 30 grados de elevación fuera de la zona para obtener la temperatura del cielo para la calibración de temperatura.\\
+La región S9 tiene una ascensión recta de 17 h 52 m 05 s y una declinación -34°25'15'', coordenadas que son ingresadas en el software de control de la montura alt azimutal.\\
+
+La prueba consistio en relizar observaciones de 30 minutos, acumulando 10 espectros por segundo y obteniendo su promedio. Estas acumulaciones tuvieron lugar en una ventana de 2 horas entre las 12:30 pm UTC -3:00 y las 4:00 pm UTC -3:00, con unos cuantos minutos entre cada medición para corroborar integridad de los datos. Entre estas mediciones de 30 minutos se acumularon espectros del cielo a 30 grados de elevación fuera de la zona para obtener el espectro de la radiación de la atmosfera y poder ajustar la medición.\\
 
 Para la observación se configuró el telescopio con el receptor de H1 y con la antena dipolo exótico en el foco geométrico del reflector. Se obtuvieron los espectros de la RTL-SDR y se guardaron en el disco duro para su posterior análisis.\\

@@ -1,6 +1,6 @@
 \chapter{Análisis de Resultados}
 
-La construcción de la antena finalizo con todas las partes mecánicas y electrÓnicas ensambladas. A continuaciÓn se presentan los resultados obtenidos en la caracterización de la antena.\\
+La construcción de la antena finalizó con todas las partes mecánicas y electrónicas ensambladas. A continuación se presentan los resultados obtenidos en la caracterización de la antena.\\
 
 \begin{figure}
     \centering
@@ -9,7 +9,7 @@ La construcción de la antena finalizo con todas las partes mecánicas y electr�
     \label{fig:antena}
 \end{figure}
 
-\section{Posicion del alimentador}
+\section{Posicion del alimentador} \label{sec:posicion}
 
 La posición del alimentador con mayor ganancia se obtuvo a 135 cm de la superficie del reflector. La figura \ref{fig:distancia} muestra la ganancia en función de la distancia del alimentador al reflector.\\
 
@@ -128,15 +128,15 @@ La radio definida por software, entrega una escala relativa de potencia o dBFS, 
     \label{fig:rtl1428}
 \end{figure}
 
-Como se peude apreciar en la figura \ref{fig:rtl1428}, para la frecuencia específica de 1428 MHz, se calibró la escala para obtener los mismos -80 dBm que fueron inyectados, siendo la corrección obtenida de -40.7 dB.\\
+Como se puede apreciar en la figura \ref{fig:rtl1428}, para la frecuencia específica de 1428 MHz, se calibró la escala para obtener los mismos -80 dBm que fueron inyectados, siendo la corrección obtenida de -40.7 dB.\\
 
-Se repitio la medición de potencia en las demás frecuencias de interés, obteniendo los espectros de la figura \ref{rtl_specs} y las sigueientes correcciones de potencia para cada caso de la tabla \ref{tab:correccion}.\\
+Se repitió la medición de potencia en las demás frecuencias de interés, obteniendo los espectros de la figura \ref{fig:rtl_specs} y las sigueientes correcciones de potencia para cada caso de la tabla \ref{tab:correccion}.\\
 
 \begin{table}
     \centering
     \begin{tabular}{|c|c|c|}
         \hline
-        Frecuencia (MHz) & Corrección (dB) & Pérdidas Ohmnicas (dB)\\
+        Frecuencia (MHz) & Corrección (dB) & Pérdidas de cable (dB)\\
         \hline
         300 & -73.2 & 4.45\\
         400 & -70.63 & 5.2\\
@@ -151,23 +151,52 @@ Se repitio la medición de potencia en las demás frecuencias de interés, obten
 \end{table}
 
 
-\begin{images}{Tono de -80 dBm a las frecuencias de interés}
-    
-    \addimageanum{img/rtl300}{width=8cm}
-    \addimageanum{img/rtl1000}{width=8cm}
-
-    \imagesnewline
-
-    \addimageanum{img/rtl400}{width=8cm}
-    \addimageanum{img/rtl1500}{width=8cm}
-
-    \imagesnewline
-
-    \addimageanum{img/rtl500}{width=8cm}
-    \addimageanum{img/rtl1700}{width=8cm}
-
-    \label{fig:rtl_specs}
-\end{images}
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{8cm}
+        \centering
+        \includegraphics[width=8cm]{img/rtl300}
+        %\caption{$y=x$}
+        %\label{fig:y equals x}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{8cm}
+        \centering
+        \includegraphics[width=8cm]{img/rtl1000}
+        %\caption{$y=3\sin x$}
+        %\label{fig:three sin x}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{8cm}
+        \centering
+        \includegraphics[width=8cm]{img/rtl400}
+        %\caption{$y=5/x$}
+        %\label{fig:five over x}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{8cm}
+        \centering
+        \includegraphics[width=8cm]{img/rtl1500}
+        %\caption{$y=x$}
+        %\label{fig:y equals x}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{8cm}
+        \centering
+        \includegraphics[width=8cm]{img/rtl500}
+        %\caption{$y=3\sin x$}
+        %\label{fig:three sin x}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{8cm}
+        \centering
+        \includegraphics[width=8cm]{img/rtl1700}
+        %\caption{$y=5/x$}
+        %\label{fig:five over x}
+    \end{subfigure}
+       \caption{Tono de -80 dBm a las frecuencias de interés}
+       \label{fig:rtl_specs}
+\end{figure}
 
 \section{Ganancia y Directividad}
 
@@ -187,7 +216,7 @@ Lo que se condice con el valor teórico con un error aproximado de un 1\%.\\
 
 Luego utilizando las mediciones de potencia en la banda de 1428 MHz, una vez calibradas con la escala obtenida con la RTL-SDR en la figura \ref{fig:rtl1428}, se obtuvo una ganancia del sistema a partir de la ecuación de Friis con la estrella artificial.\\
 
-La potencia inyectada en la antena de 3 dBi de la copa de agua fue de 2.23 dBm, el cable de 20 metros de longitud y el cable de 2 metros tiene una atenuación de 20.4 dB y 2.2 dB respectivamente a la frecuencia de 1428 MHz, las pérdidas de espacio libre son de 81.01 dB y la potencia medida en el receptor fue -67.22 dBm.\\
+La potencia inyectada a la antena de 3 dBi de la copa de agua fue de 2.23 dBm, el cable de 20 metros de longitud y el cable de 2 metros tiene una atenuación de 20.4 dB y 2.2 dB respectivamente a la frecuencia de 1428 MHz, las pérdidas de espacio libre son de 81.01 dB y la potencia medida en el receptor fue -67.22 dBm.\\
 
 \begin{equation}
     P_{rx}(dBm) = P_{tx}(dBm) + G_{tx}(dB) + G_{rx}(dB) - 20log{R}(km) - 20log{f}(MHz) - L_{\Omega}(dB)
@@ -209,7 +238,7 @@ Con lo que se obtiene una ganancia de 31.16 dB para la banda de 1428 MHz. Por co
 
 Este valor de eficiencia de apertura en comparación con la eficiencia de apertura declarada por el fabricante es un poco menor, siendo la del fabricante de 0.65 para el rango de frecuencias entre 1.2 a 4 GHz.\\
 
-\section{Error de apuntamiento}
+\section{Compensación de apuntamiento}
 
 El máximo de potencia recibida se obtuvo al comandar una posición de 7 grados de elevación con 171 grados de azimuth. La posición determinada de la fuente con respecto a la ubicación del telescopio es 4.6 grados de elevación y 6 grados de azimuth.\\
 
@@ -221,9 +250,18 @@ La diferencia entre la posición de la fuente y la posición de la antena es de 
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.8\textwidth]{img/h1}
+    \includegraphics[width=0.8\textwidth]{img/h1speed}
     \caption{Espectro obtenido por la RTL-SDR a 1420 MHz calibrado a potencia}
     \label{fig:firstlight}
 \end{figure}
 
-En el spectro de la figura \ref{fig:firstlight} se observa la curva de H1 obtenida en la región estandar S9. Se aprecia un máximo de potencia recibida con 0.2 dB sobre el piso de ruido del receptor centrado en 1420.7 MHz. También se pueden distinguir picos de interferencia de radiofrecuencia en 1418.3 MHz, 1419 MHz, 1419.6 MHz y 1421.6 MHz.\\
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/williams}
+    \caption{Espectro de la región estandar S9 de calibración \cite{williams73}}
+    \label{fig:williams}
+\end{figure}
+
+En el spectro de la figura \ref{fig:firstlight} se observa la curva de H1 obtenida en la región estandar S9. Se aprecia una detección de la señal de H1 con 102 sigmas. También se pueden distinguir picos en 1418.3 MHz, 1419 MHz, 1419.6 MHz y 1421.6 MHz que podrían significar interferencia de radiofrecuencia, armonicos de línea o artefactos del digitalizador, sin embargo, se requiere un analizis más profundo para determinar su procedencia.\\
+
+En comparación con el espectro de la región estandar S9 de calibración en la figura \ref{fig:williams}, se observa una similitud en la forma de la curva y conserva el ancho de velocidad de la detección, de aproximadamente 70 km/s.\\

@@ -15,32 +15,35 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Herramientas utilizadas para el ensamblado de la superficie del reflector parabólico.}}{18}{figure.caption.31}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Los 12 arcos de aluminio sujetos al centro del reflector parabólico.}}{18}{figure.caption.32}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Los tubos de aluminio y la cinta de aluminio para la tensión de la malla metálica instalados radialmente en los soportes.}}{19}{figure.caption.33}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Unión de los soportes de aluminio para el alimentador.}}{20}{figure.caption.34}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Interfaz de soporte para el tubo de distribución y otros elementos}}{21}{figure.caption.35}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Soporte interno para electrónica de recepción}}{21}{figure.caption.36}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Soporte para la fuente de calibración de la copa de agua \enquote *{estrella artificial}}}{22}{figure.caption.37}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Soporte para antena circular de alto ancho de banda para configuración de alimentador}}{22}{figure.caption.38}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Soporte para el dipolo exótico como alimentador de 1420 MHz}}{23}{figure.caption.39}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Rotor \textit {BIG-RAS/HR} de la compañía \textit {RFHamdesign} instalada en el pedestal con la montura de acero.}}{24}{figure.caption.40}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Montura de acero con los contrapesos de equilibrio instalados.}}{24}{figure.caption.41}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Rack de control con el controlador SPID de la montura y el computador de control.}}{25}{figure.caption.42}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Antena LPDA de alto ancho de banda instalada en el telescopio.}}{26}{figure.caption.43}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Dipolo de ARTE instalado en el telescopio.}}{27}{figure.caption.44}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Antena circular de alto ancho de banda instalada en el telescopio.}}{28}{figure.caption.45}%
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Amplificador y filtro pasabanda SAWbird H1 de la compañía \textit {Noeelec}.}}{29}{figure.caption.46}%
-\contentsline {figure}{\numberline {3.17}{\ignorespaces RTL-SDR conectada a la cadena de amplificador y una Raspberry PI 4B.}}{30}{figure.caption.47}%
-\contentsline {figure}{\numberline {3.18}{\ignorespaces cpt\_traking\_software.py en funcionamiento.}}{31}{figure.caption.50}%
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Generador de señales Valon 5008 con filtro pasabajo con una batería externa.}}{33}{figure.caption.54}%
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Fuente de ruido Agilent 346B.}}{34}{figure.caption.55}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Diagrama general del telescopio con sus componentes principales.}}{20}{figure.caption.34}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Unión de los soportes de aluminio para el alimentador.}}{21}{figure.caption.35}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Interfaz de soporte para el tubo de distribución y otros elementos}}{22}{figure.caption.36}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Soporte interno para electrónica de recepción}}{22}{figure.caption.37}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Soporte para la fuente de calibración de la copa de agua \enquote *{estrella artificial}}}{23}{figure.caption.38}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Soporte para antena circular de alto ancho de banda para configuración de alimentador}}{23}{figure.caption.39}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Soporte para el dipolo exótico como alimentador de 1420 MHz}}{24}{figure.caption.40}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Rotor \textit {BIG-RAS/HR} de la compañía \textit {RFHamdesign} instalada en el pedestal con la montura de acero.}}{25}{figure.caption.41}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Montura de acero con los contrapesos de equilibrio instalados.}}{25}{figure.caption.42}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Rack de control con el controlador SPID de la montura y el computador de control.}}{26}{figure.caption.43}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Antena LPDA de alto ancho de banda instalada en el telescopio.}}{27}{figure.caption.44}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Dipolo de ARTE instalado en el telescopio.}}{28}{figure.caption.45}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Antena circular de alto ancho de banda instalada en el telescopio.}}{29}{figure.caption.46}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Amplificador y filtro pasabanda SAWbird H1 de la compañía \textit {Noeelec}.}}{30}{figure.caption.47}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces RTL-SDR conectada a la cadena de amplificador y una Raspberry PI 4B.}}{31}{figure.caption.48}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces cpt\_traking\_software.py en funcionamiento.}}{32}{figure.caption.51}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Parametro S11 para la antena utilizada en la fuente de calibración.}}{34}{figure.caption.54}%
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Generador de señales Valon 5008 con filtro pasabajo con una batería externa.}}{35}{figure.caption.56}%
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Fuente de ruido Agilent 346B.}}{36}{figure.caption.57}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Antena LPDA en trípode auxiliar a 2 metros de altura.}}{37}{figure.caption.58}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Distancia de 70 metros entre el reflector y el generador de señales con elevaciones similares.}}{38}{figure.caption.60}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Distancia de 188 metros entre el reflector y la estrella artificial de la copa de agua.}}{39}{figure.caption.61}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Alimentador dipolo exótico con tetrápodo instalado.}}{39}{figure.caption.62}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Antena LPDA en trípode auxiliar a 2 metros de altura.}}{39}{figure.caption.60}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Distancia de 70 metros entre el reflector y el generador de señales con elevaciones similares.}}{40}{figure.caption.62}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Distancia de 188 metros entre el reflector y la estrella artificial de la copa de agua.}}{41}{figure.caption.63}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Alimentador dipolo de ARTE con tetrápodo instalado.}}{41}{figure.caption.64}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Antena construida siendo monitoreada por la cámara remota}}{43}{figure.caption.63}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Potencia recibida en función de la distancia del alimentador al reflector}}{44}{figure.caption.64}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Espectro obtenido por la RTL-SDR a 1428 GHz calibrado a potencia}}{46}{figure.caption.67}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Tono de -80 dBm a las frecuencias de interés}}{47}{figure.caption.69}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Espectro obtenido por la RTL-SDR a 1420 MHz calibrado a potencia}}{49}{figure.caption.70}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Antena construida siendo monitoreada por la cámara remota}}{45}{figure.caption.65}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Potencia recibida en función de la distancia del alimentador al reflector}}{46}{figure.caption.66}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Espectro obtenido por la RTL-SDR a 1428 GHz calibrado a potencia}}{48}{figure.caption.69}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Tono de -80 dBm a las frecuencias de interés}}{49}{figure.caption.71}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Espectro obtenido por la RTL-SDR a 1420 MHz calibrado a potencia}}{51}{figure.caption.72}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Espectro de la región estandar S9 de calibración \cite {williams73}}}{51}{figure.caption.73}%
 \addvspace {10\p@ }
