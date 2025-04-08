@@ -1,16 +1,16 @@
 # Fdb version 4
-["bibtex main"] 1741050775.88967 "main.aux" "main.bbl" "main" 1741051464.44412 0
-  "./library.bib" 1741045430 5759 301d3439eee8b2c4b984802e0bdf043e ""
+["bibtex main"] 1743992822.55984 "main.aux" "main.bbl" "main" 1743992830.17036 0
+  "./library.bib" 1743991285 5975 d287dce701cde66c12d9d36cbee44385 ""
   "./natnumurl.bst" 1733927529 21201 c3a97a2434b58cd70f7f9c9df607b80a ""
-  "main.aux" 1741051463 57154 6aa081110ac51713709e8d0f43751868 "pdflatex"
+  "main.aux" 1743992828 55410 6c57b002cb2deda3f1037a4e476e4832 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1741051456.53354 "c:/Users/vicen/memoria-vaitken/main.tex" "main.pdf" "main" 1741051464.44485 0
-  "antecedentes.tex" 1740976398 36046 0828f6d319ca04671cf8a684432e4939 ""
+["pdflatex"] 1743992822.9514 "c:/Users/vicen/memoria-vaitken/main.tex" "main.pdf" "main" 1743992830.17108 0
+  "antecedentes.tex" 1743992814 36882 d804c01f57e2d73aa9fbfa8dd41a88f1 ""
   "apendice.tex" 1741030736 18318 7abc6d4596c34acf178b5c70f8e84f56 ""
-  "c:/Users/vicen/memoria-vaitken/main.tex" 1740972632 7314 f238e57826e1629e0a720b47f95ab199 ""
+  "c:/Users/vicen/memoria-vaitken/main.tex" 1743981438 7320 0dd358eb80c11daf003adb9cd2e17daa ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1731631944 2375 baa924870cfb487815765f9094cf3728 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1731631944 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1731631944 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
@@ -290,7 +290,7 @@
   "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1731633696 3342992 57a686db150f41340ba13620aa9d3d03 ""
   "c:/texlive/2024/texmf.cnf" 1731633562 713 e69b156964470283e0530f5060668171 ""
   "caracterizacion.tex" 1741050767 12465 b32470dc34b0bf531a3f1fa03a3389f4 ""
-  "concluciones.tex" 1741051455 2900 c516b4ec19d8ccd432c82a3b6323add9 ""
+  "concluciones.tex" 1741051529 2900 c516b4ec19d8ccd432c82a3b6323add9 ""
   "draws/paleta.pdf" 1741029986 113846 7b606af49b76c11384349223339a8f3b ""
   "draws/paleta_feed.pdf" 1741030200 115240 2e8e9ad0573e57c7c1d1c412f583c236 ""
   "draws/soporte_feed.pdf" 1741029634 115147 0dee48388405087f3c46ccab83a3c755 ""
@@ -353,13 +353,13 @@
   "img/traking.png" 1734393959 75712 6e672ec86ea523230d1fc43d106ac46e ""
   "img/valon.jpg" 1733927529 687372 bd0c6e9f671525699d3383aeb3809c38 ""
   "img/williams.png" 1741045009 46411 8718da3c446c0edb4c2b49be29dc8f8c ""
-  "intro.tex" 1740972632 3645 b7dbde8fddc32e0f96d3c54a9feaee82 ""
-  "main.aux" 1741051463 57154 6aa081110ac51713709e8d0f43751868 "pdflatex"
-  "main.bbl" 1741050776 4502 29a9053c6ede9c84ce6f84a333b23ee4 "bibtex main"
-  "main.lof" 1741051463 6562 f44df311b414fa76d2109cb1865610c4 "pdflatex"
-  "main.lot" 1741051463 286 611aea8b1e397a454136d09ce0713df0 "pdflatex"
-  "main.tex" 1740972632 7314 f238e57826e1629e0a720b47f95ab199 ""
-  "main.toc" 1741051463 7260 44d7258f43250c0f701ffa7b1b962f9e "pdflatex"
+  "intro.tex" 1743981438 4401 c7a2b205a315ca7ced6fc7a789fc0ad5 ""
+  "main.aux" 1743992828 55410 6c57b002cb2deda3f1037a4e476e4832 "pdflatex"
+  "main.bbl" 1743992822 4663 728cd357810ca1ba3539829aaa78a954 "bibtex main"
+  "main.lof" 1743992828 6651 e5586f69afd755f041ea79d596f786c1 "pdflatex"
+  "main.lot" 1743992828 286 611aea8b1e397a454136d09ce0713df0 "pdflatex"
+  "main.tex" 1743981438 7320 0dd358eb80c11daf003adb9cd2e17daa ""
+  "main.toc" 1743992828 6896 298466ab2f3647b1b1e1355ac712d0c4 "pdflatex"
   "resultados.tex" 1741050767 11663 52c40a4ec79d43205c6e900d69b8492e ""
   "template.tex" 1733927529 290297 841a7a2beb05c5dcc319b64380dc348b ""
   "template_config.tex" 1733927529 21894 c8a156315548211a1859ff1d4e1eb92a ""

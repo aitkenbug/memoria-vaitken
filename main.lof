@@ -2,11 +2,11 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Parámetros del patrón de radiación para una antena con características directivas. \cite {stutzman2012antenna}.}}{4}{figure.caption.11}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Polarización linear y circular de una onda electromagnética propagándose en el eje Z.}}{7}{figure.caption.12}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Diagrama de parámetros S para un dispositivo bajo prueba (DUT).}}{7}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Polarización linear y circular de una onda electromagnética propagándose en el eje Z.}}{6}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Diagrama de parámetros $S$ para un dispositivo bajo prueba (DUT), donde a la izquierda se encontraria el puerto 1 del instrumento y a la derecha el puerto 2.}}{7}{figure.caption.13}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Ancho de banda de reflexión de una antena.}}{8}{figure.caption.15}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Figura de una cadena de recepción con un filtro de paso de banda.}}{9}{figure.caption.17}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Antena de 12 metros Vertex tipo Cassegrain en el observatorio de ALMA.}}{11}{figure.caption.23}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Figura de una cadena de recepción con un filtro de paso de banda.}}{8}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Antena de 12 metros Vertex tipo Cassegrain del observatorio ALMA.}}{11}{figure.caption.23}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Telescopio Effelsberg de 100 metros de tipo Gregorian.}}{12}{figure.caption.25}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Telescopio GBT (Green Bank Telescope) de 100 metros de tipo \textit {off-axis}.}}{12}{figure.caption.27}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Telescopio CPT en el cerro Calán siguiendo el centro de la galaxia.}}{15}{figure.caption.29}%

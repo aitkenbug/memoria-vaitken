@@ -26,6 +26,11 @@ Friis, H., ``A note on a simple transmission formula'', {Proceedings of the IRE}
 \backrefprint\backrefparscantrue
 
 \backrefparscanfalse
+\bibitem{alma}
+(ALMA), A. L. M.~A., ``About alma''. https://www.almaobservatory.org/en/about-alma/, 2025.
+\backrefprint\backrefparscantrue
+
+\backrefparscanfalse
 \bibitem{Finger2013}
 Finger, R.~A., {Design and construction of a digital sideband separating spectrometer for the 1.2-meter southern radio telescope}.
 \newblock Tesis PhD, 2013.

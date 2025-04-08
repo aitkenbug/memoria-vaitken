@@ -3,10 +3,6 @@
 \contentsline {section}{\numberline {1.1}Motivación}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Objetivo General}{2}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Objetivos Específicos}{2}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Ensamblado Mecánico}{2}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Diseño del receptor}{2}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {1.3.3}Primera Luz y Caracterización}{2}{subsection.1.3.3}%
-\contentsline {subsection}{\numberline {1.3.4}Observar Hidrógeno neutro}{2}{subsection.1.3.4}%
 \contentsline {chapter}{\numberline {2}Antecedentes}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Fundamentos de antenas}{3}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Patrón de radiación}{3}{subsection.2.1.1}%
@@ -14,17 +10,17 @@
 \contentsline {subsection}{\numberline {2.1.3}Ganancia}{5}{subsection.2.1.3}%
 \contentsline {subsection}{\numberline {2.1.4}Polarización}{6}{subsection.2.1.4}%
 \contentsline {subsection}{\numberline {2.1.5}Ancho de banda}{7}{subsection.2.1.5}%
-\contentsline {paragraph}{Ancho de banda $S_{11}$}{8}{section*.14}%
+\contentsline {paragraph}{Ancho de banda $S_{11}$}{7}{section*.14}%
 \contentsline {paragraph}{Ancho de banda $S_{21}$}{8}{section*.16}%
 \contentsline {subsection}{\numberline {2.1.6}Pérdidas y eficiencia}{9}{subsection.2.1.6}%
 \contentsline {paragraph}{Impedancia de entrada}{9}{section*.18}%
 \contentsline {paragraph}{Pérdidas de espacio libre}{9}{section*.19}%
-\contentsline {paragraph}{Pérdidas de superficie}{10}{section*.20}%
+\contentsline {paragraph}{Pérdidas de superficie}{9}{section*.20}%
 \contentsline {paragraph}{Pérdidas ohmnicas}{10}{section*.21}%
 \contentsline {subsection}{\numberline {2.1.7}Ecuación de Friis}{10}{subsection.2.1.7}%
-\contentsline {section}{\numberline {2.2}Antenas parabólicas}{11}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Tipos de antenas parabólicas}{11}{subsection.2.2.1}%
-\contentsline {paragraph}{Cassegrain}{11}{section*.22}%
+\contentsline {section}{\numberline {2.2}Colectores de radiotelescopios}{10}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Tipos de colectores parabólicos}{10}{subsection.2.2.1}%
+\contentsline {paragraph}{Cassegrain}{10}{section*.22}%
 \contentsline {paragraph}{Gregorian}{11}{section*.24}%
 \contentsline {paragraph}{Off-axis}{12}{section*.26}%
 \contentsline {paragraph}{Foco primario}{13}{section*.28}%

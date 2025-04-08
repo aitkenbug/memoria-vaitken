@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.14)  3 MAR 2025 22:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.14)  6 APR 2025 22:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2325,7 +2325,7 @@ LaTeX Info: Redefining \% on input line 1.
 
 [7
 
-])
+{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}])
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
@@ -2347,14 +2347,14 @@ Capítulo 2.
 [3
 
 ]
-<img/patern1.png, id=340, 731.73375pt x 450.9347pt>
+<img/patern1.png, id=338, 731.73375pt x 450.9347pt>
 File: img/patern1.png Graphic file (type png)
 <use img/patern1.png>
 Package pdftex.def Info: img/patern1.png  used on input line 38.
 (pdftex.def)             Requested size: 312.9803pt x 192.87291pt.
 
 
-[4{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} <./img/patern1.png>]
+[4{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} <./img/patern1.png>]
 
 [5{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
 <img/pol.png, id=375, 737.75626pt x 307.90031pt>
@@ -2364,67 +2364,67 @@ Package pdftex.def Info: img/pol.png  used on input line 120.
 (pdftex.def)             Requested size: 377.62642pt x 157.60025pt.
 
 
-[6]
+[6 <./img/pol.png>]
 <img/bloquesS.png, id=385, 545.03625pt x 198.7425pt>
 File: img/bloquesS.png Graphic file (type png)
 <use img/bloquesS.png>
 Package pdftex.def Info: img/bloquesS.png  used on input line 137.
 (pdftex.def)             Requested size: 377.62642pt x 137.69652pt.
-
-
-[7 <./img/pol.png> <./img/bloquesS.png>]
-<img/s11Arte.png, id=394, 1156.32pt x 650.43pt>
+<img/s11Arte.png, id=387, 1156.32pt x 650.43pt>
 File: img/s11Arte.png Graphic file (type png)
 <use img/s11Arte.png>
 Package pdftex.def Info: img/s11Arte.png  used on input line 148.
 (pdftex.def)             Requested size: 377.62642pt x 212.40948pt.
-<img/s21Fh1.png, id=396, 1156.32pt x 650.43pt>
+
+
+[7 <./img/bloquesS.png>]
+<img/s21Fh1.png, id=397, 1156.32pt x 650.43pt>
 File: img/s21Fh1.png Graphic file (type png)
 <use img/s21Fh1.png>
 Package pdftex.def Info: img/s21Fh1.png  used on input line 159.
 (pdftex.def)             Requested size: 377.62642pt x 212.40948pt.
 
 
-[8 <./img/s11Arte.png>]
+[8 <./img/s11Arte.png> <./img/s21Fh1.png>]
 
-[9 <./img/s21Fh1.png>]
+[9]
 
 [10]
-<img/cassegrain.jpg, id=427, 2707.86656pt x 1910.63812pt>
+<img/cassegrain.jpg, id=430, 2707.86656pt x 1910.63812pt>
 File: img/cassegrain.jpg Graphic file (type jpg)
 <use img/cassegrain.jpg>
-Package pdftex.def Info: img/cassegrain.jpg  used on input line 232.
+Package pdftex.def Info: img/cassegrain.jpg  used on input line 238.
 (pdftex.def)             Requested size: 377.62642pt x 266.43797pt.
-<img/gregorian.jpg, id=428, 1284.8pt x 722.7pt>
+<img/gregorian.jpg, id=431, 1284.8pt x 722.7pt>
 File: img/gregorian.jpg Graphic file (type jpg)
 <use img/gregorian.jpg>
-Package pdftex.def Info: img/gregorian.jpg  used on input line 243.
+Package pdftex.def Info: img/gregorian.jpg  used on input line 250.
 (pdftex.def)             Requested size: 377.62642pt x 212.4117pt.
 
 
 [11 <./img/cassegrain.jpg>]
-<img/off-axis.jpg, id=436, 2409.0pt x 1636.1125pt>
+<img/off-axis.jpg, id=439, 2409.0pt x 1636.1125pt>
 File: img/off-axis.jpg Graphic file (type jpg)
 <use img/off-axis.jpg>
-Package pdftex.def Info: img/off-axis.jpg  used on input line 254.
+Package pdftex.def Info: img/off-axis.jpg  used on input line 261.
 (pdftex.def)             Requested size: 377.62642pt x 256.46579pt.
 
 
 [12 <./img/gregorian.jpg> <./img/off-axis.jpg>]
 
 [13]
-<img/cpt_tracking.jpg, id=458, 2596.70125pt x 1948.27875pt>
+<img/cpt_tracking.jpg, id=460, 2596.70125pt x 1948.27875pt>
 File: img/cpt_tracking.jpg Graphic file (type jpg)
 <use img/cpt_tracking.jpg>
-Package pdftex.def Info: img/cpt_tracking.jpg  used on input line 316.
+Package pdftex.def Info: img/cpt_tracking.jpg  used on input line 323.
 (pdftex.def)             Requested size: 377.62642pt x 283.31071pt.
 
 
 [14]
-<img/farfielddiag.png, id=467, 681.54625pt x 251.94125pt>
+<img/farfielddiag.png, id=470, 681.54625pt x 251.94125pt>
 File: img/farfielddiag.png Graphic file (type png)
 <use img/farfielddiag.png>
-Package pdftex.def Info: img/farfielddiag.png  used on input line 333.
+Package pdftex.def Info: img/farfielddiag.png  used on input line 340.
 (pdftex.def)             Requested size: 377.62642pt x 139.59454pt.
 
 
@@ -2432,7 +2432,7 @@ Package pdftex.def Info: img/farfielddiag.png  used on input line 333.
 
 [16 <./img/farfielddiag.png>]
 Capítulo 3.
-<img/herramientas.jpg, id=486, 2832.5825pt x 1592.95125pt>
+<img/herramientas.jpg, id=489, 2832.5825pt x 1592.95125pt>
 File: img/herramientas.jpg Graphic file (type jpg)
 <use img/herramientas.jpg>
 Package pdftex.def Info: img/herramientas.jpg  used on input line 17.
@@ -2442,7 +2442,7 @@ Package pdftex.def Info: img/herramientas.jpg  used on input line 17.
 [17
 
 ]
-<img/estructura1.jpg, id=493, 3033.3325pt x 1706.375pt>
+<img/estructura1.jpg, id=496, 3033.3325pt x 1706.375pt>
 File: img/estructura1.jpg Graphic file (type jpg)
 <use img/estructura1.jpg>
 Package pdftex.def Info: img/estructura1.jpg  used on input line 30.
@@ -2450,12 +2450,12 @@ Package pdftex.def Info: img/estructura1.jpg  used on input line 30.
 
 
 [18 <./img/herramientas.jpg> <./img/estructura1.jpg>]
-<img/estructura2.jpg, id=500, 2513.39pt x 1414.28375pt>
+<img/estructura2.jpg, id=503, 2513.39pt x 1414.28375pt>
 File: img/estructura2.jpg Graphic file (type jpg)
 <use img/estructura2.jpg>
 Package pdftex.def Info: img/estructura2.jpg  used on input line 41.
 (pdftex.def)             Requested size: 377.62642pt x 212.4787pt.
-<img/general.png, id=501, 713.66624pt x 532.99126pt>
+<img/general.png, id=504, 713.66624pt x 532.99126pt>
 File: img/general.png Graphic file (type png)
 <use img/general.png>
 Package pdftex.def Info: img/general.png  used on input line 52.
@@ -2476,12 +2476,12 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 LaTeX Warning: Reference `anexo:soportes_patas' on page 21 undefined on input line 68.
 
-<img/soporte3D5.png, id=518, 539.01375pt x 302.93175pt>
+<img/soporte3D5.png, id=520, 539.01375pt x 302.93175pt>
 File: img/soporte3D5.png Graphic file (type png)
 <use img/soporte3D5.png>
 Package pdftex.def Info: img/soporte3D5.png  used on input line 72.
 (pdftex.def)             Requested size: 377.62642pt x 212.23103pt.
-<img/soporte3D1v1.png, id=521, 529.98pt x 298.11375pt>
+<img/soporte3D1v1.png, id=523, 529.98pt x 298.11375pt>
 File: img/soporte3D1v1.png Graphic file (type png)
 <use img/soporte3D1v1.png>
 Package pdftex.def Info: img/soporte3D1v1.png  used on input line 85.
@@ -2489,12 +2489,12 @@ Package pdftex.def Info: img/soporte3D1v1.png  used on input line 85.
 
 
 [21 <./img/soporte3D5.png>]
-<img/soporte3D7.png, id=530, 529.37775pt x 297.5115pt>
+<img/soporte3D7.png, id=532, 529.37775pt x 297.5115pt>
 File: img/soporte3D7.png Graphic file (type png)
 <use img/soporte3D7.png>
 Package pdftex.def Info: img/soporte3D7.png  used on input line 94.
 (pdftex.def)             Requested size: 377.62642pt x 212.22429pt.
-<img/soporte3D4.png, id=532, 563.10374pt x 316.7835pt>
+<img/soporte3D4.png, id=534, 563.10374pt x 316.7835pt>
 File: img/soporte3D4.png Graphic file (type png)
 <use img/soporte3D4.png>
 Package pdftex.def Info: img/soporte3D4.png  used on input line 103.
@@ -2502,7 +2502,7 @@ Package pdftex.def Info: img/soporte3D4.png  used on input line 103.
 
 
 [22 <./img/soporte3D1v1.png> <./img/soporte3D7.png>]
-<img/soporte3D2.png, id=542, 579.3645pt x 325.81725pt>
+<img/soporte3D2.png, id=544, 579.3645pt x 325.81725pt>
 File: img/soporte3D2.png Graphic file (type png)
 <use img/soporte3D2.png>
 Package pdftex.def Info: img/soporte3D2.png  used on input line 112.
@@ -2510,12 +2510,12 @@ Package pdftex.def Info: img/soporte3D2.png  used on input line 112.
 
 
 [23 <./img/soporte3D4.png> <./img/soporte3D2.png>]
-<img/soporte3D6.png, id=552, 483.0045pt x 271.61475pt>
+<img/soporte3D6.png, id=554, 483.0045pt x 271.61475pt>
 File: img/soporte3D6.png Graphic file (type png)
 <use img/soporte3D6.png>
 Package pdftex.def Info: img/soporte3D6.png  used on input line 121.
 (pdftex.def)             Requested size: 377.62642pt x 212.35597pt.
-<img/soporte_montura.jpg, id=555, 3092.55376pt x 1739.49875pt>
+<img/soporte_montura.jpg, id=557, 3092.55376pt x 1739.49875pt>
 File: img/soporte_montura.jpg Graphic file (type jpg)
 <use img/soporte_montura.jpg>
 Package pdftex.def Info: img/soporte_montura.jpg  used on input line 134.
@@ -2523,7 +2523,7 @@ Package pdftex.def Info: img/soporte_montura.jpg  used on input line 134.
 
 
 [24 <./img/soporte3D6.png>]
-<img/contrapesos.jpg, id=563, 3084.52374pt x 1735.48375pt>
+<img/contrapesos.jpg, id=565, 3084.52374pt x 1735.48375pt>
 File: img/contrapesos.jpg Graphic file (type jpg)
 <use img/contrapesos.jpg>
 Package pdftex.def Info: img/contrapesos.jpg  used on input line 143.
@@ -2531,7 +2531,7 @@ Package pdftex.def Info: img/contrapesos.jpg  used on input line 143.
 
 
 [25 <./img/soporte_montura.jpg> <./img/contrapesos.jpg>]
-<img/rack.jpg, id=571, 4047.12pt x 3035.34pt>
+<img/rack.jpg, id=573, 4047.12pt x 3035.34pt>
 File: img/rack.jpg Graphic file (type jpg)
 <use img/rack.jpg>
 Package pdftex.def Info: img/rack.jpg  used on input line 159.
@@ -2539,7 +2539,7 @@ Package pdftex.def Info: img/rack.jpg  used on input line 159.
 
 
 [26 <./img/rack.jpg>]
-<img/lpda.jpg, id=580, 778.91pt x 438.63875pt>
+<img/lpda.jpg, id=582, 778.91pt x 438.63875pt>
 File: img/lpda.jpg Graphic file (type jpg)
 <use img/lpda.jpg>
 Package pdftex.def Info: img/lpda.jpg  used on input line 178.
@@ -2547,12 +2547,12 @@ Package pdftex.def Info: img/lpda.jpg  used on input line 178.
 
 
 [27 <./img/lpda.jpg>]
-<img/feed.jpg, id=590, 3605.47pt x 2028.57875pt>
+<img/feed.jpg, id=592, 3605.47pt x 2028.57875pt>
 File: img/feed.jpg Graphic file (type jpg)
 <use img/feed.jpg>
 Package pdftex.def Info: img/feed.jpg  used on input line 191.
 (pdftex.def)             Requested size: 377.62642pt x 212.46536pt.
-<img/paletaFeed.jpg, id=595, 3238.0975pt x 1821.80624pt>
+<img/paletaFeed.jpg, id=597, 3238.0975pt x 1821.80624pt>
 File: img/paletaFeed.jpg Graphic file (type jpg)
 <use img/paletaFeed.jpg>
 Package pdftex.def Info: img/paletaFeed.jpg  used on input line 204.
@@ -2560,7 +2560,7 @@ Package pdftex.def Info: img/paletaFeed.jpg  used on input line 204.
 
 
 [28 <./img/feed.jpg>]
-<img/rtl_saw.jpg, id=603, 3461.93375pt x 1947.275pt>
+<img/rtl_saw.jpg, id=605, 3461.93375pt x 1947.275pt>
 File: img/rtl_saw.jpg Graphic file (type jpg)
 <use img/rtl_saw.jpg>
 Package pdftex.def Info: img/rtl_saw.jpg  used on input line 220.
@@ -2568,7 +2568,7 @@ Package pdftex.def Info: img/rtl_saw.jpg  used on input line 220.
 
 
 [29 <./img/paletaFeed.jpg>]
-<img/rpiRtlSaw.jpg, id=612, 4047.12pt x 2276.505pt>
+<img/rpiRtlSaw.jpg, id=614, 4047.12pt x 2276.505pt>
 File: img/rpiRtlSaw.jpg Graphic file (type jpg)
 <use img/rpiRtlSaw.jpg>
 Package pdftex.def Info: img/rpiRtlSaw.jpg  used on input line 233.
@@ -2578,7 +2578,7 @@ Package pdftex.def Info: img/rpiRtlSaw.jpg  used on input line 233.
 [30 <./img/rtl_saw.jpg>]
 
 [31 <./img/rpiRtlSaw.jpg>]
-<img/traking.png, id=628, 738.96075pt x 377.61075pt>
+<img/traking.png, id=630, 738.96075pt x 377.61075pt>
 File: img/traking.png Graphic file (type png)
 <use img/traking.png>
 Package pdftex.def Info: img/traking.png  used on input line 258.
@@ -2586,7 +2586,7 @@ Package pdftex.def Info: img/traking.png  used on input line 258.
 
 
 [32 <./img/traking.png>]
-<img/s11Paleta.png, id=639, 1156.32pt x 650.43pt>
+<img/s11Paleta.png, id=641, 1156.32pt x 650.43pt>
 File: img/s11Paleta.png Graphic file (type png)
 <use img/s11Paleta.png>
 Package pdftex.def Info: img/s11Paleta.png  used on input line 290.
@@ -2594,12 +2594,12 @@ Package pdftex.def Info: img/s11Paleta.png  used on input line 290.
 
 
 [33]
-<img/paleta.jpg, id=648, 3428.81pt x 1929.2075pt>
+<img/paleta.jpg, id=650, 3428.81pt x 1929.2075pt>
 File: img/paleta.jpg Graphic file (type jpg)
 <use img/paleta.jpg>
 Package pdftex.def Info: img/paleta.jpg  used on input line 300.
 (pdftex.def)             Requested size: 212.41261pt x 119.486pt.
-<img/fake_star.jpg, id=649, 3194.93625pt x 1796.7125pt>
+<img/fake_star.jpg, id=651, 3194.93625pt x 1796.7125pt>
 File: img/fake_star.jpg Graphic file (type jpg)
 <use img/fake_star.jpg>
 Package pdftex.def Info: img/fake_star.jpg  used on input line 305.
@@ -2607,12 +2607,12 @@ Package pdftex.def Info: img/fake_star.jpg  used on input line 305.
 
 
 [34 <./img/s11Paleta.png> <./img/paleta.jpg> <./img/fake_star.jpg>]
-<img/valon.jpg, id=658, 3077.4975pt x 1731.46875pt>
+<img/valon.jpg, id=660, 3077.4975pt x 1731.46875pt>
 File: img/valon.jpg Graphic file (type jpg)
 <use img/valon.jpg>
 Package pdftex.def Info: img/valon.jpg  used on input line 319.
 (pdftex.def)             Requested size: 377.62642pt x 212.44363pt.
-<img/fuenteRuido.jpg, id=660, 3610.48875pt x 2030.58624pt>
+<img/fuenteRuido.jpg, id=662, 3610.48875pt x 2030.58624pt>
 File: img/fuenteRuido.jpg Graphic file (type jpg)
 <use img/fuenteRuido.jpg>
 Package pdftex.def Info: img/fuenteRuido.jpg  used on input line 332.
@@ -2625,7 +2625,7 @@ Package pdftex.def Info: img/fuenteRuido.jpg  used on input line 332.
 
 [37]
 Capítulo 4.
-<img/enfoque1.jpg, id=684, 2361.82375pt x 1771.61874pt>
+<img/enfoque1.jpg, id=686, 2361.82375pt x 1771.61874pt>
 File: img/enfoque1.jpg Graphic file (type jpg)
 <use img/enfoque1.jpg>
 Package pdftex.def Info: img/enfoque1.jpg  used on input line 15.
@@ -2635,17 +2635,17 @@ Package pdftex.def Info: img/enfoque1.jpg  used on input line 15.
 [38
 
 ]
-<img/enfoque_cerca.jpg, id=691, 3035.34pt x 1707.37875pt>
+<img/enfoque_cerca.jpg, id=693, 3035.34pt x 1707.37875pt>
 File: img/enfoque_cerca.jpg Graphic file (type jpg)
 <use img/enfoque_cerca.jpg>
 Package pdftex.def Info: img/enfoque_cerca.jpg  used on input line 25.
 (pdftex.def)             Requested size: 212.41261pt x 119.47661pt.
-<img/enfoque_cerca1.jpg, id=692, 2737.22626pt x 1539.7525pt>
+<img/enfoque_cerca1.jpg, id=694, 2737.22626pt x 1539.7525pt>
 File: img/enfoque_cerca1.jpg Graphic file (type jpg)
 <use img/enfoque_cerca1.jpg>
 Package pdftex.def Info: img/enfoque_cerca1.jpg  used on input line 30.
 (pdftex.def)             Requested size: 212.41261pt x 119.47055pt.
-<img/70m_measure.png, id=693, 885.3075pt x 497.60907pt>
+<img/70m_measure.png, id=695, 885.3075pt x 497.60907pt>
 File: img/70m_measure.png Graphic file (type png)
 <use img/70m_measure.png>
 Package pdftex.def Info: img/70m_measure.png  used on input line 40.
@@ -2653,7 +2653,7 @@ Package pdftex.def Info: img/70m_measure.png  used on input line 40.
 
 
 [39 <./img/enfoque1.jpg> <./img/enfoque_cerca.jpg> <./img/enfoque_cerca1.jpg>]
-<img/188m_measure.png, id=700, 1018.55531pt x 572.89032pt>
+<img/188m_measure.png, id=702, 1018.55531pt x 572.89032pt>
 File: img/188m_measure.png Graphic file (type png)
 <use img/188m_measure.png>
 Package pdftex.def Info: img/188m_measure.png  used on input line 57.
@@ -2661,7 +2661,7 @@ Package pdftex.def Info: img/188m_measure.png  used on input line 57.
 
 
 [40 <./img/70m_measure.png>]
-<img/feed_focus.jpg, id=709, 2832.5825pt x 1592.95125pt>
+<img/feed_focus.jpg, id=711, 2832.5825pt x 1592.95125pt>
 File: img/feed_focus.jpg Graphic file (type jpg)
 <use img/feed_focus.jpg>
 Package pdftex.def Info: img/feed_focus.jpg  used on input line 66.
@@ -2676,12 +2676,12 @@ Package pdftex.def Info: img/feed_focus.jpg  used on input line 66.
 
 [44]
 Capítulo 5.
-<img/antenna.jpg, id=734, 1927.2pt x 1084.05pt>
+<img/antenna.jpg, id=736, 1927.2pt x 1084.05pt>
 File: img/antenna.jpg Graphic file (type jpg)
 <use img/antenna.jpg>
 Package pdftex.def Info: img/antenna.jpg  used on input line 7.
 (pdftex.def)             Requested size: 377.62642pt x 212.40619pt.
-<img/enfoqueDist.png, id=736, 1300.86pt x 794.97pt>
+<img/enfoqueDist.png, id=738, 1300.86pt x 794.97pt>
 File: img/enfoqueDist.png Graphic file (type png)
 <use img/enfoqueDist.png>
 Package pdftex.def Info: img/enfoqueDist.png  used on input line 18.
@@ -2691,12 +2691,12 @@ Package pdftex.def Info: img/enfoqueDist.png  used on input line 18.
 [45
 
  <./img/antenna.jpg>]
-<img/1420rp.png, id=742, 527.571pt x 527.571pt>
+<img/1420rp.png, id=744, 527.571pt x 527.571pt>
 File: img/1420rp.png Graphic file (type png)
 <use img/1420rp.png>
 Package pdftex.def Info: img/1420rp.png  used on input line 48.
 (pdftex.def)             Requested size: 212.41261pt x 212.40927pt.
-<img/1420rpel.png, id=743, 527.571pt x 527.571pt>
+<img/1420rpel.png, id=745, 527.571pt x 527.571pt>
 File: img/1420rpel.png Graphic file (type png)
 <use img/1420rpel.png>
 Package pdftex.def Info: img/1420rpel.png  used on input line 53.
@@ -2705,12 +2705,12 @@ Package pdftex.def Info: img/1420rpel.png  used on input line 53.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/400rp.png, id=746, 527.571pt x 527.571pt>
+<img/400rp.png, id=748, 527.571pt x 527.571pt>
 File: img/400rp.png Graphic file (type png)
 <use img/400rp.png>
 Package pdftex.def Info: img/400rp.png  used on input line 95.
 (pdftex.def)             Requested size: 212.41261pt x 212.40927pt.
-<img/400rpel.png, id=747, 527.571pt x 527.571pt>
+<img/400rpel.png, id=749, 527.571pt x 527.571pt>
 File: img/400rpel.png Graphic file (type png)
 <use img/400rpel.png>
 Package pdftex.def Info: img/400rpel.png  used on input line 100.
@@ -2721,7 +2721,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 [46 <./img/enfoqueDist.png>]
-<img/rtl1428.png, id=760, 1156.32pt x 650.43pt>
+<img/rtl1428.png, id=762, 1156.32pt x 650.43pt>
 File: img/rtl1428.png Graphic file (type png)
 <use img/rtl1428.png>
 Package pdftex.def Info: img/rtl1428.png  used on input line 126.
@@ -2729,32 +2729,32 @@ Package pdftex.def Info: img/rtl1428.png  used on input line 126.
 
 
 [47 <./img/1420rp.png> <./img/1420rpel.png> <./img/400rp.png> <./img/400rpel.png>]
-<img/rtl300.png, id=773, 1300.86pt x 794.97pt>
+<img/rtl300.png, id=775, 1300.86pt x 794.97pt>
 File: img/rtl300.png Graphic file (type png)
 <use img/rtl300.png>
 Package pdftex.def Info: img/rtl300.png  used on input line 158.
 (pdftex.def)             Requested size: 227.62204pt x 139.09756pt.
-<img/rtl1000.png, id=774, 1300.86pt x 794.97pt>
+<img/rtl1000.png, id=776, 1300.86pt x 794.97pt>
 File: img/rtl1000.png Graphic file (type png)
 <use img/rtl1000.png>
 Package pdftex.def Info: img/rtl1000.png  used on input line 165.
 (pdftex.def)             Requested size: 227.62204pt x 139.09756pt.
-<img/rtl400.png, id=775, 1300.86pt x 794.97pt>
+<img/rtl400.png, id=777, 1300.86pt x 794.97pt>
 File: img/rtl400.png Graphic file (type png)
 <use img/rtl400.png>
 Package pdftex.def Info: img/rtl400.png  used on input line 172.
 (pdftex.def)             Requested size: 227.62204pt x 139.09756pt.
-<img/rtl1500.png, id=776, 1300.86pt x 794.97pt>
+<img/rtl1500.png, id=778, 1300.86pt x 794.97pt>
 File: img/rtl1500.png Graphic file (type png)
 <use img/rtl1500.png>
 Package pdftex.def Info: img/rtl1500.png  used on input line 179.
 (pdftex.def)             Requested size: 227.62204pt x 139.09756pt.
-<img/rtl500.png, id=777, 1300.86pt x 794.97pt>
+<img/rtl500.png, id=779, 1300.86pt x 794.97pt>
 File: img/rtl500.png Graphic file (type png)
 <use img/rtl500.png>
 Package pdftex.def Info: img/rtl500.png  used on input line 186.
 (pdftex.def)             Requested size: 227.62204pt x 139.09756pt.
-<img/rtl1700.png, id=778, 1300.86pt x 794.97pt>
+<img/rtl1700.png, id=780, 1300.86pt x 794.97pt>
 File: img/rtl1700.png Graphic file (type png)
 <use img/rtl1700.png>
 Package pdftex.def Info: img/rtl1700.png  used on input line 193.
@@ -2764,7 +2764,7 @@ Package pdftex.def Info: img/rtl1700.png  used on input line 193.
 [48 <./img/rtl1428.png>]
 
 [49 <./img/rtl300.png> <./img/rtl1000.png> <./img/rtl400.png> <./img/rtl1500.png> <./img/rtl500.png> <./img/rtl1700.png>]
-<img/h1speed.png, id=801, 1156.32pt x 650.43pt>
+<img/h1speed.png, id=803, 1156.32pt x 650.43pt>
 File: img/h1speed.png Graphic file (type png)
 <use img/h1speed.png>
 Package pdftex.def Info: img/h1speed.png  used on input line 253.
@@ -2772,7 +2772,7 @@ Package pdftex.def Info: img/h1speed.png  used on input line 253.
 
 
 [50]
-<img/williams.png, id=811, 747.54282pt x 595.47469pt>
+<img/williams.png, id=813, 747.54282pt x 595.47469pt>
 File: img/williams.png Graphic file (type png)
 <use img/williams.png>
 Package pdftex.def Info: img/williams.png  used on input line 260.
@@ -2826,7 +2826,7 @@ File: ts1lmvtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 [65]
 
 [66]
-<draws/soporte_patas.pdf, id=1450, 614.295pt x 794.97pt>
+<draws/soporte_patas.pdf, id=1451, 614.295pt x 794.97pt>
 File: draws/soporte_patas.pdf Graphic file (type pdf)
 <use draws/soporte_patas.pdf>
 Package pdftex.def Info: draws/soporte_patas.pdf  used on input line 559.
@@ -2835,7 +2835,7 @@ File: draws/soporte_patas.pdf Graphic file (type pdf)
 <use draws/soporte_patas.pdf>
 Package pdftex.def Info: draws/soporte_patas.pdf  used on input line 559.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<draws/soporte_patas.pdf, id=1453, page=1, 614.295pt x 794.97pt>
+<draws/soporte_patas.pdf, id=1454, page=1, 614.295pt x 794.97pt>
 File: draws/soporte_patas.pdf Graphic file (type pdf)
 <use draws/soporte_patas.pdf, page 1>
 Package pdftex.def Info: draws/soporte_patas.pdf , page1 used on input line 559.
@@ -2864,7 +2864,7 @@ Package pdftex.def Info: draws/soporte_patas.pdf , page1 used on input line 559.
 [68
 
  <./draws/soporte_patas.pdf>]
-<draws/soporte_feed.pdf, id=1476, 614.295pt x 794.97pt>
+<draws/soporte_feed.pdf, id=1477, 614.295pt x 794.97pt>
 File: draws/soporte_feed.pdf Graphic file (type pdf)
 <use draws/soporte_feed.pdf>
 Package pdftex.def Info: draws/soporte_feed.pdf  used on input line 560.
@@ -2873,7 +2873,7 @@ File: draws/soporte_feed.pdf Graphic file (type pdf)
 <use draws/soporte_feed.pdf>
 Package pdftex.def Info: draws/soporte_feed.pdf  used on input line 560.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<draws/soporte_feed.pdf, id=1479, page=1, 614.295pt x 794.97pt>
+<draws/soporte_feed.pdf, id=1480, page=1, 614.295pt x 794.97pt>
 File: draws/soporte_feed.pdf Graphic file (type pdf)
 <use draws/soporte_feed.pdf, page 1>
 Package pdftex.def Info: draws/soporte_feed.pdf , page1 used on input line 560.
@@ -2899,7 +2899,7 @@ Package pdftex.def Info: draws/soporte_feed.pdf , page1 used on input line 560.
 [69
 
  <./draws/soporte_feed.pdf>]
-<draws/paleta.pdf, id=1494, 614.295pt x 794.97pt>
+<draws/paleta.pdf, id=1495, 614.295pt x 794.97pt>
 File: draws/paleta.pdf Graphic file (type pdf)
 <use draws/paleta.pdf>
 Package pdftex.def Info: draws/paleta.pdf  used on input line 561.
@@ -2908,7 +2908,7 @@ File: draws/paleta.pdf Graphic file (type pdf)
 <use draws/paleta.pdf>
 Package pdftex.def Info: draws/paleta.pdf  used on input line 561.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<draws/paleta.pdf, id=1497, page=1, 614.295pt x 794.97pt>
+<draws/paleta.pdf, id=1498, page=1, 614.295pt x 794.97pt>
 File: draws/paleta.pdf Graphic file (type pdf)
 <use draws/paleta.pdf, page 1>
 Package pdftex.def Info: draws/paleta.pdf , page1 used on input line 561.
@@ -2934,7 +2934,7 @@ Package pdftex.def Info: draws/paleta.pdf , page1 used on input line 561.
 [70
 
  <./draws/paleta.pdf>]
-<draws/paleta_feed.pdf, id=1513, 614.295pt x 794.97pt>
+<draws/paleta_feed.pdf, id=1514, 614.295pt x 794.97pt>
 File: draws/paleta_feed.pdf Graphic file (type pdf)
 <use draws/paleta_feed.pdf>
 Package pdftex.def Info: draws/paleta_feed.pdf  used on input line 562.
@@ -2943,7 +2943,7 @@ File: draws/paleta_feed.pdf Graphic file (type pdf)
 <use draws/paleta_feed.pdf>
 Package pdftex.def Info: draws/paleta_feed.pdf  used on input line 562.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<draws/paleta_feed.pdf, id=1516, page=1, 614.295pt x 794.97pt>
+<draws/paleta_feed.pdf, id=1517, page=1, 614.295pt x 794.97pt>
 File: draws/paleta_feed.pdf Graphic file (type pdf)
 <use draws/paleta_feed.pdf, page 1>
 Package pdftex.def Info: draws/paleta_feed.pdf , page1 used on input line 562.
@@ -2969,7 +2969,7 @@ Package pdftex.def Info: draws/paleta_feed.pdf , page1 used on input line 562.
 [71
 
  <./draws/paleta_feed.pdf>]
-<draws/soporte_patch.pdf, id=1531, 614.295pt x 794.97pt>
+<draws/soporte_patch.pdf, id=1532, 614.295pt x 794.97pt>
 File: draws/soporte_patch.pdf Graphic file (type pdf)
 <use draws/soporte_patch.pdf>
 Package pdftex.def Info: draws/soporte_patch.pdf  used on input line 563.
@@ -2978,7 +2978,7 @@ File: draws/soporte_patch.pdf Graphic file (type pdf)
 <use draws/soporte_patch.pdf>
 Package pdftex.def Info: draws/soporte_patch.pdf  used on input line 563.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<draws/soporte_patch.pdf, id=1534, page=1, 614.295pt x 794.97pt>
+<draws/soporte_patch.pdf, id=1535, page=1, 614.295pt x 794.97pt>
 File: draws/soporte_patch.pdf Graphic file (type pdf)
 <use draws/soporte_patch.pdf, page 1>
 Package pdftex.def Info: draws/soporte_patch.pdf , page1 used on input line 563.
@@ -3022,18 +3022,18 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 35848 strings out of 473362
- 589015 string characters out of 5725050
- 2095381 words of memory out of 5000000
- 57492 multiletter control sequences out of 15000+600000
+ 35853 strings out of 473362
+ 589117 string characters out of 5725050
+ 2096563 words of memory out of 5000000
+ 57495 multiletter control sequences out of 15000+600000
  672090 words of font info for 143 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  113i,17n,128p,2912b,4281s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmvtt10.pfb>
-Output written on main.pdf (81 pages, 28992191 bytes).
+Output written on main.pdf (81 pages, 28995716 bytes).
 PDF statistics:
- 2032 PDF objects out of 2073 (max. 8388607)
- 1773 compressed objects within 18 object streams
- 798 named destinations out of 1000 (max. 500000)
- 999 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2022 PDF objects out of 2073 (max. 8388607)
+ 1763 compressed objects within 18 object streams
+ 800 named destinations out of 1000 (max. 500000)
+ 967 words of extra memory for PDF output out of 10000 (max. 10000000)
 
