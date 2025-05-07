@@ -1,6 +1,10 @@
-\chapteranum{Apéndice}
+\begin{appendixs}
 
-\section*{cpt\_tracking\_software.py}
+\section{Python scripts}
+
+\subsection{cpt\_tracking\_software.py}
+
+Este codigo permite el seguimiento de un objeto en el cielo, utilizando coordenadas altazimutales. El programa se ejecuta en un hilo separado y actualiza la posición del telescopio cada 5 segundos. El usuario puede ingresar comandos para iniciar o detener el seguimiento, cambiar el objetivo o salir del programa.
 
 \begin{sourcecode}[]{python}{}
     import time
@@ -125,7 +129,9 @@
     
 \end{sourcecode}
 
-\section*{spid.py}
+\subsection{spid.py}
+
+Este script funciona como libreria para codificar y decodificar comandos para el protocolo SPID MD-1 Rot2Prog. Permite convertir ángulos a pulsos, construir comandos de movimiento al stream del socket UDP y decodificar respuestas del controlador.
 
 \begin{sourcecode}[]{python}{}
     # Library to process all bytes formating for the SPID MD-1 Rot2Prog protocol
@@ -186,10 +192,12 @@
         return (az, el)    
 \end{sourcecode}
 
-\section*{control.py}
+\subsection{control.py}
+
+Este script permite la comunicación con el controlador del telescopio a través de un socket UDP. Permite enviar comandos para mover el telescopio, detenerlo y consultar su estad. A su vez tiene los parametros de movimiento que aseguran que cada movimiento no ponga en riesgo los cables con el pedestal. También incluye un hilo para recibir mensajes del controlador y otro para enviar los comandos.
 
 \begin{sourcecode}[]{python}{}
-    import spid
+import spid
 import socket
 import numpy as np
 import threading
@@ -361,7 +369,9 @@ if __name__ == "__main__":
 
 \end{sourcecode}
 
-\section*{astrortl.py}
+\subsection{astrortl.py}
+
+Este codigo contiene funciones para conectarse a un receptor RTL-SDR, configurar sus parámetros y recibir datos. También incluye funciones para procesar la serie muestras de IF y calcular el espectro de frecuencias.
 
 \begin{sourcecode}[]{python}{}
     import socket
@@ -426,7 +436,9 @@ if __name__ == "__main__":
         return freqs, spectrum_power
 \end{sourcecode}
 
-\section*{cpt\_rtl\_adquisition.py}
+\subsection{cpt\_rtl\_adquisition.py}
+
+Este script automatiza la observación configurando el receptor y definiendo el tamaño de cada espectro obtenido y a su vez controla el guardado de los espectros en un archivo .npy. El script se ejecuta indefinidamente, guardando los espectros cada 10000 muestras y reiniciando el buffer de datos o hasta que el usuario termine la observación.
 
 \begin{sourcecode}[]{python}{}
 import astrortl as rtl
@@ -468,7 +480,7 @@ while True:
         sdr_socket.close()
 \end{sourcecode}
 
-\section*{spectra\_avg.py}
+\subsection{spectra\_avg.py}
 
 \begin{sourcecode}[]{python}{}
     import numpy as np
@@ -505,7 +517,11 @@ while True:
 
 \end{sourcecode}
 
-\section*{rp\_rtl\_spectrum.py}
+\subsection{rp\_rtl\_spectrum.py}
+
+Script utilizado para medir el patrón de radiación con la fuente de calibración, incluyendo todas las conversiones de elevación y azimuth para mantener la referencia del patrón
+
+
 
 \begin{sourcecode}[]{python}{}
 import socket
@@ -556,8 +572,14 @@ def send_angle_el(el, host='10.17.89.223', port = 23):
 
 \end{sourcecode}
 
-\includehfpdf[pages=-]{draws/soporte_patas}\label{fig:soporte_patas}
-\includehfpdf[pages=-]{draws/soporte_feed}\label{fig:soporte_feed}
-\includehfpdf[pages=-]{draws/paleta}\label{fig:paleta}
-\includehfpdf[pages=-]{draws/paleta_feed}\label{fig:paleta_feed}
-\includehfpdf[pages=-]{draws/soporte_patch} \label{fig:soporte_patch}
+\newpage
+
+\section{Diagramas mecanicos}
+
+\includehfpdf[scale = 0.7 ,pages=-,pagecommand={\subsection{Soporte para tetrápodo}\label{fig:soporte_patas}},linktodoc=true]{draws/soporte_patas}
+\includehfpdf[scale = 0.7 ,pages=-,pagecommand={\subsection{Soporte universal para el alimentador}\label{fig:soporte_feed}}]{draws/soporte_feed}
+\includehfpdf[scale = 0.7 ,pages=-,pagecommand={\subsection{Soporte para estrella artifical}\label{fig:paleta}}]{draws/paleta}
+\includehfpdf[scale = 0.7 ,pages=-,pagecommand={\subsection{Soporte para alimentador de alto ancho de banda}\label{fig:paleta_feed}}]{draws/paleta_feed}
+\includehfpdf[scale = 0.7 ,pages=-,pagecommand={\subsection{Soporte para alimentador del dipolo de ARTE}\label{fig:soporte_patch}}]{draws/soporte_patch} 
+
+\end{appendixs}

@@ -8,14 +8,14 @@ Para finalizar con la descripción del software creado para la operación, mante
 
 \section{Ensamblado Mecánico}
 
-Tanto el reflector parabólico como la montura alt azimutal y su correspondiente controlador, son elementos adquiridos de la compañía \textit{RFHamdesign}, una empresa holandesa que se especializa en la construcción de telescopios de radio aficionados. El reflector de 3 metros se encontraba completamente desarmado y con piezas que requerían ser modificadas y ensambladas para su correcto funcionamiento.\\
+Tanto el reflector parabólico como la montura alt-azimutal y su correspondiente controlador, son elementos adquiridos de la compañía \textit{RFHamdesign}, una empresa holandesa que se especializa en la construcción de telescopios de radio aficionados. El reflector de 3 metros se encontraba completamente desarmado y con piezas que requerían ser modificadas y ensambladas para su correcto funcionamiento.\\
 
 Para todo el ensamblado se utilizaron herramientas manuales y eléctricas, como taladros, tijeras de hojalata, remachadoras, etc.\\
 
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{img/herramientas}
-    \caption{Herramientas utilizadas para el ensamblado de la superficie del reflector parabólico.}
+    \caption{Herramientas utilizadas para el ensamblado de la superficie del reflector parabólico. Alicates, cierras de metal, remachadora, tijeras de hojalata, latadro para metal y llaves de tuercas.}
     \label{fig:ensamblado1}
 \end{figure}
 
@@ -28,7 +28,7 @@ Las piezas del reflector se dividen en los 12 arcos, o costillas de aluminio que
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{img/estructura1}
-    \caption{Los 12 arcos de aluminio sujetos al centro del reflector parabólico.}
+    \caption{Los 12 arcos de aluminio sujetos al centro del reflector parabólico de aproximadamente 15 kilogramos.}
     \label{fig:ensamble2}
 \end{figure}
 
@@ -65,7 +65,7 @@ Se diseñaron 6 piezas en total con el software de diseño asistido por computad
 
 Una ventaja importante en la elección de la impresión 3D en filamentos plásticos, es su baja incidencia en la deformación o interferencia del comportamiento de radiofrecuencia, al ser un material no conductor introducido en el campo cercano de los componentes.\\
 
-Se puende consultar los dibujos mecanicos con medidas y carateristicas en el anexo. \ref{anexo:soportes_patas}.\\
+Se puende consultar los dibujos mecanicos con medidas y carateristicas en el anexo \ref{Anexo}.\\
 
 \begin{figure}
     \centering
@@ -119,15 +119,15 @@ Para las mediciones de baja frecuencia (menores a 600 MHz) se debe utilizar la m
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{img/soporte3D6}
-    \caption{Soporte para el dipolo exótico como alimentador de 1420 MHz}
+    \caption{Soporte para el dipolo de ARTE como alimentador de 1420 MHz}
     \label{fig:ensamble9}
 \end{figure}
 
-Al igual que en la figura \ref{fig:ensamble8}, la figura \ref{fig:ensamble9} es un soporte que permite colocar el dipolo exótico como alimentador del telescopio por medio del tubo de PVC. Diferenciándose del soporte anterior, este diseño permite asegurar la placa de la antena con la deformación forzada del material impreso, evitando el uso de pernos y tuercas.\\
+Al igual que en la figura \ref{fig:ensamble8}, la figura \ref{fig:ensamble9} es un soporte que permite colocar el dipolo de ARTE como alimentador del telescopio por medio del tubo de PVC. Diferenciándose del soporte anterior, este diseño permite asegurar la placa de la antena con la deformación forzada del material impreso, evitando el uso de pernos y tuercas.\\
 
-\subsection{Montura Alt-Azimutal}
+\subsection{Montura alt-azimutal}
 
-El rotor utilizado para la montura alt-azimutal es el modelo \textit{BIG-RAS/HR} de la compañía \textit{RFHamdesign} está diseñado para soportar una carga de hasta 319 kg, con una velocidad de movimiento de hasta 2.5 grados por segundo y una resolución de 0.1 grados para sus codificadores de posición.\\
+El rotor utilizado para la montura alt-azimutal es el modelo \textit{BIG-RAS/HR} de la compañía \textit{RFHamdesign} \cite{spid_bigrashr} está diseñado para soportar una carga de hasta 319 kg, con una velocidad de movimiento de hasta 2.5 grados por segundo y una resolución de 0.1 grados para sus codificadores de posición.\\
 
 \begin{figure}
     \centering
@@ -147,11 +147,11 @@ En la figura \ref{fig:ensamble10} se puede ver el rotor instalado en el pedestal
 
 En la figura \ref{fig:ensamble11} se pueden ver los contrapesos de equilibrio instalados en la montura de acero. Los contrapesos son ladrillos de una mezcla de plomo y cemento de 10 kg cada uno. Se instalaron 4 ladrillos en total a una distancia de 78 cm de del eje con la tubería, lugar donde sin ejercer ninguna fuerza sobre la antena o la montura se equilibra con los pernos de sujeción completamente desajustados.\\
 
-La montura es capaz de moverse en 400 grados en azimuth y 180 grados en elevación, con un rango de movimiento de -40 a 360 en los motores horizontales y de 0 a 180 para los motores verticales. Los cuales para mantener rangos de seguridad la montura se mueve entre 0 a 180 grados en azimuth y elevación, así se minimiza el riesgo de enrollado de los cables al girar. En la sección de software se explicará el funcionamiento del algoritmo de movimiento.\\
+La montura es capaz de moverse en 400 grados en azimuth y 180 grados en elevación, con un rango de movimiento de $-40$ a 360 en los motores horizontales y de 0 a 180 para los motores verticales. Los cuales para mantener rangos de seguridad la montura se mueve entre 0 a 180 grados en azimuth y elevación, así se minimiza el riesgo de enrollado de los cables al girar. En la sección de software se explicará el funcionamiento del algoritmo de movimiento.\\
 
 \subsection{Rack de control}
 
-El rack de control se encuentra en el edificio más cercano al telescopio, el edificio del meridiano, donde también se encuentra el telescopio ARTE. El rack consiste en un gabinete de 12 unidades de rack o \textit{U} completamente de acero tanto su cuerpo como la puerta frontal. Con el objetivo de minimizar el RFI que pueda ser introducido por los componentes electrónicos, se utilizó un gabinete completamente cerrado y con una puerta frontal de acero conectado a la tierra local.\\
+El rack de control se encuentra en el edificio más cercano al telescopio, el edificio del meridiano, donde también se encuentra el telescopio ARTE. El rack consiste en un gabinete de 12 unidades de rack o \textit{U} completamente de acero tanto su cuerpo como la puerta frontal. Con el objetivo de minimizar la interferencia de radiofrecuencia (RFI) que pueda ser introducido por los componentes electrónicos, se utilizó un gabinete completamente cerrado y con una puerta frontal de acero conectado a la tierra local.\\
 
 
 \begin{figure}
@@ -161,7 +161,7 @@ El rack de control se encuentra en el edificio más cercano al telescopio, el ed
     \label{fig:ensamble12}
 \end{figure}
 
-En la figura \ref{fig:ensamble12} se puede ver el rack de control con los siguientes elementos ordenados verticalmente: el switch de red, el inyector POE\footnote{Protocolo de energización por cables ethernet con su sigla en inglés, POE\textit{Power Over Ethernet}} del receptor, la fuente de alimentación múltiple, el controlador de la montura SPID, el computador de control y observación. Estos elementos se encuentran en la sala de recepción de ARTE que cuenta con un sistema de climatización que mantiene la temperatura constante a 16 grados Celsius.\\
+En la figura \ref{fig:ensamble12} se puede ver el rack de control con los siguientes elementos ordenados verticalmente: el switch de red, el inyector POE\footnote{Protocolo de energización por cables ethernet con su sigla en inglés, POE \textit{Power Over Ethernet}} del receptor, la fuente de alimentación múltiple, el controlador de la montura SPID\footnote{SPID es el nombre de la serie de rotores para antenas de la compañía RFHamdesign}, el computador de control y observación. Estos elementos se encuentran en la sala de recepción de ARTE que cuenta con un sistema de climatización que mantiene la temperatura constante a 16 grados Celsius.\\
 
 \section{Alimentador}
 
@@ -180,11 +180,11 @@ La antena log-periódica de dipolo (LPDA) de alto ancho de banda es una antena q
     \label{fig:ensamble13}
 \end{figure}
 
-La antena de la figura \ref{fig:ensamble13} se instaló en el soporte de la figura \ref{fig:ensamble8} y se conectó al receptor por medio de un cable coaxial de 50 ohmios y 1.5 metros de longitud.\\
+La antena de la figura \ref{fig:ensamble13} se instaló en el soporte de la figura \ref{fig:ensamble8} y se conectó al receptor por medio de un cable coaxial de 50 $\Omega$ y 1.5 m de longitud.\\
 
 \subsection{Dipolo de ARTE}
 
-El dipolo de ARTE es una antena que forma el arreglo del telescopio ARTE \cite{Gallardo2023} esta antena se caracteriza por tener un ancho de banda de 400 MHz desde 1000 para el diseño impreso instalado en el telescopio. Esta antena tiene una ganancia de 3 dBi y se ubica en el foco de la parábola a 135 cm de la superficie.\\
+El dipolo de ARTE es una antena que forma el arreglo del telescopio ARTE \cite{Gallardo2023} esta antena se caracteriza por tener un ancho de banda de 700 MHz desde 1000 MHz hasta 1700 MHz para el diseño impreso instalado en el telescopio. Esta antena tiene una ganancia de 3 dBi y se ubica en el foco de la parábola a 135 cm de la superficie.\\
 
 \begin{figure}
     \centering
@@ -202,14 +202,14 @@ Esta antena es la misma que la utilizada en la fuente de calibración de la copa
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{img/paletaFeed}
-    \caption{Antena circular de alto ancho de banda instalada en el telescopio.}
+    \caption{Antena de polarización circular de alto ancho de banda instalada en el telescopio.}
     \label{fig:ensamble15}
 \end{figure}
 
 
 \section{Diseño del receptor}
 
-Para el receptor se optó por utilizar una SDR de bajo costo, un filtro pasabanda optimizado para la observación de la banda de hidrógeno y un amplificador de bajo ruido. Se tomó en cuenta que estos componentes deben no solo ser de alta precisión, sino que también robustos, ya que estarán ubicados lo más cerca posible del alimentador a la intemperie.\\
+Para el receptor se optó por utilizar una SDR de bajo costo, un filtro pasabanda optimizado para la observación de la banda de HI y un amplificador de bajo ruido. Se tomó en cuenta que estos componentes deben no solo ser de alta precisión, sino que también robustos, ya que estarán ubicados lo más cerca posible del alimentador a la intemperie.\\
 
 \subsection{Cadena de recepción}
 
@@ -218,15 +218,15 @@ Para la cadena de recepción cuenta con un empaquetado de un amplificador de baj
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{img/rtl_saw}
-    \caption{Amplificador y filtro pasabanda SAWbird H1 de la compañía \textit{Noeelec}.}
+    \caption{Amplificador y filtro pasabanda SAWbird HI de la compañía \textit{Noeelec}.}
     \label{fig:cadena}
 \end{figure}
 
-En la figura \ref{fig:cadena} se puede ver el amplificador y filtro pasabanda SAWbird H1 de la compañía conectado a un analizador de espectro y una fuente de ruido para la caracterización de la cadena de recepción.\\
+En la figura \ref{fig:cadena} se puede ver el amplificador y filtro pasabanda SAWbird HI de la compañía conectado a un analizador de espectro y una fuente de ruido para la caracterización de la cadena de recepción.\\
 
 \subsection{Digitalizador y adquisición}
 
-El digitalizador es una RTL-SDR de la organización \textit{RTL-SDR} basado en el chip R820T de \textit{Rafael Micro} que se conecta por USB a un computador para obtener directamente el voltaje complejo de la IF para que sea procesada por el software de adquisición. Este digitalizador tiene una frecuencia de muestreo máxima de 3.2 MS/s y una resolución de 8 bits, pero usualmente se utiliza bajo los 2.56 MS/s para que tenga un comportamiento estable \cite{RTLSDR2018}.\\
+El digitalizador es una SDR de la organización \textit{RTL-SDR} basado en el chip R820T de \textit{Rafael Micro} que se conecta por USB a un computador para obtener directamente el voltaje complejo de la IF para que sea procesada por el software de adquisición. Este digitalizador tiene una frecuencia de muestreo máxima de 3.2 MS/s y una resolución de 8 bits, pero usualmente se utiliza bajo los 2.56 MS/s para que tenga un comportamiento estable \cite{RTLSDR2018}.\\
 
 \begin{figure}
     \centering
@@ -235,9 +235,9 @@ El digitalizador es una RTL-SDR de la organización \textit{RTL-SDR} basado en e
     \label{fig:digitalizador}
 \end{figure}
 
-En la figura \ref{fig:digitalizador} se puede ver la RTL-SDR conectada a la cadena de amplificador y una Raspberry PI 4B con un \textit{Hat} POE. Se utilizó esta configuración para llevar solo un cable ethernet cat 6 por el cual pasaría la energía y los datos. La Raspberry es capaz de alimentar a la SDR que a su vez por medio de su Bias-Tee puede alimentar al amplificador de bajo ruido con la mínima cantidad posible de cables y conexiones.\\
+En la figura \ref{fig:digitalizador} se puede ver la RTL-SDR conectada a la cadena de amplificador y una Raspberry PI 4B con un \textit{Hat} POE. Se utilizó esta configuración para llevar solo un cable ethernet cat 6 por el cual pasaría la energía y los datos. La Raspberry Pi es capaz de alimentar a la SDR que a su vez por medio de su Bias-Tee puede alimentar al amplificador de bajo ruido con la mínima cantidad posible de cables y conexiones.\\
 
-El cable ethernet utilizado es un cat 6 de 25 metros, que va desde el receptor al rack de control. Este cable es del tipo FFTP, lo que quiere decir que cada par trenzado está recubierto con una lámina de aluminio y a su vez los 4 pares trenzados más un conductor de apantallamiento están recubiertos por otra lámina de aluminio que se conecta a tierra en ambos extremos para minimizar el ruido al transportar datos y no producir RFI al telescopio.\\
+El cable ethernet utilizado es un cat 6 de 25 metros, que va desde el receptor al rack de control. Este cable es del tipo FFTP\footnote{Cable de par trenzado apantallado con pantalla global (FFTP)}, lo que quiere decir que cada par trenzado está recubierto con una lámina de aluminio y a su vez los 4 pares trenzados más un conductor de apantallamiento están recubiertos por otra lámina de aluminio que se conecta a tierra en ambos extremos para minimizar el ruido al transportar datos y no producir RFI al telescopio.\\
 
 \section{Software de control y adquisición} \label{sec:software}
 
@@ -268,9 +268,9 @@ Por ejemplo, si al calcular que la posición del astro en elevación de 50 grado
 
 Para la adquisición de datos se crearon 2 softwares en python para esta tarea, uno para adquirir una acumulación de espectros para las observaciones de un objeto celeste y otro para la calibración del instrumento.\\
 
-\paragraph{rtl\_spectra.py} Es un script que utiliza la radio RTL-SDR para obtener espectros mediante un comando específico, este se utiliza principalmente para las caracterizaciones y las mediciones. Se usa en conjunto con el software de control para crear las variantes de medición de patrón de radiación. Se puede configurar la taza de datos, el tamaño de la FFT, la cantidad de espectros tomados y el formato de guardado.\\
+\paragraph{rtl\_spectra.py} Es un script que utiliza la radio RTL-SDR para obtener espectros mediante un comando específico, este se utiliza principalmente para las caracterizaciones y las mediciones. Se usa en conjunto con el software de control para crear las variantes de medición de patrón de radiación. Se puede configurar la tasa de datos, el tamaño de la FFT, la cantidad de espectros tomados y el formato de guardado.\\
 
-\paragraph{cpt\_rtl\_adquisition.py} Es el software de observación, el cual tiene un \textit{Ring buffer} o un acumulador de espectros flotantes, esto quiere decir que, según como se configure, puede acumular una cantidad de espectros que se van actualizando constantemente con nuevos espectros y eliminando los viejos en la ventana de tiempo que se requiera o en lo que la memoria pueda guardar.\\
+\paragraph{cpt\_rtl\_adquisition.py} Es el software de observación, el cual tiene un \textit{ring-buffer} o un acumulador de espectros flotantes, esto quiere decir que, según como se configure, puede acumular una cantidad de espectros que se van actualizando constantemente con nuevos espectros y eliminando los viejos en la ventana de tiempo que se requiera o en lo que la memoria pueda guardar.\\
 
 Al igual que el script anterior este se puede configurar para la tasa de datos, el tamaño de la FFT, la cantidad de espectros tomados y el formato de guardado. Este, por otra parte, está diseñado para obtener una gran cantidad de espectros para ser guardados en una estructura eficiente en espacio en código binario. También tiene la tarea de mostrar en tiempo real la acumulación promediada de los espectros y en paralelo obtener las muestras y agregarlas al ring-buffer.\\
 
@@ -279,9 +279,9 @@ Al igual que el script anterior este se puede configurar para la tasa de datos, 
 
 Para caracterizar el telescopio, se requiere una serie de instrumentos y elementos que permitan obtener los datos necesarios para su calibración y la verificación de los resultados.\\
 
-\subsection{Fuente de calibración}
+\subsection{Fuente de calibración} \label{estrellaCal}
 
-Ya que el campo lejano de las antenas eléctricamente grandes, como es el caso de una antena de apertura, para medir el patrón de radiación en potencia de una antena se requiere de una fuente de radiofrecuencia conocida a una distancia mayor a la de campo lejano de la antena que se quiere medir.\\
+El campo lejano de las antenas eléctricamente grandes, como es el caso de una antena de apertura, aumenta conforme crece la apertura fisica de esta. Para medir el patrón de radiación en potencia de una antena se requiere de una fuente de radiofrecuencia conocida a una distancia mayor a la de campo lejano de la antena que se quiere medir.\\
 
 Para esto se instaló una antena de alto ancho de banda (192 MHz a 8 GHz) en la copa de agua del cerro Calán, con un cable coaxial de 20 metros de longitud. Al dejar la antena instalada en la parte superior y pudiéndose instalar generadores de señales desde la parte inferior. A esta antena le llamamos la \quotes{estrella artificial}.\\
 
@@ -292,7 +292,7 @@ Para esto se instaló una antena de alto ancho de banda (192 MHz a 8 GHz) en la 
     \label{fig:s11estrella}
 \end{figure}
 
-El ancho de banda de esta antena tiene dos criterios de zona óptima de operación, como se puede apreciar en la figura \ref{fig:s11estrella}, el primer criterio es que la antena posee un ancho de banda bajo los -6 dB de reflexiones para el rango de 192 MHz a 1 GHz y luego para el otro criterio de -10 dB de reflexiones para el rango de 1 GHz a 3 GHz.\\
+El ancho de banda de esta antena tiene dos criterios de zona óptima de operación, como se puede apreciar en la figura \ref{fig:s11estrella}, el primer criterio es que la antena posee un ancho de banda bajo los $-6$ dB de reflexiones para el rango de 192 MHz a 1 GHz y luego para el otro criterio de $-10$ dB de reflexiones para el rango de 1 GHz a 3 GHz.\\
 
 \begin{figure}[h!]
     \centering
@@ -340,14 +340,14 @@ Para realizar la medición de la temperatura de ruido se requirió de una fuente
 
 Este script genera un archivo con los espectros tomados por ángulo y luego mueve la montura a otro ángulo para tomar otro espectro, este proceso se repite hasta que se obtienen un corte de 180 grados con la cantidad de espectros que haya sido configurada.\\
 
-Como la fuente de calibración se encuentra en altura, hay que ajustar el plano de rotación con respecto a plano azimutal de la montura, para esto se utilizó la siguiente conversión de coordenadas:\\
+Como la fuente de calibración se encuentra en altura, hay que ajustar el plano de rotación con respecto a plano azimutal de la montura, para esto se utilizó la siguiente conversión de coordenadas:
 
 \begin{equation}
-    \theta' = \theta + \left(1- \frac{2\phi}{\pi}\right)E
+    \theta' = \theta + \left(1- \frac{2\phi}{\pi}\right)E\text{,}
 \end{equation}
 
 \begin{equation}
-    \phi' = \phi
+    \phi' = \phi\text{.}
 \end{equation}
 
 Donde $\theta$ es la elevación original, $E$ es el ángulo de elevación de la estrella artificial con respecto a la antena, $\phi$ es el azimut, $\theta'$ y $\phi'$ son las nuevas coordenadas. Con esta conversión se tiene una elevación específica para cada punto de azimut que permite mantener el plano de rotación de la fuente de calibración en el nuevo plano de azimutal.\\

@@ -10,11 +10,6 @@ Condon, J. y Ransom, S., {Essential Radio Astronomy}.
 \backrefprint\backrefparscantrue
 
 \backrefparscanfalse
-\bibitem{Astudillo2014}
-Alvarado, P.~A., ``Medición del patrón de radiación del telescopio mini'', 2014, \href{https://repositorio.uchile.cl/handle/2250/116317} {\nolinkurl{\detokenize{https://repositorio.uchile.cl/handle/2250/116317}}}.
-\backrefprint\backrefparscantrue
-
-\backrefparscanfalse
 \bibitem{stutzman2012antenna}
 Stutzman, W. y Thiele, G., {Antenna Theory and Design}.
 \newblock Antenna Theory and Design, Wiley, 2012, \href{https://books.google.cl/books?id=xhZRA1K57wIC} {\nolinkurl{\detokenize{https://books.google.cl/books?id=xhZRA1K57wIC}}}.
@@ -23,6 +18,12 @@ Stutzman, W. y Thiele, G., {Antenna Theory and Design}.
 \backrefparscanfalse
 \bibitem{Friis1946}
 Friis, H., ``A note on a simple transmission formula'', {Proceedings of the IRE}, vol.~34, no.~5, pp.~254--256, 1946, \href{https://dx.doi.org/10.1109/JRPROC.1946.234568} {\nolinkurl{doi:\detokenize{10.1109/JRPROC.1946.234568}}}.
+\backrefprint\backrefparscantrue
+
+\backrefparscanfalse
+\bibitem{cwna}
+Coleman, D.~D. y Westcott, D.~A., {CWNA: Certified Wireless Network Administrator Official Study Guide}.
+\newblock Hoboken, NJ: John Wiley \& Sons, 2012.
 \backrefprint\backrefparscantrue
 
 \backrefparscanfalse
@@ -37,6 +38,17 @@ Finger, R.~A., {Design and construction of a digital sideband separating spectro
 \backrefprint\backrefparscantrue
 
 \backrefparscanfalse
+\bibitem{teunissen2017springer}
+Teunissen, P. J.~G. y Montenbruck, O., {Springer Handbook of Global Navigation Satellite Systems}.
+\newblock Springer International Publishing, 2017.
+\backrefprint\backrefparscantrue
+
+\backrefparscanfalse
+\bibitem{fft}
+Heideman, M., Johnson, D., y Burrus, C., ``Gauss and the history of the fast fourier transform'', {IEEE ASSP Magazine}, 1984, \href{https://dx.doi.org/10.1109/MASSP.1984.1162257} {\nolinkurl{doi:\detokenize{10.1109/MASSP.1984.1162257}}}.
+\backrefprint\backrefparscantrue
+
+\backrefparscanfalse
 \bibitem{nraoRadioTelescopes}
 {National Radio Astronomy Observatory (NRAO)}, ``Radio telescopes - national radio astronomy observatory'', 2024, \href{https://public.nrao.edu/telescopes/radio-telescopes/} {\nolinkurl{\detokenize{https://public.nrao.edu/telescopes/radio-telescopes/}}}.
 \backrefprint\backrefparscantrue
@@ -47,13 +59,28 @@ Finger, R.~A., {Design and construction of a digital sideband separating spectro
 \backrefprint\backrefparscantrue
 
 \backrefparscanfalse
+\bibitem{arte}
+{Departamento de Astronomía, Universidad de Chile}, ``Astronomical radio transients experiment (arte)''., \href{http://www.das.uchile.cl/lab_mwl/project.html} {\nolinkurl{\detokenize{http://www.das.uchile.cl/lab_mwl/project.html}}}.
+\backrefprint\backrefparscantrue
+
+\backrefparscanfalse
 \bibitem{rfhamdesign3meterdish}
 {RF Hamdesign}, ``3 meter parabolic dish kit'', 2024, \href{https://www.rfhamdesign.com/products/parabolicdishkit/3meterdishkit/index.php} {\nolinkurl{\detokenize{https://www.rfhamdesign.com/products/parabolicdishkit/3meterdishkit/index.php}}}.
 \backrefprint\backrefparscantrue
 
 \backrefparscanfalse
+\bibitem{Astudillo2014}
+Alvarado, P.~A., ``Medición del patrón de radiación del telescopio mini'', 2014, \href{https://repositorio.uchile.cl/handle/2250/116317} {\nolinkurl{\detokenize{https://repositorio.uchile.cl/handle/2250/116317}}}.
+\backrefprint\backrefparscantrue
+
+\backrefparscanfalse
 \bibitem{analogNoiseFigure}
 {Analog Devices}, ``Noise figure measurement methods and formulas – maxim integrated'', 2024, \href{https://www.analog.com/en/resources/technical-articles/noise-figure-measurement-methods-and-formulas--maxim-integrated.html} {\nolinkurl{\detokenize{https://www.analog.com/en/resources/technical-articles/noise-figure-measurement-methods-and-formulas--maxim-integrated.html}}}.
+\backrefprint\backrefparscantrue
+
+\backrefparscanfalse
+\bibitem{spid_bigrashr}
+SPID, ``Big-ras/hr azimuth \& elevation rotor''., \href{https://www.rfhamdesign.com/products/spid-hr-antenna-rotators/bigrashr/index.php} {\nolinkurl{\detokenize{https://www.rfhamdesign.com/products/spid-hr-antenna-rotators/bigrashr/index.php}}}.
 \backrefprint\backrefparscantrue
 
 \backrefparscanfalse

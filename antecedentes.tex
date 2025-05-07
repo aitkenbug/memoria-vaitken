@@ -1,18 +1,18 @@
 \chapter{Antecedentes}
 
-En este capítulo se expondrán los fundamentos necesarios en el desarrollo del proyecto. Se abordarán los principales conceptos y características de las antenas, teniendo en cuenta que por naturaleza un radiotelescopio es una antena. Además, se explicará el funcionamiento de los receptores heterodinos, principal componente utilizado en la de señales de RF para finalmente, abordar el concepto de radiotelescopio, la importancia de la línea de hidrógeno neutro y el proyecto CHARTS.\\
+En este capítulo se expondrán los fundamentos necesarios en el desarrollo del proyecto. Se abordarán los principales conceptos y características de las antenas, teniendo en cuenta que por naturaleza un radiotelescopio es una antena. Además, se explicará el funcionamiento de los receptores heterodinos, principal componente utilizado en la de señales de radiofrecuencia (RF) para finalmente, abordar el concepto de radiotelescopio, la importancia de la línea de hidrógeno neutro y el aporte técnico al proyecto CHARTS.\\
 
 \section{Fundamentos de antenas}
 
-Una antena es un dispositivo usualmente pasivo que convierte radiación electromagnética del espacio en corriente eléctrica y viceversa, dependiendo para qué se utilice, pueden ser configuradas para recibir o transmitir señales. Los radiotelescopios son antenas receptoras. Suele ser fácil calcular las propiedades de una antena transmisora y medir las propiedades de una antena receptora. Afortunadamente, la mayor parte de las propiedades de una antena transmisora (como el patrón de radiación) son equivalentes al usar esta misma antena como receptora, así como cualquier medición de una antena receptora puede ser aplicada a esta antena cuando es usada para la transmisión \cite{Ransom2016}.\\
+Una antena es un dispositivo usualmente pasivo que convierte radiación electromagnética del espacio en corriente eléctrica y viceversa, dependiendo para qué se utilice, pueden ser configuradas para recibir o transmitir señales. Los radiotelescopios son antenas receptoras. Suele ser fácil calcular las propiedades de una antena transmisora y medir las propiedades de una antena receptora. Afortunadamente, la mayor parte de las propiedades de una antena transmisora (como el patrón de radiación) son equivalentes al usar esta misma antena como receptora, así como cualquier medición de una antena receptora puede ser aplicada a esta antena cuando es usada para la transmisión debido al principio de reciprocidad \cite{Ransom2016}.\\
 
 \subsection{Patrón de radiación}
 
 El patrón de radiación es una representación gráfica de las propiedades radiativas de una antena. Se define como la distribución de la potencia transmitida por la antena en una esfera de radio constante. Por razones prácticas, se analizan secciones del patrón de radiación, las cuales corresponden a las curvas tridimensionales obtenidas en la intersección de la esfera con planos perpendicular que pasan por el origen.\\
 
-Para medir la potencia radiada por una antena, es necesario utilizar la aproximación de campo lejano. El campo lejano es la distancia a la que debe ubicarse una fuente puntual para que las ondas recibidas sean planas \cite{Ransom2016}. Lo anterior quiere decir que la radiación se propaga en modo TEM, lo que significa que la componente eléctrica es perpendicular a la componente magnética y que ambas son perpendiculares a la dirección de propagación. Esto permite describir la radiación utilizando únicamente el campo eléctrico \cite{Astudillo2014}.\\
+Para medir la potencia radiada por una antena, es necesario utilizar la aproximación de campo lejano. El campo lejano es la distancia a la que debe ubicarse una fuente puntual para que las ondas recibidas sean planas y se pueda obtener la radiación en potencia sin componentes magneticos utilizando unicamente el campo eléctrico \cite{Ransom2016}.\\
 
-\subsubsection*{Campo Lejano} La definición de la distancia de campo lejano depende tanto de la longitud de onda $\lambda$ como el tamaño de la antena $D$, o diámetro para antenas de apertura parabólicas. La distancia de campo lejano se define como:
+\subsubsection*{Campo Lejano} La definición de la distancia de campo lejano depende tanto de la longitud de onda $\lambda$ como la maxima extensión del colector D, o diámetro para antenas de apertura parabólicas. La distancia de campo lejano se define como la distancia perpendicular a la propagación $R$:
 
 \begin{equation}
     R = \frac{2D^2}{\lambda}
@@ -21,28 +21,28 @@ Para medir la potencia radiada por una antena, es necesario utilizar la aproxima
 Se utiliza las definiciones de campo eléctrico normalizado y potencia normalizada para poder expresar el patrón de radiación en decibelios. Utilizando el máximo como el valor de referencia. La potencia normalizada se define como:\\
 
 \begin{equation}
-    \Vec{F}(\theta, \Phi)=\frac{\Vec{E(\theta, \phi)}}{max|\Vec{E}(\theta, \phi)|}
+    \Vec{F}(\theta, \phi)=\frac{\Vec{E(\theta, \phi)}}{\text{max}|\Vec{E}(\Vec{\theta}, \phi)|}
 \end{equation}
 
 \begin{equation}
-    P(\theta, \phi) = |\Vec{F}(\theta, \phi)|^{2}
+    P(\theta, \phi) = ||\Vec{F}(\theta, \phi)||^{2}
 \end{equation}
 
 \begin{equation}
-    P(\theta, \phi)_{dB} = 10logP(\theta, \phi)=20log |\Vec{F}|=F(\theta, \phi)
+    P(\theta, \phi)_{\text{dB}} = 10\text{log}P(\theta, \phi)=20\text{log} |\Vec{F}|=F(\theta, \phi)
 \end{equation}
 
 
 \begin{figure}
     \centering
     \includegraphics[width = 11cm]{img/patern1.png}
-    \caption{Parámetros del patrón de radiación para una antena con características directivas. \cite{stutzman2012antenna}.}
+    \caption{Parámetros del patrón de radiación para una antena con características directivas de un haz principla, la definición del ancho haz de media potencia, nulos y lobulos menores. Figura recuperada de \textit{Antenna theory and design} \cite{stutzman2012antenna}.}
     \label{fig:patern}
 \end{figure}
 
-La figura \ref{fig:patern}, muestra un patrón de radiación de una antena directiva, donde se pueden observar los lóbulos laterales y el haz principal. El haz principal es la dirección de máxima radiación, mientras que los lóbulos laterales son las direcciones de radiación secundarias.\\
+La figura \ref{fig:patern}, muestra un patrón de radiación de una antena directiva, donde se pueden observar los lóbulos menores o lóbulos laterales y el haz principal. El haz principal es la dirección de máxima radiación, mientras que los lóbulos laterales son las direcciones de radiación de menor potencia.\\
 
-El haz principal se define en términos de potencia y se conoce como HPBW o Haz de Media Potencia. El HPBW es el ángulo entre los puntos de la curva de radiación que tienen la mitad de la potencia máxima, es decir donde se ve una disminución de 3 dB.\\
+El haz principal se define en términos de potencia y se conoce como HPBW o haz de media potencia. El HPBW es el ángulo entre los puntos de la curva de radiación que tienen la mitad de la potencia máxima, es decir donde se ve una disminución de 3 dB.\\
 
 \subsection{Directividad}
 
@@ -54,7 +54,7 @@ La directividad ($D$) se define como la razón de intensidad de radiación en un
 
 Donde $U(\theta, \phi)$ es la densidad de potencia radiada en una dirección específica y $U_{prom}$ es la densidad de potencia promedio. Lo que da a entender que la directividad es siempre adimensional.\\
 
-La directividad se puede expresar directamente del patrón de radiación de la antena. Para esto se define un haz de ángulo sólido $d\Omega$  y se integra sobre la superficie de una esfera de radio R.
+La directividad se puede obtener directamente del patrón de radiación de la antena. Para esto se define un haz de ángulo sólido $d\Omega$ y se integra sobre la superficie de una esfera de radio R.
 
 \begin{equation}\label{eq:solidangle}
     \Omega_{A} = \iint_{\text{esfera}} |F(\theta, \phi)|^{2} d\Omega
@@ -72,7 +72,7 @@ Finalmente, si se reemplaza la ecuación (\ref{eq:solidangle}) en la ecuación (
     D = \frac{4\pi}{\Omega_{A}}
 \end{equation}
 
-Esto quiere decir que la directividad está completamente definida por la forma del patrón de radiación. Haciendo que sea totalmente independiente de la construcción de la antena \cite{stutzman2012antenna}.\\
+Esto quiere decir que la directividad está completamente definida por la forma del patrón de radiación. Garantizando su completa independencia respecto al diseño físico de la antena \cite{stutzman2012antenna}.\\
 
 
 \subsection{Ganancia}
@@ -101,7 +101,7 @@ En el caso particular de una antena de apertura, el término de la eficiencia ta
     \varepsilon_{ap} = e_{r} \varepsilon_{t} \varepsilon_{s} \varepsilon_{a}
 \end{equation}
 
-Donde $e_{r}$ es la eficiencia de la radiación, $\varepsilon_{t}$ es la eficiencia \textit{taper} o de cobertura, $\varepsilon_{s}$ de \textit{spillover} o de derrame e $\varepsilon_{a}$ es la eficiencia de \textit{achivement} o de completitud, la cual incluye muchas otras fuentes de pérdidas \cite{stutzman2012antenna}.\\
+Donde $e_{r}$ es la eficiencia de la radiación, $\varepsilon_{t}$ es la eficiencia \textit{taper} o de cobertura, $\varepsilon_{s}$ de \textit{spillover} o de derrame y $\varepsilon_{a}$ es la eficiencia de \textit{achivement} o de completitud, la cual incluye muchas otras fuentes de pérdidas \cite{stutzman2012antenna}.\\
 
 Así, la ganancia de una antena de apertura es directamente proporcional a su apertura física y a la longitud de onda de la señal que se desea recibir,
 
@@ -122,7 +122,7 @@ La polarización de una antena es el plano de progagación de la onda electromag
     \label{fig:polarizacion2}
 \end{figure}
 
-Los tipos de polarización se dividen en polarización lineal, polarización circular y la combinación de ambas, la polarización elíptica. La figura 2.2a muestra una onda electromagnética linealmente polarizada en orientación vertical. La figura 2.2b muestra una onda electromagnética circularmente polarizada en sentido horario.\\
+Los tipos de polarización se dividen en polarización lineal, polarización circular y la combinación de ambas, la polarización elíptica y no polarizada. La figura 2.2a muestra una onda electromagnética linealmente polarizada en orientación vertical. La figura 2.2b muestra una onda electromagnética circularmente polarizada en sentido horario con respecto al transmisor.\\
 
 
 
@@ -157,7 +157,7 @@ La figura \ref{fig:bandwidth} muestra el ancho de banda de reflexión de una ant
 \begin{figure}
     \centering
     \includegraphics[width = 0.8\textwidth]{img/s21Fh1}
-    \caption{Figura de una cadena de recepción con un filtro de paso de banda.}
+    \caption{Figura de una cadena de recepción con un filtro de paso de banda delgado para observaciones astronomicas de HI, con un ancho de banda de 5 MHz con una frecuencia central de 1428 MHz.}
     \label{fig:bandwidth2}
 \end{figure}
 
@@ -166,7 +166,7 @@ La figura \ref{fig:bandwidth2} muestra el ancho de banda de un filtro de pasaban
 
 \subsection{Pérdidas y eficiencia}
 
-En la propagación de ondas electromagnéticas se producen pérdidas de varias fuentes, las relacionas con la geometría son las pérdidas de espacio libre y las pérdidas óhmnicas por el medio de transmisión, pero en el contexto de una antena de apertura de reflector parabólico, se encuentran también las pérdidas de superficie y las pérdidas de alimentación.\\
+En la propagación de ondas electromagnéticas se producen pérdidas de varias fuentes, las relacionadas con la geometría son las pérdidas de espacio libre y las pérdidas óhmnicas por el medio de transmisión, pero en el contexto de una antena de apertura de reflector parabólico, se encuentran también las pérdidas de superficie y las pérdidas de alimentación.\\
 
 \paragraph{Impedancia de entrada}
 
@@ -208,7 +208,7 @@ Donde $P_{\text{ohm}}$ es la potencia disipada por pérdidas ohmnicas, $I$ es la
 
 Estos efectos se aprecian al utilizar conductores coaxiales con pérdidas por distancia y por pérdidas dielectricas según sus materiales. También influyen los materiales utilizados en la construcción de la antena.\\
 
-\subsection{Ecuación de Friis}
+\subsection{Ecuación de Friis} \label{friis}
 
 La ecuación de Friis es una fórmula de transmisión para un circuito de radiofrecuencia compuesto por dos antenas, una antena transmisora u otra receptora en espacio libre \cite{Friis1946}. La ecuación se define como:
 
@@ -217,6 +217,22 @@ La ecuación de Friis es una fórmula de transmisión para un circuito de radiof
 \end{equation}
 
 Donde $P_{r}$ es la potencia recibida, $P_{t}$ es la potencia transmitida, $G_{t}$ es la ganancia de la antena transmisora, $G_{r}$ es la ganancia de la antena receptora, $\lambda$ es la longitud de onda de la señal y $d$ es la distancia de propagación.\\
+
+\subsection{Zona de Fresnel}
+
+La zona de Fresnel es una zona delimitada por elipsoides que rqodian la línea de vista entre una antena transmisiora y una receptora. Esta zona define si un obstaculo en la línea de vista interfiere significativamente en la potencia de la señal.\\
+
+La zona de Fresnel, consiste en multiples zonas elipsoidales definidas por numeros (1, 2, 3, 4, ... n), siendo la zona 1 la que contiene la señal con mayor potencia con un 60\% de la potencia total del enlace \cite{cwna}.\\
+
+Se puede obtener el radio de la zona de Fresnel utilizando la siguiente ecuación para cada punto en la el camino de la línea de vista.
+
+\begin{equation}
+    r_{n} = \sqrt{\frac{n\lambda d_{1}d_{2}}{d_{1}+d_{2}}}
+\end{equation}
+
+Donde $r_{n}$ es el radio de la zona de Fresnel, $n$ es el número de la zona, $\lambda$ es la longitud de onda de la señal, $d_{1}$ es la distancia entre la antena transmisora y el punto en la zona de Fresnel y $d_{2}$ es la distancia entre el punto en la zona de Fresnel y la antena receptora.\\
+
+Para que un obstaculo no interfiera significativamente en la transmision de la señal en el aire, se debe mantener a lo menos la primera zona de Fresnel (n=1) libre.
 
 \section{Colectores de radiotelescopios}
 
@@ -270,7 +286,7 @@ Las antenas de tipo foco primario, son aquellas donde la antena alimentadora se 
 
 \subsection{Antenas de alimentación}
 
-Las antenas alimentadoras son las antenas colectoras de un radiotelescopio ubicadas en el foco de la parábola principal que capturan la radiación concentrada por el reflector. Estas antenas deben tener un patrón de radiación adecuado para el tipo de diseño de la antena parabólica.\\
+Las antenas alimentadoras son aquellas que en un radiotelescopio estan ubicadas en el foco de la parábola principal que capturan la radiación concentrada por el reflector. Estas antenas deben tener un patrón de radiación adecuado para el tipo de diseño de la antena parabólica.\\
 
 Las antenas alimentadoras pueden ser de distintos tipos, como antenas de parche, antenas de bocina, antenas Yagui-Uda, antenas log-periódicas, antenas de semiespacio, \textit{microstrip}, entre otras. El tipo de antena alimentadora a utilizar dependerá del tipo de antena parabólica y de la aplicación de la antena, sin embargo, las antenas de bocina son las más utilizadas en antenas parabólicas de reflector secundario.\\
 
@@ -279,53 +295,84 @@ Las antenas alimentadoras pueden ser de distintos tipos, como antenas de parche,
 
 Los receptores comúnmente utilizados en radioastronomía son bastante similares a los utilizados en telecomunicaciones. El rol principal de estos receptores es convertir las señales incidentes a un rango de frecuencia menor conservando la fase y la amplitud, esta frecuencia se le conoce como frecuencia intermedia (IF), la cual es procesada a posteriori para extraer su información \cite{Finger2013}.\\
 
-En todos los receptores heterodinos se utiliza un mezclador para realizar la conversión de frecuencia, este es un dispositivo no lineal que procesa las señales con una señal de referencia conocida como oscilador local.\\
+Un receptor heterodino utiliza un mezclador para realizar la conversión de frecuencia a IF, este es un dispositivo no lineal que procesa las señales con una señal de referencia conocida como oscilador local.\\
 
 
 \subsection{Radio definida por software}
 
 Una radio definida por software, del inglés \textit{Software Defined Radio} (SDR), es un receptor heterodino con un oscilador reprogramable y entrega la señal de IF a un computador para su procesamiento. Estos receptores se pueden reconfigurar para sintonizar distintas frecuencias, para luego entregar las muestras digitales a un computador y así procesar la señal, como por ejemplo, realizar una transformada de Fourier para obtener el espectro de la señal.\\
 
-%\subsection{Transformada Rápida de Fourier}
+\subsection{Temperatura de ruido}
+
+La temperatura de ruido, es una forma de representar el ruido intrinseco de un receptor a partir de sus caracteristicas electronicas y la temperatura ambiente. Esta temperatura se define como la razón señal a ruido de la señal que entra al receptor con la señal de salida \cite{teunissen2017springer}.\\
+
+Este ruido también delimita el piso de ruido del receptor y determina la sensibilidad del receptor. Se calibra esta temperatura con una fuente termica conocida para determinar la escala absoluta de potencia que se puede medir.
+
+\begin{equation}
+    T_{\text{sys}} = T_{0}(F-1)\text{,}
+\end{equation}
+
+Donde $T_{sys}$ es la temperatura de ruido del sistema, $T_{0}$ es la temperatura de referencia, $F$ es el factor de ruido del receptor.\\
+
+Una de las tecnicas más utilizadas para determinar el factor de ruido es el $Y$\textit{-factor} que será desarrollado más adelante.
+
+
+\subsection{Transformada Rápida de Fourier}
+
+La transformada rápida de Fourier (FFT), es un algoritmo que permite calcular la transformada discreta de Fourier. Proceso el cual transforma una señal en su dominio original, usualmente tiempo, a una representación del dominio de la frecuencia. La transformada se obtiene computando una secuencia de valores a componentes de frecuencia, obteniendo el espectro de la señal \cite{fft}.\\
+
+La transformada discreta de Fourier se define como:
+
+\begin{equation}
+    X(k) = \sum_{n=0}^{N-1} x(n)e^{-j\frac{2\pi}{N}kn}
+\end{equation}
+
+Donde $X(k)$ es la transformada discreta de Fourier, $x(n)$ es la señal en el dominio del tiempo, $N$ es el número de muestras y $k$ es el índice de frecuencia.\\
 
 
 
 
 \section{Radiotelescopios}
 
-Tal como los telescopios ópticos que concentran la luz visible en un foco, la amplifican y procesan para que sea analizada por diversos instrumentos, también los radiotelescopios concentran la luz de las ondas de radio de fuentes astronomicas. Estos telescopios son diseñados para observar las ondas de la luz, desde 1 mm a 10 m de longitud de onda. \cite{nraoRadioTelescopes}\\
+Tal como los telescopios ópticos que concentran la luz visible en un foco, la amplifican y procesan para que sea analizada por diversos instrumentos, también los radiotelescopios concentran la luz de las ondas de radio de fuentes astronomicas. Estos telescopios son diseñados para observar las ondas de la luz, desde 1 mm a 10 m de longitud de onda \cite{nraoRadioTelescopes}.\\
 
 Un radiotelescopio posee una ventaja única en su adquisición. La radiación observada es coherente, por lo que existen los amplificadores y digitalizadores coherentes, los cuales mantienen la información de la fase de la señal. Esta cualidad permite la construcción de interferómetros y telescopios de apertura sintética \cite{Ransom2016}.\\ 
 
 \subsection{Línea de Hidrógeno Neutro}
 
-El movimiento de un electrón en un átomo de Hidrógeno neutro genera un campo magnético que se acopla con los espines del protón y el electrón. \quotes{Este acople da cuenta de la radiación a 1420 MHz que viene de la transición entre dos niveles energéticos del nivel fundamental del Hidrógeno} \cite{Restrepo2023}.\\
+El movimiento de un electrón en un átomo de hidrógeno neutro genera un campo magnético que se acopla con los espines del protón y el electrón. \quotes{Este acople da cuenta de la radiación a 1420 MHz que viene de la transición entre dos niveles energéticos del nivel fundamental del Hidrógeno} \cite{Restrepo2023}.\\
 
-La línea de hidrógeno neutro o H1, es una de las líneas espectrales más importantes en radioastronomía, ya que permite observar la distribución de gas en las galaxias y la evolución del universo primitivo. También es una de las más estudiadas y catalogadas por muchos otros telescopios.\\
+La línea de hidrógeno neutro o HI, es una de las líneas espectrales más importantes en radioastronomía, ya que permite observar la distribución de gas en las galaxias y la evolución del universo primitivo. También es una de las más estudiadas y catalogadas por muchos otros telescopios.\\
 
-\subsection{CHARTS y FRB}
+\subsection{CHARTS y FRBs}
 
-Los fenómenos astrofísicos transitorios de radio o FRB, son eventos de extremadamente corta duración y origen desconocido que ocurren en un amplio rango de frecuencias. Estos pulsos inspiraron el proyecto CHARTS, para apoyar su búsqueda y estudio.\\
+Los fenómenos astrofísicos transitorios de radio como los FRBs, son eventos de duración desde milisegundos a microsegundos y origen desconocido que ocurren en un amplio rango de frecuencias. Estos pulsos inspiraron el proyecto CHARTS, para apoyar su búsqueda y estudio.\\
 
-El proyecto CHARTS, es una colaboración entre la Universidad de Chile y la Universidad de Toronto con el objetivo de construir un arreglo de 128 antenas sintonizadas para operar en el rango de 300 MHz a 500 MHz en el marco de la búsqueda de FRB.\\
+El proyecto CHARTS, es una colaboración entre la Universidad de Chile y de la University of Toronto con el objetivo de construir un arreglo de 256 antenas sintonizadas para operar en el rango de 300-500 MHz en el marco de la búsqueda de FRBs en tiempo real.\\
+
+\subsection{Astronomical Radio Transients Experiment (ARTE)}\label{ARTE}
+
+Arte es un radiotelescopio diseñado como un experimento para detectar FRBs provenientes del centro de la Galaxia y monitorear llamaradas solares. Este telescopio se compone de un arreglo de 12 antenas de parche para la banda 1300 a 1900 MHz montadas sobre una montura ecuatorial. Posee una arquitectura de recepción basada en digitalizadores con matrices de puertas lógicas programables en campo (FPGA) \cite{arte}.\\
+
+Este telescopio se encuentra, al igual que el CPT, en la cumbre del cerro Calán en Santiago de Chile. Este es un proyecto experimental del departamento de astronomía del Laboratorio de Ondas Mililimetricas y Sub-milimetricas (MWL).
 
 
 \section{Telescopio CPT}
 
-El telescopio CPT, \textit{CHARTS Pathfinder Telescope}, es un telescopio de 3 metros de diámetro con una configuración de foco primario. Este telescopio se encuentra en la cumbre del cerro Calán en Santiago de Chile, siendo parte del departamento de astronomía de la Facultad de Ciencias Físicas y Matemáticas de la Universidad de Chile.\\
+El telescopio \textit{CHARTS Pathfinder Telescope} (CPT), es un telescopio de 3 metros de diámetro con una configuración de foco primario. Este telescopio se encuentra en la cumbre del cerro Calán en Santiago de Chile, siendo parte del departamento de ingeniería eléctrica, en cooperacion con departamento de astronomía, de la Facultad de Ciencias Físicas y Matemáticas de la Universidad de Chile.\\
 
-El reflector de este telescopio es un paraboloide de 3 metros de diámetro, con una estructura de aluminio unida con remaches y pernos. Su superficie reflectante es de malla de acero galvanizado con separación de 6 mm, el anillo exterior es de una cinta de aluminio de 3x20 mm. El soporte del alimentador es de 4 perfiles de aluminio de 2x2 cm de 2 metros de largo \cite{rfhamdesign3meterdish}.\\
+El reflector de este telescopio es un paraboloide de 3 metros de diámetro, con una estructura de aluminio unida con remaches y pernos. Su superficie reflectante es de malla de acero galvanizado con separación de 6 mm, el anillo exterior es de una cinta de aluminio de $3\times 20$ mm. El soporte del alimentador es de 4 perfiles de aluminio de $2\times 2$ cm de 2 metros de largo \cite{rfhamdesign3meterdish}.\\
 
-La eficiencia de superficie que estima el fabricante es de 65\% teniendo su ganancia máxima a 5760 MHz con 43.3 dB y a 1296 MHz con 30.3 dB. Tanto el reflector como la montura alt-azimutal son de la compañía holandesa \textit{RFHamdesign}.\\
+La eficiencia de superficie que estima el fabricante es de 65\% teniendo su ganancia máxima a 5760 MHz con 43.3 dB y a 1296 MHz con 30.3 dB. Tanto el reflector como la montura alt-azimutal son de la compañía holandesa \textit{RFHamdesign} \cite{rfhamdesign3meterdish}.\\
 
 \begin{figure}
     \centering
     \includegraphics[width = 0.8\textwidth]{img/cpt_tracking}
-    \caption{Telescopio CPT en el cerro Calán siguiendo el centro de la galaxia.}
+    \caption{Telescopio CPT en el cerro Calán siguiendo el centro de la Galaxia.}
     \label{fig:cpt}
 \end{figure}
 
-El propósito para poner en servicio este telescopio es apoyar al proyecto CHARTS en la banda de 300 MHz a 500 MHz. Para lograr este objetivo se quiere observar la línea espectral de hidrógeno neutro de 21 cm de longitud de onda, para caracterizar todos los aspectos de la antena y comenzar a realizar observaciones de radioastronomía. Luego se ampliarán sus capacidades para  y hacer observaciones solares de alto ancho de banda desde 300 MHz a 6 GHz.\\
+El propósito para poner en servicio este telescopio es apoyar al proyecto CHARTS en la banda de 300 MHz a 500 MHz para la busqueda de FRBs. Para lograr este objetivo se quiere observar la línea espectral de hidrógeno neutro de 21 cm de longitud de onda, para caracterizar todos los aspectos de la antena y comenzar a realizar observaciones de radioastronomía. Luego se ampliarán sus capacidades para  y hacer observaciones solares de alto ancho de banda desde 300 MHz a 6 GHz.\\
 
 \section{Métodos de caracterización}
 
@@ -338,7 +385,7 @@ El método más directo para la medición del patrón de radiación es el de cam
 \begin{figure}
     \centering
     \includegraphics[width = 0.8\textwidth]{img/farfielddiag}
-    \caption{Diagrama de un sistema de medición de patrón de radiación para una antena bajo prueba (AUT) en campo lejano.}
+    \caption{Diagrama de un sistema de medición de patrón de radiación para una antena bajo prueba (AUT) en campo lejano con los sistemas de recepción, control y resgistro. Además de una fuente puntual con un generador de señales.}
     \label{fig:farfield}
 \end{figure}
 
@@ -346,23 +393,23 @@ La figura \ref{fig:farfield} muestra un diagrama de un sistema básico necesario
 
 \subsection{Medición de la temperatura de ruido}
 
-Para medir la temperatura de ruido de un sistema, se puede utilizar el método de factor Y, el cual consiste en utilizar una fuente de ruido de ENR, conocida como \textit{Excess Noise Ratio} o la relación de exceso de ruido, la cual se conecta a la antena y se mide la potencia de ruido en la salida del receptor.\\
+Para medir la temperatura de ruido de un sistema, se puede utilizar el método de factor $Y$, el cual consiste en utilizar una fuente de ruido de ENR, conocida como (ENR) o la relación de exceso de ruido, la cual se conecta a la antena y se mide la potencia de ruido en la salida del receptor.\\
 
 La medición se realiza obteniendo la temperatura del sistema cuando se enciende la fuente de ruido y cuando se apaga, siendo estas temperaturas como $T_{hot}$ y $T_{cold}$ o temperatura caliente y temperatura fría respectivamente.\\
 
-El ruido de ENR se obtiene a 2 \quotes{temperaturas de ruido} conocidas, una a temperatura ambiente y otra a la temperatura con la fuente encendida.\\
+El ruido de ENR se obtiene a 2 \quotes{temperaturas de ruido} conocidas, una a temperatura ambiente y otra a la temperatura con la fuente encendida.
 
 \begin{equation}
-    ENR = \frac{T_{hot} - 290}{290}
+    ENR = \frac{T_{hot} - 290}{290}\text{,}
 \end{equation}
 
 Considerando la temperatura ambiente como 290 grados K. ENR se logra polarizando la fuente de ruido y para obtener el factor Y utilizamos la siguiente ecuación:\\
 
 \begin{equation}
-    Y = \frac{\frac{T_{hot}}{T_{cold}} + \frac{T_{noise}}{T_{cold}}}{1 + \frac{T_{noise}}{T_{cold}}}
+    Y = \frac{\frac{T_{\text{hot}}}{T_{\text{cold}}} + \frac{T_{\text{noise}}}{T_{\text{cold}}}}{1 + \frac{T_{\text{noise}}}{T_{\text{cold}}}}
 \end{equation}
 
-Donde $T_{noise}$ es la temperatura de ruido del sistema. Así para obtener la figura de ruido se necesita el factor de ruido F, $F=T_{noise}/T_{cold} +1 $, para luego reemplazarlo en $NF = 10log(F)$\cite{analogNoiseFigure}.\\
+Donde $T_{\text{noise}}$ es la temperatura de ruido del sistema. Así para obtener la figura de ruido se necesita el factor de ruido F, $F=T_{\text{noise}}/T_{\text{cold}} +1 $, para luego reemplazarlo en $NF = 10\text{log}(F)$\cite{analogNoiseFigure}.\\
 
 
 %\section{Estado del arte}

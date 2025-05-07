@@ -4,11 +4,11 @@ En este capítulo se expondrán los procesos de caracterización y puesta en ser
 
 \section{Enfoque del alimentador}
 
-Se realizaron 2 mediciones de enfoque del alimentador, una a 70 metros y otra a 186 metros. Para la primera medición se utilizó un generador de señales genérico con una LPDA de alto ancho de banda. Luego para el resto de las mediciones se utilizó la estrella artificial de la copa de agua de la sección XX.\\
+Se realizaron 2 mediciones de enfoque del alimentador, una a 70 m y otra a 186 m. Para la primera medición se utilizó un generador de señales genérico con una LPDA de alto ancho de banda. Luego para el resto de las mediciones se utilizó la estrella artificial de la copa de agua de la sección \ref{estrellaCal}.\\
 
 \subsection{Pruebas de enfoque preliminar}
 
-En un principio el alimentador del telescopio consistía en una antena LPDA (Log Periodic Dipole Array) de 296 MHz a 6 GHz, de ultra ancho de banda, con una ganancia de aproximadamente 9 dBi. Con el receptor instalado en esta antena, se procedió a realizar el enfoque del alimentador. Para esta etapa se retiró el soporte tetrápodo y se instaló el alimentador en un trípode auxiliar sostenido por un tubo de PVC para lograr la altura del centro del reflector de 2 metros.\\
+En un principio el alimentador del telescopio consistía en una antena LPDA (Log Periodic Dipole Array) de 296 MHz a 6 GHz, de ultra ancho de banda, con una ganancia de aproximadamente 9 dBi. Con el receptor instalado en esta antena, se procedió a realizar el enfoque del alimentador. Para esta etapa se retiró el soporte tetrápodo y se instaló el alimentador en un trípode auxiliar sostenido por un tubo de PVC para lograr la altura del centro del reflector de 2 m.\\
 
 \begin{figure}
     \centering
@@ -24,12 +24,12 @@ Con la antena de la figura \ref{fig:antena_lpda} se procedió a realizar el enfo
     \begin{subfigure}{0.45\textwidth}
         \includegraphics[width=\textwidth]{img/enfoque_cerca}
         \caption{Generador de señales portátil con la antena orientada hacia el reflector.}
-        \label{fig:generador}
+        \label{fig:generador1}
     \end{subfigure}
     \begin{subfigure}{0.45\textwidth}
         \includegraphics[width=\textwidth]{img/enfoque_cerca1}
         \caption{Antena LPDA de menor ancho de banda instalada con el generador de señales en trípode.}
-        \label{fig:antena_lpda}
+        \label{fig:antena_lpda1}
     \end{subfigure}
 \end{figure}
 
@@ -50,7 +50,7 @@ La potencia recibida por el receptor fue medida con el software de medición uti
 
 \subsection{Pruebas de enfoque definitivas}
 
-Para la medición de enfoque con la estrella artificial se instaló el soporte tetrápodo y se colocó el alimentador en su posición final después de las mediciones anteriores. Se configuró el generador de señales Valon de la estrella artificial a frecuencias autorizadas para transmisión de radioaficionados. Se utilizó esta nueva frecuencia para evitar interferencia de radiofrecuencia en la medición, utilizando el filtro delgado de H1.\\
+Para la medición de enfoque con la estrella artificial se instaló el soporte tetrápodo y se colocó el alimentador en su posición final después de las mediciones anteriores. Se configuró el generador de señales Valon de la estrella artificial a frecuencias autorizadas para transmisión de radioaficionados. Se utilizó esta nueva frecuencia para evitar interferencia de radiofrecuencia en la medición, utilizando el filtro delgado de HI.\\
 
 \begin{figure}
     \centering
@@ -64,38 +64,38 @@ Para el caso de 1428 MHz, la distancia de campo lejano era de 85 metros y la est
 \begin{figure}
     \centering
     \includegraphics[width=0.7\textwidth]{img/feed_focus}
-    \caption{Alimentador dipolo de ARTE con tetrápodo instalado.}
-    \label{fig:enfoque2}
+    \caption{Alimentador dipolo de ARTE con tetrápodo instalado a la distancia focal de la párabola a 135 cm.}
+    \label{fig:enfoque3}
 \end{figure}
 
-En la figura \ref{fig:enfoque2} se muestra el alimentador con el tetrápodo instalado y un tubo PVC milimetrado para medir la distancia relativa al reflector, usando de referencia el punto donde los soportes se unen al tubo del alimentador.\\
+En la figura \ref{fig:enfoque3} se muestra el alimentador con el tetrápodo instalado y un tubo PVC milimetrado para medir la distancia relativa al reflector, usando de referencia el punto donde los soportes se unen al tubo del alimentador.\\
 
-Para esta medición de enfoque, se movió el alimentador en el eje Z con una resolución de 0.5 cm hasta encontrar el punto de máxima potencia recibida que se puede apreciar en la sección \ref{sec:posicion}. Se midió la razón señal a ruido y se obtuvo el punto de máxima potencia recibida en dBFS al igual que en la medición anterior.\\
+Para esta medición de enfoque, se movió el alimentador en el eje Z con una resolución de 0.5 cm hasta encontrar el punto de máxima potencia recibida que se puede apreciar en la sección \ref{sec:posicion}. Se midió la razón señal a ruido y se obtuvo el punto de máxima potencia recibida en dBFS\footnote{dBFS, Medida en decibeles \textit{Full Scale} relativas a las escalas de voltajes de la ventana de digitalización de un digitalizador.} al igual que en la medición anterior.\\
 
 \section{Medición del patrón de radiación}
 
 Se utilizaron 2 plataformas para la medición del patrón de radiación, una con la medida relativa dBFS obtenida de los espectros de la RTL-SDR y otra con la medida absoluta en dBm obtenida con el analizador de espectros Siglent SVA1075x. Para todas las mediciones se utilizó la estrella artificial de la copa de agua.\\
 
-Todas las mediciones de patrón de radiación se realizaron en la cima del cerro Calán, en la plataforma de observación del telescopio CPT. Para cada frecuencia medida, se hicieron los cortes azimutales y de elevación, o la medida del campo H y el campo E. Todos los cortes son de 180 grados para obtener con claridad los lóbulos laterales y con una resolución de 1 punto por grado.\\
+Todas las mediciones de patrón de radiación se realizaron en la cima del cerro Calán, en la plataforma de observación del telescopio CPT. Para cada frecuencia medida, se hicieron los cortes azimutales y de elevación, o la medida del campo $H$ y el campo $E$. Todos los cortes son de 180 grados para obtener con claridad los lóbulos laterales y con una resolución de 1 punto por grado.\\
 
 
-\subsection{Medición relativa para banda de H1}
+\subsection{Medición relativa para banda de HI}
 
 La medición con la RTL-SDR se realizó a 1428 MHz, utilizando el filtro angosto de la misma frecuencia de \textit{RadioastronomySuplies}. El generador Valon, se configuró a 1428 MHz con una potencia inyectada a la estrella artificial de 0.23 dBm.\\
 
-Las pérdidas ohmnicas del cable coaxial RG316 a 1428 MHz son de 10.5 dB por 10 m, como el cable que alimenta la antena de la copa de agua es de 20 metros, se obtuvo una pérdida de 21 dB. La potencia recibida por la antena es de -21 dBm aproximadamente.\\
+Las pérdidas ohmnicas del cable coaxial RG316 a 1428 MHz son de 10.5 dB por 10 m, como el cable que alimenta la antena de la copa de agua es de 20 metros, se obtuvo una pérdida de 21 dB. La potencia recibida por la antena es de $-21$ dBm aproximadamente.\\
 
-Con los softwares de medición se obtuvieron los espectros de la señal recibida por la RTL-SDR, se midió la razón señal a ruido y se guardaron 1000 espectros para cada grado de elevación y azimuth. Como la copa de agua se encuentra en altura, se generó un plano semicircular elevado en 7 grados sobre el eje horizontal, donde se corrigieron los valores de elevación por ángulo azimutal con la ecuación de corrección \ref{eq:powerdensity}. Para el segundo corte, se generó un desfase de 7 grados en elevación, y para medir de 0 a -90 grados, se invirtió la posición azimutal en 180 grados para obtener ese cuadrante.\\
+Con los softwares de medición se obtuvieron los espectros de la señal recibida por la RTL-SDR, se midió la razón señal a ruido y se guardaron 1000 espectros para cada grado de elevación y azimuth. Como la copa de agua se encuentra en altura, se generó un plano semicircular elevado en 7 grados sobre el eje horizontal, donde se corrigieron los valores de elevación por ángulo azimutal con la ecuación de corrección \ref{eq:powerdensity}. Para el segundo corte, se generó un desfase de 7 grados en elevación, y para medir de 0 a $-90$ grados, se invirtió la posición azimutal en 180 grados para obtener ese cuadrante.\\
 
 %\subsection{Medición absoluta para todas las bandas de interés}
 
-\section{Sensibilidad y temperatura de ruido}
+\section{Sensibilidad}
 
-La medida de sensibilidad se realizó inyectando un tono para cada frecuencia de interés en la entrada de la cadena de recepción. Se utilizó el generador de señales \textit{Rode \& Schwartz} SMB100A con una potencia de salida de -80 dBm y un coaxial RG316 de 10 metros al receptor instalado en el foco de la antena. Se midieron los espectros generados por la RTL-SDR para determinar la escala dBFS de la radio y calibrar los demás espectros en potencia.\\
+La medida de sensibilidad se realizó inyectando un tono para cada frecuencia de interés en la entrada de la cadena de recepción. Se utilizó el generador de señales \textit{Rode \& Schwartz} SMB100A con una potencia de salida de $-80$ dBm y un coaxial RG316 de 10 metros al receptor instalado en el foco de la antena. Se midieron los espectros generados por la RTL-SDR para determinar la escala dBFS de la radio y calibrar los demás espectros en potencia.\\
 
 Se guardaron los espectros de 300 MHz, 400 MHz y 500 MHz para cubrir la banda de interés del proyecto CHARTS. También se guardaron los espectros de 1000 MHz, 1428 MHz, 1500 MHz y el límite de digitalización de 1700 MHz.\\
 
-\subsection{Medición de la temperatura de ruido}
+\section{Medición de la temperatura de ruido}
 
 Para medir la temperatura de ruido del receptor, se utilizó la fuente de ruido Agilent 346B con una amplificación de 40dB. Para la cadena de amplificación se utilizó el LNA + Filtro H1 SAWbird+ H1 de Nooelec, el cual se conectó a la fuente de ruido y se midió la potencia de ruido en la salida en el analizador de espectro.\\
 
@@ -103,14 +103,14 @@ Para la temperatura de ruido del receptor, se inyectó la señal de ruido en la 
 
 %Para obtener la temperatura del sistema completo se realizó una acumulación de espectros del centro de la galaxia a 1420 MHz y a una región del cielo limpia en concentración de hidrógeno neutro. Consultando a los catálogos de radioastronomía se obtuvo la temperatura de la galaxia y de la región del cielo.\\
 
-Se realizó el cálculo de temperatura de ruido con el método de Y-factor y se obtuvo la figura de ruido de la cadena de amplificación, del receptor y del sistema.\\
+Se realizó el cálculo de temperatura de ruido con el método de $Y$-factor y se obtuvo la figura de ruido de la cadena de amplificación, del receptor y del sistema.\\
 
 
 \section{Medición del error de apuntamiento}
 
 Para determinar el error de apuntamiento del telescopio se utilizó la estrella artificial de la copa de agua. Se especificaron las posiciones geograficas del telescopio y la copa de agua, así tambien sus alturas correspondientes.\\
 
-Se midieron las posiciones utilizando un GPS y se determino la distancia entre el telescopio y la copa de agua. También se midió la altitud de las bases de cada estructura con GPS. Las coordenadas del telescopio son -33.395701 -70.536878, latitud y logitud respectivamente con una altitud de 867 metros sobre el nivel del mar. Para la copa de agua las coordenadas son -33.397340 y -70.536800, latitud y logitud respectivamente, con una altituid de 853 metros sobre el nivel del mar.\\
+Se midieron las posiciones utilizando un GPS y se determino la distancia entre el telescopio y la copa de agua. También se midió la altitud de las bases de cada estructura con GPS. Las coordenadas del telescopio son $-33.395701$ $-70.536878$, latitud y logitud respectivamente con una altitud de 867 metros sobre el nivel del mar. Para la copa de agua las coordenadas son $-33.397340$ y $-70.536800$, latitud y logitud respectivamente, con una altituid de 853 metros sobre el nivel del mar.\\
 
 El centro de rotación del motor de la antena, se encuentra a 2 metros de la superficie del terreno y la altura de la antena instalada en la copa de agua es 15 metros desde el terreno.\\
 
@@ -122,6 +122,6 @@ Para la primera luz, se escogió la región estándar S9 del catálogo de observ
 
 La región S9 tiene una ascensión recta de 17 h 52 m 05 s y una declinación -34°25'15'', coordenadas que son ingresadas en el software de control de la montura alt azimutal.\\
 
-La prueba consistio en relizar observaciones de 30 minutos, acumulando 10 espectros por segundo y obteniendo su promedio. Estas acumulaciones tuvieron lugar en una ventana de 2 horas entre las 12:30 pm UTC -3:00 y las 4:00 pm UTC -3:00, con unos cuantos minutos entre cada medición para corroborar integridad de los datos. Entre estas mediciones de 30 minutos se acumularon espectros del cielo a 30 grados de elevación fuera de la zona para obtener el espectro de la radiación de la atmosfera y poder ajustar la medición.\\
+La prueba consistio en relizar observaciones de 30 minutos, acumulando 10 espectros por segundo y obteniendo su promedio. Estas acumulaciones tuvieron lugar en una ventana de 2 horas entre las 12:30 pm UTC -3:00 y las 4:00 pm UTC $-$3:00, con unos cuantos minutos entre cada medición para corroborar integridad de los datos. Entre estas mediciones de 30 minutos se acumularon espectros del cielo a 30 grados de elevación fuera de la zona para obtener el espectro de la radiación de la atmosfera y poder ajustar la medición.\\
 
-Para la observación se configuró el telescopio con el receptor de H1 y con la antena dipolo exótico en el foco geométrico del reflector. Se obtuvieron los espectros de la RTL-SDR y se guardaron en el disco duro para su posterior análisis.\\
+Para la observación se configuró el telescopio con el receptor de HI y con la antena dipolo exótico en el foco geométrico del reflector. Se obtuvieron los espectros de la RTL-SDR y se guardaron en el disco duro para su posterior análisis.\\
