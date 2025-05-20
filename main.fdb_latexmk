@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1744729241.34839 "main.aux" "main.bbl" "main" 1744729254.24008 0
+["bibtex main"] 1744729241.34839 "main.aux" "main.bbl" "main" 1747700231.24028 0
   "./library.bib" 1744688153 7214 67d0f57cecf10cc747c491fdc7998705 ""
   "./natnumurl.bst" 1733750114 21201 c3a97a2434b58cd70f7f9c9df607b80a ""
-  "main.aux" 1744729251 66715 1be60fd6c7e4538c98597ed6d70dad29 "pdflatex"
+  "main.aux" 1747700229 66715 1be60fd6c7e4538c98597ed6d70dad29 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1744729241.9981 "c:/Users/Vincent/memoria-vaitken/main.tex" "main.pdf" "main" 1744729254.2426 0
+["pdflatex"] 1747700220.98614 "c:/Users/Vincent/memoria-vaitken/main.tex" "main.pdf" "main" 1747700231.24112 0
   "antecedentes.tex" 1744688370 41114 070e93cd1a8983f6dcab40d1ec3ba560 ""
   "apendice.tex" 1744729229 20549 0957fa8388510af9848e59e3908d24c2 ""
   "c:/Users/Vincent/memoria-vaitken/main.tex" 1744688820 7333 f01286ce3c19acd2bded01f197939d29 ""
@@ -354,13 +354,13 @@
   "img/valon.jpg" 1733853906 687372 bd0c6e9f671525699d3383aeb3809c38 ""
   "img/williams.png" 1743125376 46411 8718da3c446c0edb4c2b49be29dc8f8c ""
   "intro.tex" 1744423478 4434 09a1ddbe601b27a997bd0968a8c096c4 ""
-  "main.aux" 1744729251 66715 1be60fd6c7e4538c98597ed6d70dad29 "pdflatex"
+  "main.aux" 1747700229 66715 1be60fd6c7e4538c98597ed6d70dad29 "pdflatex"
   "main.bbl" 1744729241 6061 753e4a600fcd89c1ae3e938c16706c9e "bibtex main"
-  "main.lof" 1744729251 7229 a9dd8d23279e9527b3a31587a4612d7c "pdflatex"
-  "main.lot" 1744729251 286 cb9634af121b20a05ca8480fad6a56a6 "pdflatex"
+  "main.lof" 1747700229 7229 a9dd8d23279e9527b3a31587a4612d7c "pdflatex"
+  "main.lot" 1747700229 286 cb9634af121b20a05ca8480fad6a56a6 "pdflatex"
   "main.tex" 1744688820 7333 f01286ce3c19acd2bded01f197939d29 ""
-  "main.toc" 1744729251 8588 4d686c46365378e5666ba5662abaa35a "pdflatex"
-  "resultados.tex" 1744689909 12045 c9f23648f1bbc3371332307b5f61f6d6 ""
+  "main.toc" 1747700229 8588 4d686c46365378e5666ba5662abaa35a "pdflatex"
+  "resultados.tex" 1747700218 12047 d434ce08e0f6198faf363de87147a586 ""
   "template.tex" 1733750114 290297 841a7a2beb05c5dcc319b64380dc348b ""
   "template_config.tex" 1733750114 21894 c8a156315548211a1859ff1d4e1eb92a ""
   (generated)
